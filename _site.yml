@@ -1,0 +1,9 @@
+name: "Maarten Blaauw"  
+author: "Dr Maarten Blaauw"  
+output_dir: "docs"  
+output:  
+  html_document:  
+    self_contained: no  
+    theme: flatly  
+navbar:  
+  title: "Maarten's new webpage" 
