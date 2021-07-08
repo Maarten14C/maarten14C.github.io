@@ -1,3 +1,5 @@
 ---
 title: "My Website Name"
 ---
+
+My publications are [here] (./publications.md)
