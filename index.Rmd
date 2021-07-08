@@ -3,3 +3,9 @@ title: "My Website Name"
 ---
 
 My publications are [here] (./publications.md)
+
+Or are they [here]? (./publications.html)
+
+```
+plot(1:10)
+```
