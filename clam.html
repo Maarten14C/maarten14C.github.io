@@ -21,22 +21,22 @@
  <li><a href="#trouble">Troubleshooting</a>
  <li><a href="#refs">References</a>
  <li><a href="#this">About this manual</a>
- <li><a href="Clam_2.2_espanol.pdf">Spanish version (of version 2.2; translated by Florencio Delgado)</a>
+ <li><a href="Clam_2.2_espanol.pdf">Spanish version (of version 2.2; kindly translated by Florencio Delgado)</a>
 </ul>
 <hr>
 
 
 <h2><a name="intro"></a>Introduction</h2>
 
-<p>Clam (Blaauw, 2010) was written to perform 'classic' age-depth modelling - prior to applying more sophisticated techniques such as Bayesian age-depth modelling. A recent version of the free open-source statistical software <a HREF=http://www.r-project.org>R</a> (at least version 3.5.1; R Development Core Team, 2018) should also be installed on your computer. You can download clam within R, by typing <code>install.packages("clam")</code> followed by <code>library(clam)</code>. Help can be obtained by typing, for example, <code>?clam</code>.
+<p>Clam (Blaauw, 2010) was written to perform 'classic' age-depth modelling - prior to applying more sophisticated techniques such as Bayesian age-depth modelling. A recent version of the free open-source statistical software <a HREF=http://www.r-project.org>R</a> (at least version 4.1.0; R Development Core Team, 2021) should also be installed on your computer. You can download clam within R, by typing <code>install.packages("clam")</code> followed by <code>library(clam)</code>. Help can be obtained by typing, for example, <code>?clam</code>.
 
-<p>Please do cite clam (Blaauw, 2010) in your work, as well as its version (most recent 2.3.2), calibration curve(s) used (e.g., Reimer et al., 2013) and the settings applied to obtain the age-models.
+<p>Please do cite clam (Blaauw, 2010) in your work, as well as its version (most recent 2.3.9), calibration curve(s) used (e.g., Reimer et al., 2020) and the settings applied to obtain the age-models.
 
 <hr>
 <table align="right"><tr><td><a href="#top">to top of page</a></table>
 <h2><a name="calcurves"></a>Radiocarbon calibration</h2>
 
-<p>Radiocarbon dates need to be calibrated so that they can be placed onto a calendar year time-scale. Clam's default calibration curve is the northern hemisphere terrestrial curve IntCal13.14C (<code>cc=1</code>) from Reimer et al. (2013). This can be changed to Marine13 (Reimer et al., 2013; <code>cc=2</code>) or SHCal13 (Hogg et al., 2013; <code>cc=3</code>). You can also provide an alternative curve (which must be present within the folder specified by ccdir, e.g., <code>ccdir="."</code>), change the default name of <code>cc1</code>, <code>cc2</code> or <code>cc3</code> to that alternative curve, and set <code>cc</code> to the desired curve. See later for special cases such as mixed marine/terrestrial dates.
+<p>Radiocarbon dates need to be calibrated so that they can be placed onto a calendar year time-scale. Clam's default calibration curve is the northern hemisphere terrestrial curve IntCal20.14C (<code>cc=1</code>) from Reimer et al. (2020). This can be changed to Marine20 (Reimer et al., 2020; <code>cc=2</code>) or SHCal20 (Hogg et al., 2020; <code>cc=3</code>). You can also provide an alternative curve (which must be present within the folder specified by ccdir, e.g., <code>ccdir="."</code>), change the default name of <code>cc1</code>, <code>cc2</code> or <code>cc3</code> to that alternative curve, and set <code>cc</code> to the desired curve. See later for special cases such as mixed marine/terrestrial dates.
 
 <p>Negative radiocarbon ages are calibrated with one of the postbomb curves from Hua et al. (2013), but the user needs to inform clam which one should be used. Three postbomb curves are provided for different regions of the northern hemisphere (check the map of Hua et al. (2013) or <a target="new" href=http://www.calib.qub.ac.uk/CALIBomb/frameset.html>calibomb</a>), while there are two curves for the southern hemisphere. For example, to use the first of the three northern hemisphere curves with <code>clam</code> and/or <code>calibrate</code>, provide the option <code>postbomb=1</code>, while for southern hemisphere samples, use <code>postbomb=4</code> for SH zones 1-2 or <code>postbomb=5</code> for SH zone 3. Clam will provide a warning if no such option is provided with negative radiocarbon ages.
 
@@ -483,7 +483,7 @@ Suggestions for corrections of and additions to the code are much appreciated an
 
 <p>Reimer, P.J., Brown, T.A., Reimer, R.W., 2004. Discussion: reporting and calibration of post-bomb 14C data. <i>Radiocarbon</i> <b>46</b>: 1299-1304
 
-<p>Reimer, P.J., Bard, E., Bayliss, A., Beck, J.W., Blackwell, P.G., Bronk Ramsey, C., Buck, C.E., Edwards, R.L., Friedrich, M., Grootes, P.M., Guilderson, T.P., Haflidason, H., Hajdas, I., Hatt&eacute;, C., Heaton, T.J., Hoffmann, D.L., Hogg, A.G., Hughen, K.A., Kaiser, K.F., Kromer, B., Manning, S.W., Niu, M., Reimer, R.W., Richards, D.A., Scott, E.M., Southon, J.R., Turney, C.S.M., van der Plicht, J., 2013. IntCal13 and Marine13 radiocarbon age calibration curves, 0-50,000 years cal BP. <i>Radiocarbon</i> <b>55</b>: 1869-1887
+<p>Reimer PJ, et al., 2020. The IntCal20 northern hemisphere radiocarbon age calibration curve (0–55 cal kBP). <i>Radiocarbon</i> <b>62</b>: 725-57.
 
 <p>Stuiver, M., Reimer, P.J., 1993. Extended 14C database and revised CALIB radiocarbon calibration program. <i>Radiocarbon</i> <b>35</b>: 215-230
 
