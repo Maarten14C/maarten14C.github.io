@@ -1,0 +1,5 @@
+depths		 1.5 	 	 99.5 
+acc.shape	 2 
+acc.mean	 10 
+mem.strength	 4 
+mem.mean	 0.7 
