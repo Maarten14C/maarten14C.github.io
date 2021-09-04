@@ -19,7 +19,7 @@ halflives <- .5 ^ (0:9)
 cbind(yr, 100*halflives)
 ```
 
-To plot the data behind the latest IntCal calibration curve, IntCal, first we have to load the IntCal package (see the previous page if you haven't installed it yet):
+To plot the data behind the latest IntCal calibration curve, IntCal20, first we have to load the IntCal package (see the previous page if you haven't installed it yet):
 
 ```{r}
 require(IntCal)
