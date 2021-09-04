@@ -1,0 +1,118 @@
+---
+title: session 1
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{session 1}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+This page contains the R code that will be run in the first session of the GSA Short Course on age-modeling.
+
+To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):
+
+```{r}
+yr <- seq(0, by=5730, length=10)
+halflives <- .5 ^ (0:9)
+cbind(yr, 100*halflives)
+```
+
+To plot the data behind the latest IntCal calibration curve, IntCal, first we have to load the IntCal package (see the previous page if you haven't installed it yet):
+
+```{r}
+require(IntCal)
+```
+
+Now we can plot the data, e.g. from 0 to 1000 cal BP:
+
+```{r, fig.width=5, fig.asp=1}
+intcal.data(0, 1000)
+```
+
+The legend shows the origins of the datasets. All start with a t, which means that these are tree-ring datasets.
+
+Diving further back in time, e.g. between 30 and 40 thousand years ago, there are no more continuous tree-ring series and here IntCal20 relies on other independently-dated datasets and their radiocarbon ages:
+
+```{r, fig.width=5, fig.asp=1}
+intcal.data(30e3, 40e3)
+```
+
+tTurney is a wiggle-match dated Kauri tree, lSuigetsu is from a Japanese varved lake, and mCariaco is from an anoxic marine basin off Venezuela.
+
+To plot just the curve without the data:
+
+```{r, fig.width=5, fig.asp=1}
+draw.ccurve()
+```
+
+The following graph is a plot of the IntCal20 calibration curve (in blue) and the NH1 postbomb curve (green) (not that they are on separate vertical axes):
+
+```{r, fig.width=5, fig.asp=1}
+draw.ccurve(1850, 2020, BCAD=T, cc2="nh1", add.yaxis=T)
+```
+
+To check the values within the calibration curve, store the curve in a new variable and have a look at it:
+
+```{r}
+cc <- ccurve()
+head(cc)
+```
+
+## radiocarbon calibration
+
+Before we go and calibrate a date, first we have to look at probability distributions. For example, if we have a measurement of `130 +- 20`, what are its possible values? Is, say, 125 a likely value given this measurement? We can calculate this, assuming a normal distribution (`dnorm`):
+
+```{r}
+dnorm(125, 130, 20)
+```
+
+Not a very likely value perhaps. But what about 130 as a value?
+
+```{r}
+dnorm(130, 130, 20)
+```
+
+Let's calculate, list and plot a larger range of values and their probabilities:
+
+```{r, fig.width=5, fig.asp=1}
+x <- 0:250
+probs <- dnorm(x, 130, 20)
+head(cbind(x, probs))
+sum(probs)
+plot(x, probs, type="l")
+```
+
+So, each value has a corresponding probability, given the measurement and its error.
+
+When you calibrate a radiocarbon date, you are comparing the obtained 14C age with the calibration curve (in this case IntCal20). For each calendar year, the IntCal20 14C age of that calendar year is compared with the 14C age of the to-be-calibrated sample. Imagine for now that you have a radiocarbon date of `130 +- 20`. To calibrate it, for each calendar year of the calibration curve, check its probability given the IntCal20 radiocarbon year belonging to that calendar year. For example, for the most recent few years of IntCal20:
+
+```{r, fig.width=5, fig.asp=1}
+cc <- ccurve()
+yr.intcal <- cc[,1]
+c14.intcal <- cc[,2]
+probs <- dnorm(c14.intcal, 130, 20)
+plot(yr.intcal, probs, xlim=c(0, 300), type="l")
+```
+
+In fact, we also need to take into account the uncertainty of the calibration curve itself, by summing the squared errors:
+
+```{r, fig.width=5, fig.asp=1}
+cc <- ccurve()
+yr.intcal <- cc[,1]
+c14.intcal <- cc[,2]
+c14.errors <- cc[,3]
+probs <- dnorm(c14.intcal, 130, sqrt(20^2 + c14.errors^2))
+plot(yr.intcal, probs, xlim=c(0, 300), type="l")
+```
+
+The above can be done much more quickly using IntCal's `calibrate` function:
+
+```{r, fig.width=5, fig.asp=1}
+calibrate(130,20)
+```
+
+For help and options, place a question mark before the function, e.g., `?calibrate`.
+
+
+[prev: intro](intro.html)<br>
+[next: session 2](session_2.html)
