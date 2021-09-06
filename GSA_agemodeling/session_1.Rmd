@@ -39,7 +39,7 @@ Diving further back in time, e.g. between 30 and 40 thousand years ago, there ar
 intcal.data(30e3, 40e3)
 ```
 
-tTurney is a wiggle-match dated Kauri tree, lSuigetsu is from a Japanese varved lake, and mCariaco is from an anoxic marine basin off Venezuela.
+tTurney is a wiggle-match dated Kauri tree, lSuigetsu is from a Japanese varved lake, and mCariaco is from a marine basin off Venezuela.
 
 To plot just the curve without the data:
 
