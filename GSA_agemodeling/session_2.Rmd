@@ -9,7 +9,7 @@ vignette: >
 
 This page contains the R code that will be ran in the second session of the GSA Short Course on age-modeling.
 
-The presentation slides of this session can be downloaded from [here](./2-agemodels_theory.pptx).
+The presentation slides of this session can be downloaded from [here](./2a_agemodels_theory.pptx).
 
 The first slides which we could reproduce here were done using the R package `clam`. Assuming you have it installed already (see [here](intro.html)), then you simply need to load the code:
 
