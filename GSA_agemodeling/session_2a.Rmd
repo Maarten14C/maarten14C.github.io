@@ -7,7 +7,7 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-This page contains the R code that will be ran in the second session of the GSA Short Course on age-modeling.
+This page contains the R code that will be ran in the second session of the GSA Short Course on age-modeling. First we'll cover the theory (part 2a), then the practicalities of running rbacon (part 2b).
 
 The presentation slides of this session can be downloaded from [here](./2a_agemodels_theory.pptx).
 
