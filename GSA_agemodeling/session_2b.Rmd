@@ -154,7 +154,7 @@ To see all Bacon’s options, type:
 
 ### Post-run analyses
 
-You can load a previous, existing run without having to run it again (assuming here that depths haven't changed). First load it and then draw the age-model plot to get all the data in memory:
+You can load a previous, existing run without having to run it again (assuming here that minimum and maximum core depths haven't changed). First load it and then draw the age-model plot to get all the data in memory:
 
 ```{r, eval=FALSE}
 Bacon("RLGH3", run=FALSE)
