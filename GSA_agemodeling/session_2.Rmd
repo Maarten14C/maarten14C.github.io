@@ -1,0 +1,78 @@
+---
+title: session 2a
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{session 2a}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+This page contains the R code that will be ran in the second session of the GSA Short Course on age-modeling.
+
+The presentation slides of this session can be downloaded from [here](./2-agemodels_theory.pptx).
+
+The first slides which we could reproduce here were done using the R package `clam`. Assuming you have it installed already (see [here](intro.html)), then you simply need to load the code:
+
+```{r}
+require(clam)
+```
+
+The basic, default model is linear interpolation through the dated levels of the standard core that comes with clam:
+
+```{r, fig.width=5, fig.asp=1}
+clam()
+```
+
+We can also assume that the sixth date in the sequence is outlying:
+
+```{r, fig.width=5, fig.asp=1}
+clam(outliers=6)
+```
+
+Or assume that a hiatus happened at 470 cm core depth, causing a gap in time:
+
+```{r, fig.width=5, fig.asp=1}
+clam(hiatus=470)
+```
+
+We can also assume this hiatus and instead of linear interpolation, draw a linear regression between the dates in the sections below and above the hiatus (linear regression can be activated by specifying `type=2`):
+
+```{r, fig.width=5, fig.asp=1}
+clam(type=2, hiatus=470)
+```
+
+Or a higher-order polynomial regression, to the second degree (since model type and its degree are the second and third clam options, you can also leave out the names of the options and simply add their values in their places):
+
+```{r, fig.width=5, fig.asp=1}
+clam(,2 , 2, hiatus=470)
+```
+
+or a polynomial regression to the third degree:
+
+```{r, fig.width=5, fig.asp=1}
+clam(, 2, 3, hiatus=470)
+```
+
+You can also draw a smooth spline through the dates (type=4):
+
+```{r, fig.width=5, fig.asp=1}
+clam(,4)
+```
+
+and again remove the sixth date as outlier:
+
+```{r, fig.width=5, fig.asp=1}
+clam(,4, outliers=6)
+```
+
+or instead assume a hiatus:
+
+```{r, fig.width=5, fig.asp=1}
+clam(,4, hiatus=470)
+```
+
+
+---
+
+[prev: session 1](session_1.html)<br>
+[next: session 2b](session_2b.html)
