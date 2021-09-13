@@ -349,7 +349,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 <p>This page contains the R code that will be run in the first session of the GSA Short Course on age-modeling.</p>
-<p>The presentation slides of this session can be downloaded from <a href="./1-radiocarbon.pptx">here</a>.</p>
+<p>The presentation slides of this session can be downloaded from <a href="./1-radiocarbon.odp">here</a>. They are in the open-source .odp format, which should open fine in MS-Powerpoint.</p>
 <p>To get to grips with radiocarbon’s half-life of 5730 years, first let’s set up a variable called <code>yr</code> that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>yr &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dt">by=</span><span class="dv">5730</span>, <span class="dt">length=</span><span class="dv">10</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>halflives &lt;-<span class="st"> </span><span class="fl">.5</span> <span class="op">^</span><span class="st"> </span>(<span class="dv">0</span><span class="op">:</span><span class="dv">9</span>)</span>
@@ -365,6 +365,9 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 ##  [8,] 40110   0.7812500
 ##  [9,] 45840   0.3906250
 ## [10,] 51570   0.1953125</code></pre>
+<p>Type (or paste) the above commands in R’s terminal window and press the <code>Enter</code> key after each command. The wee <code>&lt;-</code> arrow means assign, so by typing <code>yr &lt;- seq(0, by=5730, length=10)</code> we define a new variable called <code>yr</code>, and fill it with a sequence (<code>seq</code>) that starts with the value <code>0</code>, increases by <code>5730</code> each time, and has <code>length=10</code> values.</p>
+<p>To re-run previous commands in your R terminal, press the up arrow. You can also type the first few letters of a command and then press the tab key to fill in the rest (or suggest what could be filled in next if there are multiple options).</p>
+<p>Sometimes when R plots things, the plot window becomes active and you will have to click on the terminal again to enter more data or commands.</p>
 <p>To plot the data behind the latest IntCal calibration curve, IntCal20, first we have to load the IntCal package (see the previous page if you haven’t installed it yet):</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="kw">require</span>(IntCal)</span></code></pre></div>
 <p>Now we can plot the data, e.g. from 0 to 1000 cal BP:</p>

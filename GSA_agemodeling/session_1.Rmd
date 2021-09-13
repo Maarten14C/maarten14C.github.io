@@ -9,7 +9,7 @@ vignette: >
 
 This page contains the R code that will be run in the first session of the GSA Short Course on age-modeling.
 
-The presentation slides of this session can be downloaded from [here](./1-radiocarbon.pptx).
+The presentation slides of this session can be downloaded from [here](./1-radiocarbon.odp). They are in the open-source .odp format, which should open fine in MS-Powerpoint.
 
 To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):
 
@@ -18,6 +18,12 @@ yr <- seq(0, by=5730, length=10)
 halflives <- .5 ^ (0:9)
 cbind(yr, 100*halflives)
 ```
+
+Type (or paste) the above commands in R's terminal window and press the `Enter` key after each command. The wee `<-` arrow means assign, so by typing `yr <- seq(0, by=5730, length=10)` we define a new variable called `yr`, and fill it with a sequence (`seq`) that starts with the value `0`, increases by `5730` each time, and has `length=10` values.
+
+To re-run previous commands in your R terminal, press the up arrow. You can also type the first few letters of a command and then press the tab key to fill in the rest (or suggest what could be filled in next if there are multiple options).
+
+Sometimes when R plots things, the plot window becomes active and you will have to click on the terminal again to enter more data or commands.
 
 To plot the data behind the latest IntCal calibration curve, IntCal20, first we have to load the IntCal package (see the previous page if you haven't installed it yet):
 
