@@ -19,11 +19,19 @@ Welcome to the GSA Short Course on *Age-Depth Modeling of Sedimentary Deposits*.
 
 All sessions will take place at 9-11am PDT (Pacific Daylight Time) on Zoom
 
-You will need to have a recent version of [R](http://r-project.org) installed for your operating system, at least version 4.0. If you want, you can also install [RStudio](http://www.rstudio.com). Note that the version numbering differs between `R` and `Rstudio`; most important is to have a recent version of `R`.
+You will need to have a recent version of [R](http://r-project.org) installed for your operating system, at least version *4.1.1*. If you want, you can also install [RStudio](http://www.rstudio.com). Note that the version numbering differs between `R` and `Rstudio`; most important is to have a recent version of `R`.
 Please install the following R packages:
 
 ```{r}
 install.packages(c("IntCal", "clam", "rbacon", "coffee"))
+```
+After these packages are installed, please try loading both and running clam and rbacon, so that we can be sure everything will work as expected during the sessions:
+
+```{r, eval=FALSE}
+library(clam)
+clam()
+library(rbacon)
+Bacon()
 ```
 
 [next: session 1](session_1.html)
