@@ -27,7 +27,7 @@ install.packages(c("IntCal", "clam", "rbacon", "coffee"))
 ```
 After these packages are installed, please try loading both and running clam and rbacon, so that we can be sure everything will work as expected during the sessions:
 
-```{r, eval=FALSE}
+```{r}
 library(clam)
 clam()
 library(rbacon)
