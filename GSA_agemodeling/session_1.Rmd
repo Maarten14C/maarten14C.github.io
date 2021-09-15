@@ -11,6 +11,16 @@ This page contains the R code that will be run in the first session of the GSA S
 
 The presentation slides of this session can be downloaded from these links: [.odp](./1-radiocarbon.odp) or [.pptx](./1-radiocarbon.pptx).
 
+The streamed sessions are here (in two parts - before and after cat intrusion):  
+  -[session 1 part 1_transcript1](./session1/session_1_part1.txt)  
+  -[session 1 part 1_audio](./session1/session_1_part1.m4a)  
+  -[session 1 part 1_video](./session1/session_1_part1.mp4)  
+  -[session1 part 1_transcript2](./session1/session_1_part1.vtt)  
+  -[session 1 part 2_transcript1](./session1/session_1_part2.txt)  
+  -[session 1 part 2_audio](./session1/session_1_part2.m4a)  
+  -[session 1 part 2_video](./session1/session_1_part2.mp4)  
+  -[session1 part 2_transcript2](./session1/session_1_part2.vtt)  
+
 To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):
 
 ```{r}
