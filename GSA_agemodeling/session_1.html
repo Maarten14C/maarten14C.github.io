@@ -143,15 +143,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <p>This page contains the R code that will be run in the first session of the GSA Short Course on age-modeling.</p>
 <p>The presentation slides of this session can be downloaded from these links: <a href="./1-radiocarbon.odp">.odp</a> or <a href="./1-radiocarbon.pptx">.pptx</a>.</p>
-<p>The streamed sessions are here (in two parts - before and after cat intrusion):<br />
--<a href="./session1/session_1_part1.txt">session 1 part 1_transcript1</a><br />
--<a href="./session1/session_1_part1.m4a">session 1 part 1_audio</a><br />
--<a href="./session1/session_1_part1.mp4">session 1 part 1_video</a><br />
--<a href="./session1/session_1_part1.vtt">session1 part 1_transcript2</a><br />
--<a href="./session1/session_1_part2.txt">session 1 part 2_transcript1</a><br />
--<a href="./session1/session_1_part2.m4a">session 1 part 2_audio</a><br />
--<a href="./session1/session_1_part2.mp4">session 1 part 2_video</a><br />
--<a href="./session1/session_1_part2.vtt">session1 part 2_transcript2</a></p>
+<p>The streamed sessions are here (in two parts - before and after cat intrusion):</p>
+<p><a href="https://us06web.zoom.us/rec/share/jBoL0MA1mvF_OSzcr_GyWcG3VwTD2o_shVSJ_bIL7WBDFvf9cgRssNrOJcjQ_nH2.xzpBAUA0aV_XQoa0">session 1 part 1</a><br />
+Access Passcode: a*9.UT4P</p>
+<p><a href="https://us06web.zoom.us/rec/share/_qL8p4ulKYJpyAm9Gr9Xam8IQs5gXHusD9clJOkpnqSHZIA2bikqocaVAvmPn-fm.Ge3tw_dPT4V4GTLM">session 1 part 2</a><br />
+Access Passcode: z!99CZ+C</p>
 <p>To get to grips with radiocarbon’s half-life of 5730 years, first let’s set up a variable called <code>yr</code> that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="at">by=</span><span class="dv">5730</span>, <span class="at">length=</span><span class="dv">10</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>halflives <span class="ot">&lt;-</span> .<span class="dv">5</span> <span class="sc">^</span> (<span class="dv">0</span><span class="sc">:</span><span class="dv">9</span>)</span>
