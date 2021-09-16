@@ -7,8 +7,6 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-This page contains the R code that will be run in the first session of the GSA Short Course on age-modeling.
-
 The presentation slides of this session can be downloaded from these links: [.odp](./1-radiocarbon.odp) or [.pptx](./1-radiocarbon.pptx).
 
 The streamed sessions are here (in two parts - before and after cat intrusion):
@@ -23,6 +21,7 @@ The streamed sessions are here (in two parts - before and after cat intrusion):
 [chats](./session1/session_1_part2.txt){target="_blank"}<br>
 [transcript](./session1/session_1_part2.vtt){target="_blank"}<br>
 
+This page contains the R code used in the first session of the GSA Short Course on age-modeling.
 
 To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):
 
