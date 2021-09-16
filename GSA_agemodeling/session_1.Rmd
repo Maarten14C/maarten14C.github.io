@@ -13,15 +13,15 @@ The presentation slides of this session can be downloaded from these links: [.od
 
 The streamed sessions are here (in two parts - before and after cat intrusion):
 
-###session 1 part 1
+*session 1 part 1*<br>
 [video on youtube](https://youtu.be/prk2Bgy_Dk4){target="_blank"}<br>
-[transcript as .txt](./session1/session_1_part1.txt)<br>
-[transcript as .vtt](./session1/session_1_part1.vtt)<br>
+[transcript as .txt](./session1/session_1_part1.txt){target="_blank"}<br>
+[transcript as .vtt](./session1/session_1_part1.vtt){target="_blank"}<br>
 
-###session 1 part 2
+*session 1 part 2*<br>
 [video on youtube](https://youtu.be/vHGLiJdMOSU){target="_blank"}<br>
-[transcript as .txt](./session1/session_1_part2.txt)<br>
-[transcript as .vtt](./session1/session_1_part2.vtt)<br>
+[transcript as .txt](./session1/session_1_part2.txt){target="_blank"}<br>
+[transcript as .vtt](./session1/session_1_part2.vtt){target="_blank"}<br>
 
 
 To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):
