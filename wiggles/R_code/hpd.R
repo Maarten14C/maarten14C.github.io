@@ -59,5 +59,8 @@ for(j in 1:length(probseq)) {
   dev.off()
 }
 
+# .mp4 plays well on chrome and MS-Powerpoint:
 system("ffmpeg -framerate 15 -pattern_type glob -y -i 'hpd_pngs/*.png' -c:v libx264 hpd.mp4")
 
+# webm plays well on firefox. -pix_fmt set to yuv420p to better translate colours between rgb pngs and yuv webm
+system("ffmpeg -framerate 15 -pattern_type glob -y -i 'hpd_pngs/*.png' -b:v 800k -pix_fmt yuv420p hpd.webm")
