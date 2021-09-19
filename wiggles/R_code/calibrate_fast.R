@@ -66,4 +66,8 @@ for(i in 1:length(xseq)) {
   dev.off()
 }
 
-system("ffmpeg -framerate 30 -pattern_type glob -y -i 'calibfast.pngs/*.png' -c:v libx264 calibratefast.mp4")
+# .mp4 plays well on chrome and MS-Powerpoint:
+system("ffmpeg -framerate 30 -pattern_type glob -y -i 'calibfast.pngs/*.png' -c:v libx264 calibrate_fast.mp4")
+
+# webm plays well on firefox. -pix_fmt set to yuv420p to better translate colours between rgb pngs and yuv webm
+system("ffmpeg -framerate 30 -pattern_type glob -y -i 'calibfast.pngs/*.png' -b:v 800k -pix_fmt yuv420p calibrate_fast.webm")

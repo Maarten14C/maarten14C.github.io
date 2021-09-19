@@ -1,23 +1,38 @@
 <html>
-  <head>
-    <title></title>
-    <meta content="">
-    <style></style>
-  </head>
 
-<img src="videos/calibrate_fast.webm" alt="construct calibrated distribution" title="construct calibrated distribution">
+<head>
+<meta content="text/html" http-equiv="content-type">
+<link REL=StyleSheet HREF="style.css" TYPE="text/css">
+</head>
 
-<p>Construction of a calibrated distribution from a radiocarbon date. Red is the C14 date, grey is its probability distribution on the C14 axis, green is the IntCal20 calibration curve. For every calendar year (vertical dashed blue line), we check how far away the reported C14 age (red) is from the <i>C14 age of the calibration curve</i> at that calendar year (blue circles and lines). The further away from the reported C14 age, the less likely that C14 age is. This is reflected by the curve of the normal distribution, which becomes lower further away from the reported C14 age. The calibrated distribution is then constructed by plotting the height of the probability distribution on the C14 axis for every calendar year as we move gradually from one end of the calendar axis to the other end. <p>
+<title>Calibrating a radiocarbon date</title>
 
-A slower, step-wise video might help explaining the above:
-<img src="videos/calibrate_steps.webm" alt="construct calibrated distribution" title="construct calibrated distribution in slower steps">
+<h1>Calibrating a radiocarbon date</h1>
+<br>
+<video controls width="700">
+  <source src="videos/calibrate_fast.webm" type="video/webm">
+  <source src="videos/calibrate_fast.mp4" type="video/webm">
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+<p>Construction of a calibrated distribution from a radiocarbon date. Red is the C14 date, grey is its probability distribution on the C14 axis, green is the IntCal20 calibration curve. For every calendar year (vertical dashed blue line), we check how far away the reported C14 age (red) is from the <i>C14 age of the calibration curve</i> at that calendar year (blue circles and lines). The further away from the reported C14 age, the less likely that C14 age is. This is reflected by the curve of the normal distribution, which becomes lower further away from the reported C14 age. The calibrated distribution is then constructed by plotting the height of the probability distribution on the C14 axis for every calendar year as we move gradually from one end of the calendar axis to the other end. Two additional black axes were added to the animation to highlight that the heights on the probability distributions are NOT plotted on either the C14 BP or cal BP axes, but on their own (most often invisible) axes. <p>
+
+A slower, step-wise video might help explaining the above:<br>
+<video controls width="700">
+  <source src="videos/calibrate_steps.webm" type="video/webm">
+  <source src="videos/calibrate_steps.mp4" type="video/webm">
+  Sorry, your browser doesn't support embedded videos.
+</video>
 
 <hr>
 
-<img src="videos/hpd.webm" alt="calculate highest posterior density range" title="calculate highest posterior density range">
+<video controls width="700">
+  <source src="videos/hpd.webm" type="video/webm">
+  <source src="videos/hpd.mp4" type="video/webm">
+  Sorry, your browser doesn't support embedded videos.
+</video>
 
 <p>Having found the calibrated distribution, we can calculate a 95%, 68% or other range of its <i>highest posterior density</i> or hpd range. This is done by gradually lowering a horizontal line, and every time calculating how much of the calibrated distribution falls below that line (grey shapes). Whenever the horizontal line is lowered such that exactly 95% (or 68%, etc.) of the calibrated distribution falls below the line, we use the calendar ages which fall within those grey ranges as the 95% hpd of the calibrated date. More often than not, there are several such calibrated age ranges, each with a distinct probability (size of the grey shape relative to that of the entire shape). <p>
-
 
 You're welcome to use/adapt these videos for teaching/research purposes. They can be downloaded as mp4 (good for e.g. presentations)
  <a href="videos/calibrate_fast.mp4" target="_blank">[calibrate]</a> <a href="videos/calibrate_steps.mp4" target="_blank">[calibrate in steps]</a> <a href="videos/hpd.mp4" target="_blank">[hpd]</a>
@@ -26,10 +41,10 @@ and as webm (good for webpages)
 
 These animations are also available on vimeo
 <a href="https://vimeo.com/603364618" target="_blank">[calibrate]</a> <a href="https://vimeo.com/603317968" target="_blank">[calibrate in steps]</a> <a href="https://vimeo.com/603420882" target="_blank">[hpd]</a>
-, and is also available on youtube
+ and youtube
 <a href="https://youtu.be/IT61vvabkFg" target="_blank">[calibrate]</a> <a href="https://youtu.be/Vs8IYcbhRLM" target="_blank">[calibrate in steps]</a> <a href="https://youtu.be/PIxjORufba4" target="_blank">[hpd]</a>.
 
-The R code for these animations can be dowloaded here: <a href="R_code/calibrte_fast.R" target="_blank">calibrate</a>, <a href="R_code/calibrate_steps.R" target="_blank">calibrate in slow steps</a>, <a href="R_code/hpd.R" target="_blank">hpd</a>. These R script produce lots of .png files, which are then made into an animation (default in .webm and .mp4 formats, but this can be changed) outside of R. To produce the animation, <a href="https://ffmpeg.org" target="_blank">ffmpeg</a> has to be installed. <p>
+The R code for these animations can be dowloaded here: <a href="R_code/calibrate_fast.R" target="_blank">calibrate</a>, <a href="R_code/calibrate_steps.R" target="_blank">calibrate in slow steps</a>, <a href="R_code/hpd.R" target="_blank">hpd</a>. These R scripts produce lots of .png files, which are then made into an animation (default in .webm and .mp4 formats, but this can be changed) outside of R. To produce the animation, <a href="https://ffmpeg.org" target="_blank">ffmpeg</a> has to be installed. <p>
 
 <i>&#169; 2021 Maarten Blaauw</i>
 
