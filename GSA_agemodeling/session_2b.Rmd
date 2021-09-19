@@ -160,6 +160,14 @@ To see all Bacon’s options, type:
 ?Bacon
 ```
 
+Additional Bacon tutorials are available here: <br>
+<ul>
+  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/intro.html">Getting started with rbacon</a>
+  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/priorssettings.html">Piors and other settings</a>
+  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/foldersfiles.html">Locations of Bacon folders and files</a>
+  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/postrun.html">Post-run analysis</a>
+  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/FAQ.html">Frequently Asked Questions</a>
+
 ### Post-run analyses
 
 You can load a previous, existing run without having to run it again (assuming here that minimum and maximum core depths haven't changed). First load it and then draw the age-model plot to get all the data in memory:
