@@ -145,6 +145,14 @@ Bacon("RLGH3")
 
 ![Output graph of Bacon age-depth model with core RLGH3](./bacon_RLGH3.png)
 
+By default, age estimates are calculated for every cm from the top to the bottom core depth. The interval, `d.by`, can be adapted, and alternatively `depths` can be provided as a variable, or a file with depths read in (the file should live in the core's folder, start with the core's name and end in `_depths.txt`).
+
+```{r, eval=FALSE}
+Bacon(d.by=2)
+my.depths <- seq(0, 100, by=3)
+Bacon(depths=my.depths)
+Bacon(depths.file=TRUE)
+```
 
 
 To see all Bacon’s options, type:
