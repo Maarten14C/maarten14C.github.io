@@ -200,6 +200,8 @@ Additional Bacon tutorials are available here: <br>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/postrun.html">Post-run analysis</a>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/FAQ.html">Frequently Asked Questions</a>
 
+You can also type `browseVignettes('rbacon')`.
+
 ---
 
 [prev: session 2a](session_2a.html)<br>
