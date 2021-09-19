@@ -1,3 +1,4 @@
+# assumes that the IntCal R package has been installed
 require(IntCal)
 cc <- ccurve()
 
@@ -10,8 +11,6 @@ ymin <- 2000
 ymax <- 2700
 
 ex <- 150
-
-# make 3 movies, one with very slow steps (fps), one medium fast, one fast
 
 cc.x <- function(x) {
   mu <- approx(cc[,1], cc[,2], x)$y

@@ -199,7 +199,7 @@ Additional Bacon tutorials are available here: <br>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/foldersfiles.html">Locations of Bacon folders and files</a>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/postrun.html">Post-run analysis</a>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/FAQ.html">Frequently Asked Questions</a>
-
+</ul>
 You should also be able access the above by typing `browseVignettes('rbacon')`.
 
 ---
