@@ -36,7 +36,13 @@ for(i in 1:length(ages))
   dev.off()
  }
 
+# for an animated gif, using ImageMagick. Sometimes doesn't work, and the resulting animation doesn't have a very high colour resolution. The second command enhances the animated gif. Both ImageMagick and gifsicle will have to be installed.
 #system("convert -loop 0 -delay 15 *.pdf temp.gif")
 #system("gifsicle --optimize --colors 20 < temp.gif > C14-decay.gif")
 
+# .mp4 plays well on chrome and MS-Powerpoint:
 system("ffmpeg -framerate 20 -pattern_type glob -y -i 'decay_pngs/*.png' -c:v libx264 decay.mp4")
+
+# webm plays well on firefox:
+system("ffmpeg -framerate 20 -pattern_type glob -y -i 'decay_pngs/*.png' -c:v libvpx-vp9 -deadline best decay.webm")
+
