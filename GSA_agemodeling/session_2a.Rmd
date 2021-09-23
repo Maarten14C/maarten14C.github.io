@@ -7,9 +7,14 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-This page contains the R code that will be ran in the second session of the GSA Short Course on age-modeling. First we'll cover the theory (part 2a), then the practicalities of running rbacon (part 2b).
+This page contains the R code that was ran in the second session of the GSA Short Course on age-modeling. The first part covered the  theory (part 2a), and then the practicalities of running rbacon (part 2b) were covered. The latter part will be repeated next week.
 
 The presentation slides of this session can be downloaded from these links: [.odp](./2a_agemodels_theory.odp) or [.pptx](./2a_agemodels_theory.pptx).
+
+The streamed session is available here:<br>
+[video on youtube](https://youtu.be/2E6vFOg8DQU){target="_blank"}<br>
+[chats](session2/session_2.txt){target="_blank"}<br>
+[transcript](session2/session_2.vtt){target="_blank"}<br>
 
 The first slides which we could reproduce here were done using the R package `clam`. Assuming you have it installed already (see [here](intro.html)), then you simply need to load the code:
 
