@@ -195,7 +195,7 @@ accrate.age.ghost()
 Additional Bacon tutorials are available here: <br>
 <ul>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/intro.html">Getting started with rbacon</a>
-  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/priorssettings.html">Piors and other settings</a>
+  <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/priorssettings.html">Priors and other settings</a>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/foldersfiles.html">Locations of Bacon folders and files</a>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/postrun.html">Post-run analysis</a>
   <li><a href="https://cran.r-project.org/web/packages/rbacon/vignettes/FAQ.html">Frequently Asked Questions</a>
