@@ -352,6 +352,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <p>The streamed sessions are here (in two parts - before and after cat intrusion):</p>
 <p><em>session 1 part 1</em><br> <a href="https://youtu.be/prk2Bgy_Dk4" target="_blank">video on youtube</a><br> <a href="./session1/session_1_part1.txt" target="_blank">chats</a><br> <a href="./session1/session_1_part1.vtt" target="_blank">transcript</a><br></p>
 <p><em>session 1 part 2</em><br> <a href="https://youtu.be/vHGLiJdMOSU" target="_blank">video on youtube</a><br> <a href="./session1/session_1_part2.txt" target="_blank">chats</a><br> <a href="./session1/session_1_part2.vtt" target="_blank">transcript</a><br></p>
+<p>The .Rmd script for session 1 is here: <a href="session_1.Rmd">session 1</a>.</p>
 <p>This page contains the R code used in the first session of the GSA Short Course on age-modeling.</p>
 <p>To get to grips with radiocarbon’s half-life of 5730 years, first let’s set up a variable called <code>yr</code> that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>yr &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dt">by=</span><span class="dv">5730</span>, <span class="dt">length=</span><span class="dv">10</span>)</span>

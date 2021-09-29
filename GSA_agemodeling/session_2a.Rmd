@@ -11,6 +11,8 @@ This page contains the R code that was ran in the second session of the GSA Shor
 
 The presentation slides of this session can be downloaded from these links: [.odp](./2a_agemodels_theory.odp) or [.pptx](./2a_agemodels_theory.pptx).
 
+The .Rmd script is here: [session 2a](session_2a.Rmd) .
+
 The streamed session is available here:<br>
 [video on youtube](https://youtu.be/2E6vFOg8DQU){target="_blank"}<br>
 [chats](session2/session_2.txt){target="_blank"}<br>

@@ -21,6 +21,9 @@ The streamed sessions are here (in two parts - before and after cat intrusion):
 [chats](./session1/session_1_part2.txt){target="_blank"}<br>
 [transcript](./session1/session_1_part2.vtt){target="_blank"}<br>
 
+
+The .Rmd script for session 1 is here: [session 1](session_1.Rmd).
+
 This page contains the R code used in the first session of the GSA Short Course on age-modeling.
 
 To get to grips with radiocarbon's half-life of 5730 years, first let's set up a variable called `yr` that contains 10 half-lives. Then calculate how much radiocarbon is left at each of the entries (in percent, so we multiply this by 100):
