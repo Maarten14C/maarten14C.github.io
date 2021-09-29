@@ -39,8 +39,8 @@ Bacon()
 
 [next: session 1](session_1.html)
 
-[session 1](session_1.html)
-[session 2a](session_2a.html)
-[session 2b](session_2b.html)
+[session 1](session_1.html)<br>
+[session 2a](session_2a.html)<br>
+[session 2b](session_2b.html)<br>
 [session 3](session_3.html)
 
