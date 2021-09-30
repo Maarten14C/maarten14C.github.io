@@ -1,0 +1,2642 @@
+WEBVTT
+
+00:03:41.000 --> 00:03:42.000
+Yeah.
+
+00:03:42.000 --> 00:03:48.000
+And as for resources to understand mC mC I'm not so sure.
+
+00:03:48.000 --> 00:03:53.000
+What resources there are there are some on YouTube as well.
+
+00:03:53.000 --> 00:03:58.000
+And I have a link here. Something I found but it's not really.
+
+00:03:58.000 --> 00:04:05.000
+I haven't been able to find much debt expense mC mC itself.
+
+00:04:05.000 --> 00:04:11.000
+So yeah, it's still it's a bit of a niche thing so there's not that many explanations.
+
+00:04:11.000 --> 00:04:21.000
+But we'll have to look at it again, when we discuss Bacon's process again in a few slides. Okay.
+
+00:04:21.000 --> 00:04:38.000
+Then there was a question about how you account for reservoir corrections in marine records, or for that sake any records when using bacon and will then look at stats, by looking at the DR and the st STD columns that can be added to your CSV file will
+
+00:04:38.000 --> 00:04:42.000
+look at that. So there are extra columns, you can enter.
+
+00:04:42.000 --> 00:04:46.000
+For example, to add a regular effect.
+
+00:04:46.000 --> 00:05:07.000
+There's a question about how to enter your uranium Florian dates and also how to deal more vida riskier femmes, and the simple answer there is, if you add a column to your CSV file fifth column which specifies zero for anything uranium for you, then that
+
+00:05:07.000 --> 00:05:14.000
+will be at Cal BP dates, and will not be calibrated using the Reddit carbon coloration curve so then it should be fine.
+
+00:05:14.000 --> 00:05:30.000
+But that's assuming that these dates are distributed using a normal distribution. Yeah, if there's any other type of distribution for example multimodal or asymmetric that then that will become a problem.
+
+00:05:30.000 --> 00:05:36.000
+And we don't currently have a way to deal with that in bacon.
+
+00:05:36.000 --> 00:05:56.000
+There's also a paper that just came out last year, enormous amount of studio some records were aged models using a whole different set of age modeling techniques so if you're interested in depth and dance to paper here.
+
+00:05:56.000 --> 00:05:58.000
+Okay.
+
+00:05:58.000 --> 00:06:09.000
+Good. Also, do you like this circle, or do you prefer me to use the arrow here.
+
+00:06:09.000 --> 00:06:18.000
+Just a mouse pointer. This one or this fancy circle. Doesn't matter.
+
+00:06:18.000 --> 00:06:20.000
+Okay.
+
+00:06:20.000 --> 00:06:30.000
+So another question was there about how to extract sedimentation rates from various depths. As a text file.
+
+00:06:30.000 --> 00:06:34.000
+And, and for that you.
+
+00:06:34.000 --> 00:06:38.000
+It's not provided automatically.
+
+00:06:38.000 --> 00:06:48.000
+But you could do something like this, for example, we'll have a look at the outfield the dogs out file that contract, each run. And there's contains many columns.
+
+00:06:48.000 --> 00:07:02.000
+The first one is the starting age at the top depth. And then you've got lots and lots of columns for each of them, a commission rates are sedimentation times for each of the sections.
+
+00:07:02.000 --> 00:07:12.000
+So, you could go into this output file and check what sedimentation rate is for the depths within the section of interest.
+
+00:07:12.000 --> 00:07:26.000
+But you can also use commands functions that are available or you can make yourself. For example, you could use them at great depth, which is a function within bacon.
+
+00:07:26.000 --> 00:07:45.000
+This gives you the accumulation range of all the iterations, for the depths of interest for example, if you want to know, older iterations. Give it, give it a conversion rates for each of the iterations for the depth of 20 centimeters down you can do
+
+00:07:45.000 --> 00:07:48.000
+it accurate types of 20.
+
+00:07:48.000 --> 00:07:49.000
+Okay.
+
+00:07:49.000 --> 00:07:59.000
+You can then also put that into variable x 20, and then assign our grades dips 22 that.
+
+00:07:59.000 --> 00:08:09.000
+And then you can ask information about it, you can see what a meeting minimum is the maximum, things like that.
+
+00:08:09.000 --> 00:08:11.000
+Yeah.
+
+00:08:11.000 --> 00:08:24.000
+And if you want to. So that's just one that at the time. And if you're yeah if you have a few gaps, that's the way you could go, but if you have a whole sequence of deaths, and you want to know that completion rate of each of those steps.
+
+00:08:24.000 --> 00:08:34.000
+You can do that as well. For example, you can make a variable depth, which has a range of steps whatever taps you're interested in.
+
+00:08:34.000 --> 00:08:43.000
+And then you can make a loop where you have variables which you assign so you have the minimum accumulation Mendota.
+
+00:08:43.000 --> 00:08:54.000
+You add some initial value to it. Then next attack ad initial value and medium that I could just add some names I made up.
+
+00:08:54.000 --> 00:08:58.000
+So we'd have three variables that are currently empty.
+
+00:08:58.000 --> 00:09:11.000
+And now we're going to fill them. Yeah. So we're going to do is we have this whole length, the whole sequence of steps. Yeah, zero, then free, then for density extensive going to than eight, etc.
+
+00:09:11.000 --> 00:09:12.000
+Okay.
+
+00:09:12.000 --> 00:09:15.000
+So what we're going to do is we're going to make a loop.
+
+00:09:15.000 --> 00:09:25.000
+So we're gonna we're going to do a for loop, which says for i in one to the length of depths.
+
+00:09:25.000 --> 00:09:47.000
+Yeah. And the length of steps is 12345678 and 10. So 18, I think, is the length. So just 18 entries. In this case, in the variable depth. So, for i in one 218.
+
+00:09:47.000 --> 00:09:55.000
+Do something. Yeah. So, this is look which is very often used in our and once you get your head around it is very useful.
+
+00:09:55.000 --> 00:10:13.000
+Yeah. So, if. So in this loop, I begins as the first entry of depths which is zero. So for i in where i is zero, then you do a list of commands. Yeah.
+
+00:10:13.000 --> 00:10:31.000
+so first ask for depth billowing into the first entry so the steps. The first steps which is zero. You, we asked for the accurate depths of zero, so you get all the recommendation rates at zero centimeters depth.
+
+00:10:31.000 --> 00:10:36.000
+And we just put it in a variable, not a new one.
+
+00:10:36.000 --> 00:10:54.000
+Then we use an our function, quintile a controller which tells you, and looks at all the values and gives the controls for example, then the lowest two and a half percent and is two and a half percent and perhaps, medium, the 50%.
+
+00:10:54.000 --> 00:11:04.000
+Yeah. So we're asking the contractile for the variable x. And then we asked for 0.025.
+
+00:11:04.000 --> 00:11:11.000
+So two and a half percent. 97 and a half percent, and 50%.
+
+00:11:11.000 --> 00:11:14.000
+Hope you get that.
+
+00:11:14.000 --> 00:11:24.000
+So now we haven't met before, that's one depth. We have all accommodation rates but we have to reduce that to feed us can minimum 95%.
+
+00:11:24.000 --> 00:11:26.000
+The maximum 95%.
+
+00:11:26.000 --> 00:11:30.000
+So the 95% range, and the medium.
+
+00:11:30.000 --> 00:11:42.000
+And now we're going to feel devalues different interest in so men.uk first entry is going to be dis min max, but the first value of that.
+
+00:11:42.000 --> 00:11:56.000
+Then a maximum 95% of recommendation of the first entry is min max to the second entry of this variable. And then you've got the medium, as well. In the first entry of that will be min max.
+
+00:11:56.000 --> 00:12:00.000
+The third value of it makes sense.
+
+00:12:00.000 --> 00:12:07.000
+So then we've gone through Luke once with for i equals one, which is the first steps.
+
+00:12:07.000 --> 00:12:13.000
+Then it becomes too.
+
+00:12:13.000 --> 00:12:22.000
+So, we could do the loop again so we go to accurate, the depths. The second entry of depths, which is three centimeters.
+
+00:12:22.000 --> 00:12:36.000
+And then the same process is done, all the acquisition rates are calculated for three centimeter steps and put in their corresponding values for the minimum of 95% range and maximum of 95% range, and the median.
+
+00:12:36.000 --> 00:12:50.000
+Alright, and then we go to the next one four centimeters, and then six and seven foot so we do that, repeatedly until we've read all reached, and read and extracted all of the depths.
+
+00:12:50.000 --> 00:12:52.000
+Yeah.
+
+00:12:52.000 --> 00:12:56.000
+So at the end of that loop, you will then have Minda.
+
+00:12:56.000 --> 00:13:03.000
+And that will have 10 entries for Dec 0346 to eight nine etc.
+
+00:13:03.000 --> 00:13:07.000
+And for the same from Mexico, and for medium neck.
+
+00:13:07.000 --> 00:13:09.000
+Yeah.
+
+00:13:09.000 --> 00:13:28.000
+Now you can simply combine them, you combine the columns. So you call them bind first attempts at first column and min and max attack and a medium director so yet, you make another variable, which combines all the information we have you put that into
+
+00:13:28.000 --> 00:13:48.000
+a text file. Yeah, you write a table of that new variable and you call it my ex text, and then you just placed header equals true. And then you've got a text file somewhere with the 90 95% ranges and medium.
+
+00:13:48.000 --> 00:13:50.000
+Okay.
+
+00:13:50.000 --> 00:13:57.000
+I think someone has her microphone open.
+
+00:13:57.000 --> 00:14:13.000
+So that's one story but there's also. You can also plot the entire say grayscale plots of documentation rate against depth or accommodation race against time.
+
+00:14:13.000 --> 00:14:27.000
+You don't need to reduce your information to just one value, say the median, or to me, or two values, the ranges. Yeah, we have to step away from using just one value.
+
+00:14:27.000 --> 00:14:40.000
+Instead of use all the values we have to better represented uncertainty involved in accumulation rates, and also services can be large, especially if you block them on the calendar scale.
+
+00:14:40.000 --> 00:14:41.000
+Okay.
+
+00:14:41.000 --> 00:14:47.000
+Any, any questions there.
+
+00:14:47.000 --> 00:14:49.000
+No.
+
+00:14:49.000 --> 00:14:51.000
+Okay.
+
+00:14:51.000 --> 00:15:02.000
+But Martin The, the, it. The, the outfit includes some accumulation rate information as well but you don't have to go through this.
+
+00:15:02.000 --> 00:15:05.000
+Hallelujah.
+
+00:15:05.000 --> 00:15:12.000
+Haha, so you could go to the output file and then if your depth of interest is a 25 centimeter steps.
+
+00:15:12.000 --> 00:15:18.000
+You could go to the section in the output file, which contains 25 centimeter steps.
+
+00:15:18.000 --> 00:15:32.000
+And then simply use death column and do whatever you want to do with that column, because that's the column that contains degradation rates for the section, in which 25% 80 centimeters generalize or lips.
+
+00:15:32.000 --> 00:15:38.000
+Yeah, but then you have to do a work anyway, because you have to open the file and find out where.
+
+00:15:38.000 --> 00:15:46.000
+And that's steps is which, which column of your follow that is.
+
+00:15:46.000 --> 00:15:50.000
+OK, thanks.
+
+00:15:50.000 --> 00:15:57.000
+Ok so here we've got a more Ivan, what you may do bacon. So,
+
+00:15:57.000 --> 00:16:12.000
+if the graphs at the top of the hour bacon, graphs, don't indicate the quality of the model, then why other providers because last time I focused on the fish should really not cut away the top panels right so we should we should include them because they
+
+00:16:12.000 --> 00:16:15.000
+have to carry important information.
+
+00:16:15.000 --> 00:16:27.000
+From what I understand, of the graphs that simply compared to prior to the model output, but a model output is what matters. If to then why provide any price at all.
+
+00:16:27.000 --> 00:16:33.000
+And also, some more explanation is required for memory. Okay.
+
+00:16:33.000 --> 00:16:36.000
+So look into this question in detail.
+
+00:16:36.000 --> 00:16:55.000
+But first of all, the output of the model of the bacon model is based on the data. And on the prayer. Yeah, so the output that we see in that correlation rates and in the entire model is not just based on the data, it is based partly on the prior information.
+
+00:16:55.000 --> 00:17:15.000
+Yeah, so it is much more transparent if we didn't also show what that prior information was. And if it if it kicked it out. Then we only see the final model, and we only see candidates but if you don't see what Brian's mentioned once which is half of
+
+00:17:15.000 --> 00:17:16.000
+the model.
+
+00:17:16.000 --> 00:17:17.000
+Yeah.
+
+00:17:17.000 --> 00:17:28.000
+And again we look into more details in what bacon does and how we should be looking at prior and posterior information in the following slides.
+
+00:17:28.000 --> 00:17:36.000
+Have a question is how do we tell if the bacon run was acceptable or needs improvement.
+
+00:17:36.000 --> 00:17:44.000
+So there's bacon minutes, spit out to model it doesn't tell us how well the model fits two dates.
+
+00:17:44.000 --> 00:17:54.000
+And for example if say 90% of the dates overlaps with a model, then the fit is playing 90%, no.
+
+00:17:54.000 --> 00:18:05.000
+And if it's a low fit, they can build tennis. So that's so that's that's one bit so okay how well does the model fit with the dates. But that's only one bit.
+
+00:18:05.000 --> 00:18:10.000
+Yeah, out of it, is how well does it fit prior information.
+
+00:18:10.000 --> 00:18:11.000
+Yeah.
+
+00:18:11.000 --> 00:18:30.000
+And it's not only that it's also there also has to be some degree, in some way, in most cases of user or expert valuation. Yeah, you know your sites, and sometimes Well, they can might be doing things that like might be running in some strange way that
+
+00:18:30.000 --> 00:18:34.000
+does not make sense for deciding question.
+
+00:18:34.000 --> 00:18:48.000
+But if bacon isn't told about it, or can't be told about it then, then you have to do some additional things to get a better model that better described what you think has happened.
+
+00:18:48.000 --> 00:19:08.000
+Yeah. So it's not entirely automatic. In many cases it will produce a reasonable model, but there will be some sites where you simply have to do more and to look at the output and and even if it is nice, there might be something that you think can't be
+
+00:19:08.000 --> 00:19:18.000
+true. And then we have to adapt to prior so that the settings to get a model that that makes more sense to you.
+
+00:19:18.000 --> 00:19:20.000
+Yeah.
+
+00:19:20.000 --> 00:19:41.000
+That said, there's also we did simulations and very made a whole set of simulated correlations simulated sites, and then produce models Clem models, bacon models and be Chrome.
+
+00:19:41.000 --> 00:19:55.000
+And what we saw is that the bacon and be grown both produce very good, very reliable very. Yeah, very reliable quantity or estimates of the uncertainty.
+
+00:19:55.000 --> 00:20:23.000
+Yeah. So, in many cases, not all cases, but in many cases the model uncertainty in their simulation covered the true truth, you have a course for simulations, we can, we know exactly what happened but we don't tell they conduct will let bacon.
+
+00:20:23.000 --> 00:20:42.000
+Yeah. So I'm quite happy with how bacon and be grown, and other Bayesian models in most cases seem to do a good job in producing age models, and their certainty that seemed to be quite robust and realistic, as opposed to for example clam better estimates
+
+00:20:42.000 --> 00:20:54.000
+let me very narrow and truth Mike really and actual truth my life outside those narrow happy age estimates.
+
+00:20:54.000 --> 00:21:02.000
+Any further remarks there.
+
+00:21:02.000 --> 00:21:06.000
+No.
+
+00:21:06.000 --> 00:21:22.000
+Okay, now just here's another question out our specific commands for income, incorporating prior knowledge on limiting the age range of very young days, which can have high colorism services for example over the last three four centuries there's multiple
+
+00:21:22.000 --> 00:21:30.000
+calibrated distributions, and because of the changes in in radiocarbon construction in the atmosphere.
+
+00:21:30.000 --> 00:21:39.000
+For example prior knowledge that part of an age range is, in fact, unrelated to the event of interest and shouldn't be incorporated into the age of death model.
+
+00:21:39.000 --> 00:21:40.000
+Yeah.
+
+00:21:40.000 --> 00:21:55.000
+So, in other words we have several dates that's very actually don't want to use some of the ranges, but you do want to use some other ranges that are, that seem to be realistic.
+
+00:21:55.000 --> 00:21:56.000
+Yeah.
+
+00:21:56.000 --> 00:22:10.000
+Very good question. And that's also a very very good case to actually make use of your prior information because in what you're saying here is that some parts of your dates, the model cannot run through it.
+
+00:22:10.000 --> 00:22:22.000
+And that's because you know that your model, very likely to certain routes, or, and that means, it used to certain accumulation rate.
+
+00:22:22.000 --> 00:22:36.000
+So if you're very very short that's the model shoot go through some bits. You can set the prior to something very strong, you can say, Well, if I wanted to go this way.
+
+00:22:36.000 --> 00:22:47.000
+And then I set my prayer for accommodation rate to something like for example, I don't know, five years per centimeter. and then make the probably a very strong so very peaked.
+
+00:22:47.000 --> 00:22:53.000
+Yeah, then your model, through the prior information is forced to go.
+
+00:22:53.000 --> 00:22:56.000
+So that's slope.
+
+00:22:56.000 --> 00:22:57.000
+Yeah.
+
+00:22:57.000 --> 00:23:08.000
+So that's actually it's forcing the model is not really private information anymore. But I think that would be the most transparent way to say, Okay, I know from other information.
+
+00:23:08.000 --> 00:23:17.000
+That's my side should have done this and should be neglecting ignoring other parts of our. Some of our dates.
+
+00:23:17.000 --> 00:23:25.000
+And in that way we can then use the prior information to get the model to do what we wanted to do.
+
+00:23:25.000 --> 00:23:37.000
+But of course, if yeah if we're, like, doing too much then Preston model looks all very fine but we, but it can't really go the other way so it's actually wanted to go.
+
+00:23:37.000 --> 00:23:43.000
+So there's also a danger, you might be prescribing a little too much.
+
+00:23:43.000 --> 00:23:44.000
+Yeah.
+
+00:23:44.000 --> 00:23:53.000
+But that's also why you should be showing them the upper panels, with a standard user or the reader of your paper can say, oh, okay, this is what I did.
+
+00:23:53.000 --> 00:23:58.000
+Based on this in this reasoning.
+
+00:23:58.000 --> 00:23:59.000
+Yeah.
+
+00:23:59.000 --> 00:24:14.000
+There's also a reason why a step clubs should always be in the main paper, I think, and not in supplementary information because it's often an important part of the reconstruction
+
+00:24:14.000 --> 00:24:32.000
+and Martin I have a. This is Amy I have a, I have an example of a case like what you were talking about a visual, so maybe I'm sure I can share that now.
+
+00:24:32.000 --> 00:24:43.000
+So, hopefully everybody can see that. So this is, this is a case from a relatively recent radiocarbon date.
+
+00:24:43.000 --> 00:25:01.000
+That is in this complicated period of the calibration curve where there are complete reversals for a calibrated date of our sorry for radiocarbon date of 225 years before present plus or minus 30.
+
+00:25:01.000 --> 00:25:17.000
+There are multiple independent possibilities of what that is, in terms of calendar ages, with, with a zero probability between them. So there's, you know, a strong possibility and they're, they're pretty much equal one that it's that the data is around
+
+00:25:17.000 --> 00:25:21.000
+1650 and one that it's around 17 1800.
+
+00:25:21.000 --> 00:25:27.000
+We know because we have led to 10 profile.
+
+00:25:27.000 --> 00:25:40.000
+That one of these dates that the more recent one is very unlikely, because it. The this sample is several centimeters below the base of where our lead to 10 came from.
+
+00:25:40.000 --> 00:25:56.000
+And so that the 1800 date is very unlikely and that the 1650 is is very likely, and so this is what Martin was talking about about using our prior information whether it's you know about the sedimentation rate the setting.
+
+00:25:56.000 --> 00:26:04.000
+Other types of dating that we have to say exclude what of these possibilities
+
+00:26:04.000 --> 00:26:15.000
+and Martin if you have anything else to say about that I would, yeah this is a really nice example, and my.
+
+00:26:15.000 --> 00:26:28.000
+What I would like to say is that you would you could also use our plum. So the Beijing is model that combines Latin and other decks.
+
+00:26:28.000 --> 00:26:41.000
+And hopefully, by using that model you would then automatically arrive at the correct age for for that date, hopefully.
+
+00:26:41.000 --> 00:26:44.000
+Yeah, I should definitely try that this is pre plum.
+
+00:26:44.000 --> 00:26:50.000
+Haha, yeah so freedom you didn't have to play around with it.
+
+00:26:50.000 --> 00:27:12.000
+Accumulation rate to get disorders, but now with the problem with yeah with the net to 10 information. Oh, if the left of information is clear enough and doesn't cause any problems can hopefully it should be able to combine the two and make sense of them.
+
+00:27:12.000 --> 00:27:15.000
+Yep, absolutely you do okay.
+
+00:27:15.000 --> 00:27:20.000
+Did you have another example you said, Nope, that's it.
+
+00:27:20.000 --> 00:27:36.000
+Okay, I will. I'll stop sharing and but hopefully that's that's useful, feel free to ask questions we can talk about that a little bit more, will have questions in the, in the chat but this is one of those examples where you can from, you know, yeah from
+
+00:27:36.000 --> 00:27:40.000
+your own information know that one of these states is not possible.
+
+00:27:40.000 --> 00:27:43.000
+Okay. Can I ask a question or.
+
+00:27:43.000 --> 00:27:43.000
+Sure.
+
+00:27:43.000 --> 00:27:49.000
+Sure. Hey, this just kind of made me think of supposing you had something archaeological.
+
+00:27:49.000 --> 00:27:54.000
+That might be hard to put a, an error, I guess.
+
+00:27:54.000 --> 00:28:08.000
+I suppose you could come up with an error for some kind of, you know, in this situation you had some kind of archaeological artifact that you could say it was this date but how would you could you add that into they can easily or a yes so you could add
+
+00:28:08.000 --> 00:28:21.000
+it as a calendar calendar date. So if you have say from marker, Poland, that you say, Oh, This is when that put on type plantation was made historically, and then you can add that.
+
+00:28:21.000 --> 00:28:36.000
+What you can do is say, it should be after this or should be before this, we don't have to build into bacon. We can only use say okay at this depths. We have business H plus or minus and error.
+
+00:28:36.000 --> 00:28:42.000
+Yeah. Okay. Yeah, that makes sense.
+
+00:28:42.000 --> 00:28:52.000
+Yeah, no, I think you'd like some kind of, there's a building construction that you know might be, you know, between 1750 and 1810 let's say and then you know that.
+
+00:28:52.000 --> 00:29:01.000
+And you could say that's the window that would make sense, I guess you could put something with a median and a plus or minus, but I don't know if it.
+
+00:29:01.000 --> 00:29:07.000
+Yes, yes, yes.
+
+00:29:07.000 --> 00:29:08.000
+So, so yeah.
+
+00:29:08.000 --> 00:29:10.000
+Yeah, good.
+
+00:29:10.000 --> 00:29:13.000
+Um,
+
+00:29:13.000 --> 00:29:29.000
+so yeah I don't know how you would do be able to do that and bacon, you could enter two dates, but he don't know exactly like for the starter for the end, but as perhaps a bit too much.
+
+00:29:29.000 --> 00:29:45.000
+But I can't imagine what type of show that the show would be an accumulating sites where bacon could be used. And what is the information in it that tells you the age of the technological structure.
+
+00:29:45.000 --> 00:30:05.000
+Well, our, I guess I had an it we don't have to go into too much detail but I had in mind there are some sites like with mill sites where they know from the construction that the mill dam was before certain age maybe or after a certain age at sort of
+
+00:30:05.000 --> 00:30:23.000
+know they don't have exact number but they, you know, based on some expert, they can say well they think it predates this date or after this date. And yeah, okay. Yeah Don't hold me from, and currently we begun we can't do this. We can only enter, say
+
+00:30:23.000 --> 00:30:28.000
+data quality data plus minus the number and error.
+
+00:30:28.000 --> 00:30:37.000
+But there's also this coffee package, where you can say okay should be older than this or. Well, I hope that soon you'll be able to.
+
+00:30:37.000 --> 00:30:48.000
+And if there's enough interest you might want to include something in bacon as well but I haven't seen much
+
+00:30:48.000 --> 00:30:58.000
+case for that yet. Okay yeah it was just it was more of a hypothetical question that. Yeah, yeah, yeah. Okay, thanks.
+
+00:30:58.000 --> 00:31:14.000
+Okay. And actually, so we'll look into okay how to set a prayer, how to work with that in order to get your models do some thing remaining transparent about that.
+
+00:31:14.000 --> 00:31:23.000
+Okay, course you can be fudging your model too much of course comes wishful thinking. Okay.
+
+00:31:23.000 --> 00:31:25.000
+Right.
+
+00:31:25.000 --> 00:31:37.000
+So, I think that we need to step back a bit and then look at what what bacon actually does. So what's the underlying age that model of bacon. Yeah.
+
+00:31:37.000 --> 00:31:49.000
+So what it does, here in the graph, you've got depth and horizontal scale and age on the vertical scale. That's because my math or maths colleague doesn't like it the other way around.
+
+00:31:49.000 --> 00:31:52.000
+So that's how I work with him.
+
+00:31:52.000 --> 00:32:09.000
+So, but they can does, it has a core from say between zero and 100 centimeters steps is divided into sequences into, into parts. Yeah, sections.
+
+00:32:09.000 --> 00:32:14.000
+And then, the slope for each section is a correlation right.
+
+00:32:14.000 --> 00:32:17.000
+Okay, or actually should imitation time.
+
+00:32:17.000 --> 00:32:27.000
+So that's the whole model. Yeah. And once you have this, so you, so you have to start age.
+
+00:32:27.000 --> 00:32:35.000
+And then for each section, you have the slope. Yeah correlation right.
+
+00:32:35.000 --> 00:32:47.000
+And then for any depth. You can find the corresponding age for that model here if just plotted three iterations that each assign a certain countries to any depth around here.
+
+00:32:47.000 --> 00:32:50.000
+Okay.
+
+00:32:50.000 --> 00:32:56.000
+So these divisions are of equal thickness. Yeah, and the default is five centimeters.
+
+00:32:56.000 --> 00:33:02.000
+And, and the locations of the elbows.
+
+00:33:02.000 --> 00:33:19.000
+Do not necessarily correspond to where you have dated it. Yeah, so you could have hundred elbows and five days, and there's no relation between where the dates are invited a model is quite a model elbows are.
+
+00:33:19.000 --> 00:33:32.000
+So, we divide the court into k sections of equal with or thickness and default of this thickness delta see here is five centimeters.
+
+00:33:32.000 --> 00:33:51.000
+And the elbows are c zero so the top elbow, and then see which is of a smaller debts for. Then she won, and then see one is of smaller captaincy to Cedric until I reached the bottom of the course ek.
+
+00:33:51.000 --> 00:33:58.000
+Right. And then for each section JB model that correlation rate.
+
+00:33:58.000 --> 00:34:01.000
+x of that second J.
+
+00:34:01.000 --> 00:34:03.000
+Yeah.
+
+00:34:03.000 --> 00:34:04.000
+Ok.
+
+00:34:04.000 --> 00:34:09.000
+Now, the age model nuclear g depends on depths.
+
+00:34:09.000 --> 00:34:17.000
+On the starting age, Sita and on the accumulation rate of the sections.
+
+00:34:17.000 --> 00:34:30.000
+Yeah. And that model is going to define this as this show we've got Tita Charles just stop using their little circle, Sita, which is to start age, this one here.
+
+00:34:30.000 --> 00:34:50.000
+Plus, however many sections you need to sum up until you reach your depth. For example, if our depth of interest is 45 centimeters, for example, we calculate this, this, this, this, until we are just
+
+00:34:50.000 --> 00:34:53.000
+reaching 45 centimeters.
+
+00:34:53.000 --> 00:34:58.000
+And then we just extrapolate a little bit more until the next section and Dustin space here.
+
+00:34:58.000 --> 00:34:59.000
+Yeah.
+
+00:34:59.000 --> 00:35:01.000
+So for any depth.
+
+00:35:01.000 --> 00:35:21.000
+We simply use the starting age, and then add older accumulation rage of each of the sections, until we reach the depth of interest. We extract like them between the last two section, elbows, and that's gives us the age for that iteration for that depth.
+
+00:35:21.000 --> 00:35:24.000
+Yeah.
+
+00:35:24.000 --> 00:35:31.000
+Okay, any questions there.
+
+00:35:31.000 --> 00:35:43.000
+I have a question. Do you think that's a likely model has our site acumen edge like that
+
+00:35:43.000 --> 00:35:53.000
+linear or say peace wise interpolation or peaceful peaceful nation regression.
+
+00:35:53.000 --> 00:36:01.000
+Yes. No.
+
+00:36:01.000 --> 00:36:19.000
+And so one thing is it is a bit strange that we have these little sections now, and within the sections it's accumulating exactly linearly. And then it changing all the time between the just just at the elbows but nowhere else seems strange, but given
+
+00:36:19.000 --> 00:36:30.000
+that we use this many many times, in the end, our model looks quite smooth. In most cases, sometimes if you have few sections to elbows, you will you will see them.
+
+00:36:30.000 --> 00:36:47.000
+So one thing that we're working on now with my colleagues in Mexico is to produce smooth bacon. Yeah, of course. Well you guys do like crispy bacon and over my side of the pond, it's more smooth bacon more fluffy.
+
+00:36:47.000 --> 00:36:56.000
+And we'll try to we're producing something which will not be as, like, elbow ESB is a bit more smooth.
+
+00:36:56.000 --> 00:36:59.000
+All right.
+
+00:36:59.000 --> 00:37:03.000
+Any questions there.
+
+00:37:03.000 --> 00:37:04.000
+OK, let's continue.
+
+00:37:04.000 --> 00:37:17.000
+So now let's, let's look at a prior Stan yeah because there are some questions about the priors. So the default of bacon is now 20 years percent of each of it does the sedimentation times.
+
+00:37:17.000 --> 00:37:18.000
+Right.
+
+00:37:18.000 --> 00:37:32.000
+And it's a gamma distribution, which means it's always larger than zero, and the shape is by default is 1.5. Yeah. So that's this shape you ever see here
+
+00:37:32.000 --> 00:37:42.000
+that allow for quite a wide range of of accumulation rates, so it could be 60 4010.
+
+00:37:42.000 --> 00:37:46.000
+Many rates are possible. Yeah.
+
+00:37:46.000 --> 00:37:58.000
+And we can also set the shape to be something higher so for the full five or 10 and then the thing becomes more pizza, so we have more information that it should be specific value.
+
+00:37:58.000 --> 00:38:01.000
+Okay.
+
+00:38:01.000 --> 00:38:09.000
+So, the default is 20 grams per centimeter but that doesn't mean that it always works. Yeah, of course there's other sites that could have quite different rates.
+
+00:38:09.000 --> 00:38:10.000
+Yeah.
+
+00:38:10.000 --> 00:38:25.000
+For example, if you have a recent sites, which only just accumulated you quite likely expect some faster accumulation rates then 20 years per centimeter could be 10 or five, or even even faster than that.
+
+00:38:25.000 --> 00:38:31.000
+Older sites might be more compacted and have lower accommodation rates.
+
+00:38:31.000 --> 00:38:49.000
+And then there's things like deltas. So, accumulation sidestep that might go much faster than lakes or much slower and lakes and oceans basins will possibly accumulate very very slowly, so you have information from the nature of the sites as to what would
+
+00:38:49.000 --> 00:38:59.000
+be a good prior for documentation page before seeing the data simply by knowing about the sites that you're working with.
+
+00:38:59.000 --> 00:39:07.000
+Yeah, so before you pay for any dates. What. Yeah, what do you think will happen with that combination.
+
+00:39:07.000 --> 00:39:09.000
+Okay.
+
+00:39:09.000 --> 00:39:23.000
+So, what happens when bacon notes, a core it quickly checks, like, oh, is, is the default accumulation rate of 20 years per centimeter, is that more or less.
+
+00:39:23.000 --> 00:39:26.000
+Doesn't seem okay.
+
+00:39:26.000 --> 00:39:44.000
+Or should we change it to a to a different prior, and if if it's if it needs to be much slower or much faster than can that could be accommodated by 20, years centimeter.
+
+00:39:44.000 --> 00:40:01.000
+accept it or, or not, or provide your own value, value. Okay. Yeah, mostly talking about the mean changing domain, but you can also change the shape. So if you have hardly any information you could perhaps, put your shape to even lower values to 1.5.
+
+00:40:01.000 --> 00:40:15.000
+Of course you want to have, like many many different possible shapes possible accommodation rich. But if you know enough about recommendation rate already you can put your prior stronger, more narrow higher values of shape.
+
+00:40:15.000 --> 00:40:17.000
+Okay.
+
+00:40:17.000 --> 00:40:35.000
+Now, once, then the priority sets, and once the data is available then is empty, empty run will combine the prior with the new data and produce the posterior now, so we update information the models learning about the process, it's learning about accommodation
+
+00:40:35.000 --> 00:40:40.000
+rates and it's variability in your site. by combining what it knew already.
+
+00:40:40.000 --> 00:40:47.000
+The 20 years per centimeter, combining that with your data. And to update our information.
+
+00:40:47.000 --> 00:40:49.000
+Yeah.
+
+00:40:49.000 --> 00:40:54.000
+So the priority is an integral part of this process.
+
+00:40:54.000 --> 00:40:58.000
+So we're talking about accommodation right on me and we'll come to memory legend.
+
+00:40:58.000 --> 00:40:59.000
+Okay.
+
+00:40:59.000 --> 00:41:02.000
+Yeah, so, memory.
+
+00:41:02.000 --> 00:41:16.000
+So the memory tells us by how much accumulation rates could change from one depth to the next. Yeah, so you have a constraint on the recommendation rate.
+
+00:41:16.000 --> 00:41:27.000
+For example, it could be like a very close to five. But then there's also the how, how much accumulation rate could could change from one bit depth to the next.
+
+00:41:27.000 --> 00:41:29.000
+Yeah.
+
+00:41:29.000 --> 00:41:38.000
+So there's, there's another prayer for that and that's a better solution, which is just tuition was always between zero percent.
+
+00:41:38.000 --> 00:41:45.000
+And we've set them. The default for that prior to see it's here
+
+00:41:45.000 --> 00:42:01.000
+to be at point five so half the strength of 10 so this prior here. A codec for quite a wide range of possible values to actually exist. Yeah, so it's quite a permissive prior.
+
+00:42:01.000 --> 00:42:05.000
+If you know more than what you can add more. Okay.
+
+00:42:05.000 --> 00:42:13.000
+Now, how just a memory, how does it work.
+
+00:42:13.000 --> 00:42:19.000
+So, do you remember that bacon works on sections.
+
+00:42:19.000 --> 00:42:23.000
+And it models that correlation rate for each section. Yeah.
+
+00:42:23.000 --> 00:42:30.000
+Now, this modeling of the administrator each section for example section J.
+
+00:42:30.000 --> 00:42:33.000
+Depends on W.
+
+00:42:33.000 --> 00:42:49.000
+So it has two components the model accumulation rated any section dependence on what part, and another parts. One part is the accumulation rate of the section of
+
+00:42:49.000 --> 00:42:55.000
+Andries. Yeah. So, the next section.
+
+00:42:55.000 --> 00:43:04.000
+And one part depends on the prior of recommendation race, and blue here alpha accommodation rage at section J.
+
+00:43:04.000 --> 00:43:05.000
+Yeah.
+
+00:43:05.000 --> 00:43:07.000
+So there's two parts.
+
+00:43:07.000 --> 00:43:16.000
+There collision rate of Section day depends partly on what happened before. And partly on the prior information on a combination rates.
+
+00:43:16.000 --> 00:43:18.000
+And it's partly.
+
+00:43:18.000 --> 00:43:27.000
+So how much it depends on if that's w desta memory. Yeah. If your memory is very high, is if it's close to one.
+
+00:43:27.000 --> 00:43:37.000
+Then, almost all of the accumulation rate of gay will depend on what happened before. Of course, if it's in the USA, very close to one.
+
+00:43:37.000 --> 00:43:53.000
+This is very close to zero dem soda your private information accommodation rages almost kicked out, and almost all of our information about a correlation rate stems from what happened at the section below it.
+
+00:43:53.000 --> 00:43:55.000
+Yeah.
+
+00:43:55.000 --> 00:44:09.000
+So Fw is close to one. If the memory is very high, then Xj will depend a lot, almost entirely on what the activation rate of the section below it.
+
+00:44:09.000 --> 00:44:12.000
+But if memory is close to zero.
+
+00:44:12.000 --> 00:44:27.000
+This whole thing of what happened before it really doesn't matter, and and the accumulation rates are assembled from alpha from the prior information and so that will then get you a much more flexible model.
+
+00:44:27.000 --> 00:44:29.000
+Yeah.
+
+00:44:29.000 --> 00:44:34.000
+Any questions there.
+
+00:44:34.000 --> 00:44:36.000
+No.
+
+00:44:36.000 --> 00:44:37.000
+Okay, move on.
+
+00:44:37.000 --> 00:44:39.000
+So how did we.
+
+00:44:39.000 --> 00:44:52.000
+How did we come on additional prior for recommendation rate so originally and first years with bacon and experiencing certain BPH. It was based on it was 10 years per centimeter.
+
+00:44:52.000 --> 00:45:04.000
+But then someone going at all. We analyzed for over 200 Lakes and title Redlands in northeastern us.
+
+00:45:04.000 --> 00:45:16.000
+And there were no age models were produced using classical methods, and from base model was, it was unchecked, what the accumulation Rachel sedimentation times were.
+
+00:45:16.000 --> 00:45:22.000
+And if you brought them over time, there's like a common trend. yeah.
+
+00:45:22.000 --> 00:45:27.000
+For very old sites deposition times are older.
+
+00:45:27.000 --> 00:45:31.000
+Yeah, longer higher. So slower.
+
+00:45:31.000 --> 00:45:43.000
+And then there's a long time over the Holocene where collision rates around, around 20 years per centimeter. And then for more recent sites we have deviations to more faster recommendation.
+
+00:45:43.000 --> 00:46:01.000
+And that's how we then decided upon getting 20 years per centimeter and the shape as it appeared from, from this paper from this analysis is shaped would be something between a fish gamma distribution, something larger than one, and build a wall between
+
+00:46:01.000 --> 00:46:04.000
+large new one and two.
+
+00:46:04.000 --> 00:46:12.000
+Okay, so that's how he came up, then with the mean of 20 years centimeter and a shape of one and a half.
+
+00:46:12.000 --> 00:46:15.000
+Okay.
+
+00:46:15.000 --> 00:46:23.000
+Hey, Martin. Yes, wonder if I can ask a question about the previous slide before we move on.
+
+00:46:23.000 --> 00:46:38.000
+Yeah, so forgive me if I had to step away for a second when you started this slide, forgive me if you said this but memory is memory, itself, a prior, do we enterprise so that is so so good yeah I'm looking at the output for.
+
+00:46:38.000 --> 00:46:52.000
+Yeah, so so the memory is actually. Yeah, that's that's this prior here. Okay, so the number itself is set as a prior and it just varies between zero and one or Yeah, okay.
+
+00:46:52.000 --> 00:46:55.000
+So you could have for example aside.
+
+00:46:55.000 --> 00:47:02.000
+So if you have say if you set your accommodation right prior to be something quite wide.
+
+00:47:02.000 --> 00:47:09.000
+But your memory to be something very specific, you could have a straight model.
+
+00:47:09.000 --> 00:47:23.000
+And that could then be about anywhere on here on the explanation right. Yeah, I can say so, in most cases, I think the memory prior isn't in most cases that important.
+
+00:47:23.000 --> 00:47:26.000
+I mean it.
+
+00:47:26.000 --> 00:47:44.000
+I think the default is result is quite seems to be quite reasonable, and perhaps more important to look at the accommodation rage, but we'll come to that later and come back, checking how the prior and posterior, and compare.
+
+00:47:44.000 --> 00:47:48.000
+Okay. All right, thank you.
+
+00:47:48.000 --> 00:48:03.000
+Okay, so this is how the accumulation rates prior was set, so it's it's it's useful for many sites in north eastern US, and hopefully that will then extrapolate to other areas.
+
+00:48:03.000 --> 00:48:07.000
+Yeah, but it doesn't always extrapolate to order area.
+
+00:48:07.000 --> 00:48:08.000
+Okay.
+
+00:48:08.000 --> 00:48:31.000
+For example, it wouldn't work that well for ocean basins, which would accumulate much slower, in most cases, this room just to Mars. Yeah. So, there's a paper, which looks at remote sensing remote photos of Mars, from satellites that are orbiting Mars.
+
+00:48:31.000 --> 00:48:49.000
+And this paper here William invites 2014 was particularly interested in a basin, where the seems to be say information in the, from what I see as if there was used to be a lake.
+
+00:48:49.000 --> 00:49:01.000
+Yeah. And like, which was have sizes at different times. Yeah.
+
+00:49:01.000 --> 00:49:09.000
+And particularly interested in a few and fan fi haven't been able to recognize this as a fan sentiment fan, but that's his fan here.
+
+00:49:09.000 --> 00:49:24.000
+And based on them. The photos, and the telemetry, they, they think that that fan as indicates that there's around 45 meters of layer deposits under that's fun.
+
+00:49:24.000 --> 00:49:31.000
+So, around four to five meters of deposits have accumulators on that side of Mars.
+
+00:49:31.000 --> 00:49:41.000
+Now we can't really go in and send a rover and then start courting, actually, good idea and this has just been done, but not in this this crater.
+
+00:49:41.000 --> 00:49:50.000
+And we can't really get data. Now, so all we have is 45 meters of sediment.
+
+00:49:50.000 --> 00:50:05.000
+And then we have to somehow, if we want to know how long that lake should have been active for, we have to use some guesstimate of how, how much you how much time is in one meter or 45 meter.
+
+00:50:05.000 --> 00:50:24.000
+So, then, William invites us going at all. So the estimates of sedimentation times in northeast the US lakes, to provide an estimate range of how long it would have taken for those 45 meters of sediment to accumulate on Mars.
+
+00:50:24.000 --> 00:50:29.000
+And that was done between four and a half to 230 frontiers.
+
+00:50:29.000 --> 00:50:31.000
+Yeah.
+
+00:50:31.000 --> 00:50:45.000
+So what do you think about this, so no data, and we're using terrestrial estimates we are extrapolating extrapolating them to Mars. Yeah.
+
+00:50:45.000 --> 00:50:55.000
+And welcome come up with a range of what could have happened in March, but fear not using additional data, only using the prior information.
+
+00:50:55.000 --> 00:50:57.000
+Yeah.
+
+00:50:57.000 --> 00:51:10.000
+So, bacon on March, so it seems to be a thing, you can have a recipe for frightening Marshburn wrapped in bacon. So why not. So, on Mars, or we have in this case history prior information.
+
+00:51:10.000 --> 00:51:13.000
+Yeah, and this is great information from a different planet.
+
+00:51:13.000 --> 00:51:16.000
+Yeah, and we have no new data to learn from.
+
+00:51:16.000 --> 00:51:28.000
+In this case, the mC mC process, if you if we were to apply bacon on Mars, if we had this four to five meters etc and everyone to produce an eight step model.
+
+00:51:28.000 --> 00:51:33.000
+We have no new data. So, all we know is to private information.
+
+00:51:33.000 --> 00:51:42.000
+And we're assuming that we can extrapolate this prior information from Earth to a different planet. Yeah.
+
+00:51:42.000 --> 00:51:52.000
+And then we're using them MC process to randomly sample values of accumulation rate.
+
+00:51:52.000 --> 00:51:57.000
+Well, obeying this prior,
+
+00:51:57.000 --> 00:51:59.000
+because all we have is the primer.
+
+00:51:59.000 --> 00:52:09.000
+So that way you can then come up with for 45, minutes of sediment, a range of a combination of limitation times.
+
+00:52:09.000 --> 00:52:12.000
+Okay.
+
+00:52:12.000 --> 00:52:28.000
+Luckily enough in real life, we do have. We're on earth, and we can go to sites and we can sample them, and we can radiocarbon data or use auto touch day so that we have new information we can combine the data we have already, and then to update our knowledge.
+
+00:52:28.000 --> 00:52:48.000
+Yeah. So, that's for example here then you have your core, Windows updates, way too many dates perhaps you combined your prior information you have with dates, and they arrive at the posterior information which is degraded, you actually have your green
+
+00:52:48.000 --> 00:52:55.000
+prior recommendation rate and the posterior is what came out after the modeling.
+
+00:52:55.000 --> 00:52:56.000
+And the same for the memory.
+
+00:52:56.000 --> 00:52:58.000
+Yeah.
+
+00:52:58.000 --> 00:53:10.000
+So that's how we should be reading these graphs and you will have prior information in green posterior information. So get actually under accumulation rates, underlying this a step model.
+
+00:53:10.000 --> 00:53:12.000
+and.
+
+00:53:12.000 --> 00:53:28.000
+And in this case, then the gray and the green bits overlap a lot. Yeah, so we have a very good correspondence between what we see, for the green one and for the gray one for member for a completion rate and the same from memory.
+
+00:53:28.000 --> 00:53:31.000
+Yeah. So what does it mean.
+
+00:53:31.000 --> 00:53:36.000
+In this case, we combine the prior information with the data.
+
+00:53:36.000 --> 00:53:56.000
+We got a model, but we didn't really learn much you about accumulation rates. Yeah, our information about accumulation rate hasn't really been updated about the same, same from memory, we haven't really learned much about how much decides varies in accommodation
+
+00:53:56.000 --> 00:54:01.000
+right over time, it's more or less what we expected.
+
+00:54:01.000 --> 00:54:05.000
+But we did learn is with the age model. Yeah.
+
+00:54:05.000 --> 00:54:19.000
+So we've got many data points, but it's an average sites, and we didn't really have many surprises we didn't learn anything new or event age model, but we didn't learn much new.
+
+00:54:19.000 --> 00:54:25.000
+We don't have any reason to update our prior, because it fits well.
+
+00:54:25.000 --> 00:54:27.000
+Okay.
+
+00:54:27.000 --> 00:54:30.000
+We've come to the mC mC part later.
+
+00:54:30.000 --> 00:54:41.000
+Okay. So, we had a look at the output file. So, the any any course output file will be having will have many many many many columns.
+
+00:54:41.000 --> 00:54:46.000
+The first column is the starting age.
+
+00:54:46.000 --> 00:54:56.000
+And then for each section that equal five centimeter steps will have that correlation rates, the estimate of the accumulation rates.
+
+00:54:56.000 --> 00:55:06.000
+Yeah. And then the final two or three columns have to do with the fit of the model and we don't really mind too much about that now for a moment.
+
+00:55:06.000 --> 00:55:13.000
+Just this file that's then used to produce to a step model. Okay.
+
+00:55:13.000 --> 00:55:18.000
+Right now, and let's play a little bit more with the priors.
+
+00:55:18.000 --> 00:55:26.000
+For example, if we would use the order default cord that comes with bacon, RLGH three.
+
+00:55:26.000 --> 00:55:31.000
+And we tell it so bacon would normally ask.
+
+00:55:31.000 --> 00:55:52.000
+Should I adapt the domain of the prior to 50 course, initial attempts to fit the data seemed that from from both traditional attempts, it seemed that's the default of 20 years per centimeter prior mean graduation rate doesn't really work, but he's like
+
+00:55:52.000 --> 00:55:55.000
+no, no, no, just use 20.
+
+00:55:55.000 --> 00:55:56.000
+Okay.
+
+00:55:56.000 --> 00:56:10.000
+Okay, bacon, doesn't mind, if you say show, so it produces the model it combines the prior information over an average of 20 years per centimeter. It combines it with the data and produces an output model.
+
+00:56:10.000 --> 00:56:14.000
+Yeah, fine.
+
+00:56:14.000 --> 00:56:16.000
+Now, what happens here.
+
+00:56:16.000 --> 00:56:22.000
+So we've got a prior and green and the posterior in gray and Same here.
+
+00:56:22.000 --> 00:56:33.000
+And here in this case to posterior into prior don't really agree so guess that they overlap. But there's a different shape between the posterior and the prior.
+
+00:56:33.000 --> 00:56:45.000
+Yeah, so we have not actually updated our information we have learned a bit like, okay, we should approach Syria is a bit different from our prior.
+
+00:56:45.000 --> 00:56:56.000
+Yeah, at least for a conversion rate but not really for the prayer for the memory the memory seems like have shifted the tiny bits to lower values but not that much.
+
+00:56:56.000 --> 00:56:57.000
+Okay.
+
+00:56:57.000 --> 00:57:09.000
+And if you look at a model, it looks fine, it is bypassing some dates, which are scattered. So, which tells us that's not all days, should be trusted.
+
+00:57:09.000 --> 00:57:21.000
+Yeah, there's plenty scatter, and the model said, You know what, I'm just going to ignore that lower mo stage, just doesn't fit with the prior that has been giving given.
+
+00:57:21.000 --> 00:57:25.000
+So, I'll just go straight ahead.
+
+00:57:25.000 --> 00:57:44.000
+Yeah, fine, I mean that that's that's what bacon did and it tried to fit as much as possible the data, which a prior and said, Well, a few outliers well you'll have just have to learn to live with that, and it produces this model.
+
+00:57:44.000 --> 00:57:47.000
+Okay,
+
+00:57:47.000 --> 00:58:06.000
+now let's read it again, and instead accepts the suggestion have begun to change the accumulation mean prior to 50 from the original 2250 do the same process, you combine the prior information with the data, and we get this model, which looks much the
+
+00:58:06.000 --> 00:58:13.000
+same. It also bypasses some dates. But now the lower most dates isn't an outlier.
+
+00:58:13.000 --> 00:58:20.000
+Yeah, so suddenly. Our model producers very slow accommodation rates.
+
+00:58:20.000 --> 00:58:25.000
+In order to fit these lower most date.
+
+00:58:25.000 --> 00:58:26.000
+Yeah.
+
+00:58:26.000 --> 00:58:40.000
+So now we have. Yeah, we have adapted our prior information and we got a quite a different model. Yeah. So in this case what bacon is saying, Well, I think that this data is correct.
+
+00:58:40.000 --> 00:58:50.000
+And we should be assuming a very low accumulation rate for for a few thousand years, and then change recommendation rate.
+
+00:58:50.000 --> 00:58:53.000
+Yeah.
+
+00:58:53.000 --> 00:59:03.000
+Then memory is also has also changed a bit has become a little bit lower than in the previous example, because it has to make that bend to fit that on a date.
+
+00:59:03.000 --> 00:59:20.000
+Yeah, so our memory, how fast things can change from from one correlation rates can change from one depth to the next will have to be updated with this model with these assumptions we have learned a bit about about process.
+
+00:59:20.000 --> 00:59:31.000
+Yeah. So I hope that with this type of choices of priors even see that the prior information is actually, like, an essential part of the baking process.
+
+00:59:31.000 --> 00:59:33.000
+Yeah.
+
+00:59:33.000 --> 00:59:48.000
+And it can be used to make decisions, you can say, you could decide that for example sometimes dates are simply wrong. Yeah, so we could go for this model, and accept a bit of scattered.
+
+00:59:48.000 --> 01:00:03.000
+But you can also think about the process in which this site was, was accumulating and perhaps this is a better model for this sites, than this one.
+
+01:00:03.000 --> 01:00:16.000
+Yeah, what data, knowledge of the user of the expert on the side comes into play. What is the most likely scenario this one or this one, or something else entirely.
+
+01:00:16.000 --> 01:00:17.000
+Yeah.
+
+01:00:17.000 --> 01:00:33.000
+So, the model had to choose, they can have to choose between either kicking this dead outlier and going happily straight on because straight is better of course you Yeah, if you the prior says like if you can go straight go straight.
+
+01:00:33.000 --> 01:00:37.000
+Yeah. Well, yeah, more or less. It's also.
+
+01:00:37.000 --> 01:00:45.000
+This type of slow accommodation rate doesn't fit well perhaps with default prior.
+
+01:00:45.000 --> 01:01:00.000
+Sorry, is prior. So, with the default prior of 20 years per centimeter, our site, couldn't really accumulate very slowly. Yeah, so just kicks it out live, but it's different, prior.
+
+01:01:00.000 --> 01:01:04.000
+We don't have to do this, we don't get a penalty of kicking out of date.
+
+01:01:04.000 --> 01:01:08.000
+Yeah. Any questions here.
+
+01:01:08.000 --> 01:01:16.000
+We want to perhaps to take a quick break because we've been going for an hour.
+
+01:01:16.000 --> 01:01:24.000
+Yeah, that sounds good let's take a four minute break and be back at 1207 or whatever oh seven, as the hour.
+
+01:01:24.000 --> 01:01:29.000
+Okay.
+
+01:01:29.000 --> 01:01:59.000
+Only four minutes.
+
+01:04:50.000 --> 01:04:55.000
+To say 730 hour.
+
+01:04:55.000 --> 01:04:57.000
+Oh yeah that's right now.
+
+01:04:57.000 --> 01:04:59.000
+effects were so quick.
+
+01:04:59.000 --> 01:05:11.000
+Yeah, sorry and Martin I think that if you know if if you're not able to get to everything that you intended. in the next hour that we can certainly stay on.
+
+01:05:11.000 --> 01:05:27.000
+Don't worry about, you know, having to stop. We are recording so people can can catch up if they need to leave. Okay. People want to stick around and ask, you know, look at models or wherever we get to, that'd be fine.
+
+01:05:27.000 --> 01:05:29.000
+Yeah.
+
+01:05:29.000 --> 01:05:33.000
+Okay.
+
+01:05:33.000 --> 01:05:34.000
+Right.
+
+01:05:34.000 --> 01:05:39.000
+So, if you don't play with memory prayer.
+
+01:05:39.000 --> 01:05:58.000
+For example, you can have RLGH three core again, and I can run into it very very peaked prior for memory, to be able to force it to be around one now so I put a mean at point 99, and the strength is like a ridiculous thousand.
+
+01:05:58.000 --> 01:06:11.000
+Yeah. So we're just putting ridiculous values here just to see what happens with those with those settings. And this case is one is awful. Yeah, it is an in memory of so high.
+
+01:06:11.000 --> 01:06:26.000
+That's the prior information is not taken to account and and all it does is trying to draw more or less a straight line. Not exactly, but mostly straight line through fulfill the whole site.
+
+01:06:26.000 --> 01:06:29.000
+And the model is bad because prayer is not good.
+
+01:06:29.000 --> 01:06:31.000
+Right.
+
+01:06:31.000 --> 01:06:48.000
+If he said, on the other hand prayer to be very close to zero, which is sort of prior is very good zero, then the model looks actually quite a lot like what we had with default prior, so not it's not bad.
+
+01:06:48.000 --> 01:07:00.000
+And in most cases, again I would recommend just using this default setting for the prior which is permissive, it allows anything between zero and one, and doesn't really give much.
+
+01:07:00.000 --> 01:07:06.000
+Yes, not very strong information is quite important to when you have a site.
+
+01:07:06.000 --> 01:07:24.000
+Check, different settings of for example the thickness of the, of the elbows and the memory and let's look look if with different settings you get slightly different types of who gets the same output.
+
+01:07:24.000 --> 01:07:28.000
+Okay, great.
+
+01:07:28.000 --> 01:07:36.000
+Sorry to sorry to interrupt but there was a question about if you can go back to the RDS H three.
+
+01:07:36.000 --> 01:07:37.000
+Excuse me.
+
+01:07:37.000 --> 01:07:54.000
+But what about these that other set of dates that are kind of in a straight line between about 50 and 125. Like what it is there an opera or a reason to exclude those i mean is the model just doing that, like why why the other dates and not those is it
+
+01:07:54.000 --> 01:07:57.000
+just because there are more of the others.
+
+01:07:57.000 --> 01:08:14.000
+Is this prior information why, like, what about those days we're all looking at them. Yeah, good question and I've never, ever seen bacon do anything else don't choose these, this upper range of dates and never the younger dates
+
+01:08:14.000 --> 01:08:27.000
+brewery because these are the dates here, like then the light lie in a straight line and there are more. And if it would have to go through the younger set of states it would have to bend more here.
+
+01:08:27.000 --> 01:08:32.000
+And I think just it doesn't want to do that.
+
+01:08:32.000 --> 01:08:40.000
+But surely we should be able to find settings of the prior information that made the model go through these few.
+
+01:08:40.000 --> 01:08:56.000
+For example, I could imagine, setting a very strong prior on that correlation rates, and then a break and accommodation rates and then different decoration rates here but that's really like fudging the data too much for really.
+
+01:08:56.000 --> 01:09:12.000
+But yeah, but by far most the most robust outcome for the most robust model seems to be one where these lower or the younger dates are kicked out those outliers.
+
+01:09:12.000 --> 01:09:16.000
+Okay.
+
+01:09:16.000 --> 01:09:30.000
+And I've done some more analysis. Just quickly, of say using a different totally different data sets, and then putting the prayer for memory to be a very low or very high.
+
+01:09:30.000 --> 01:09:38.000
+And in this case, we see very similar outputs, but for some reason when I put memory as to be very very high.
+
+01:09:38.000 --> 01:09:41.000
+And as model is more uncertain.
+
+01:09:41.000 --> 01:09:52.000
+I'm not sure how to interpret that. But, again, that's something that you can do for your own site as well.
+
+01:09:52.000 --> 01:10:00.000
+So we've got others to choose Yeah. and for, for reasons of transparency and consistency.
+
+01:10:00.000 --> 01:10:21.000
+I would suggest that you use a default values that were possible. Or, if you make bacon to x, if you tell bacon to to accept the values that bacon suggests, then accept them and use them, but also in the paper.
+
+01:10:21.000 --> 01:10:31.000
+Yeah, tell that you adapted accumulation mean prior to 10 or hundred or 50.
+
+01:10:31.000 --> 01:10:37.000
+And if you have more information about your site if you know more about decide, you can adapt to priors Yeah.
+
+01:10:37.000 --> 01:10:45.000
+So if you have a recent like you could attempt to mean to be somewhere around 10, or so.
+
+01:10:45.000 --> 01:10:48.000
+For a glacial lake, it would be 50.
+
+01:10:48.000 --> 01:10:50.000
+Yeah.
+
+01:10:50.000 --> 01:11:00.000
+And if you have strong information about this, this type of recommendation rate for example a site where you have postponed Bates where you can see. Yeah.
+
+01:11:00.000 --> 01:11:20.000
+Very, very strong information about what the rate could be, then you could set back shape to be very high and peaked yeah of course you have very strong information prior information about degradation rates for the memory, if you expect high variations
+
+01:11:20.000 --> 01:11:32.000
+and a correlation rate from one step to the next. Then you, then you could put the memory accordingly. And the strength, if you have strong information about that memory.
+
+01:11:32.000 --> 01:11:35.000
+Okay.
+
+01:11:35.000 --> 01:11:45.000
+And again, test, a range of prayers course, your models should be robust. Yeah, requesting that you ever run it several times, you get more or less the same outcome.
+
+01:11:45.000 --> 01:11:52.000
+And also if you change your prior to other reasonable values that you get, also, again, more or less.
+
+01:11:52.000 --> 01:11:54.000
+Well comparable output.
+
+01:11:54.000 --> 01:11:56.000
+Okay.
+
+01:11:56.000 --> 01:11:57.000
+Good.
+
+01:11:57.000 --> 01:12:01.000
+Now if you have started chemical changes, for example you have.
+
+01:12:01.000 --> 01:12:13.000
+Well, some sort of graphical event at say hundred 40 centimeters steps, and you have different totally different city Griffey before and below and above that event.
+
+01:12:13.000 --> 01:12:35.000
+You can then set different aggregation rate priors for above and below. That's the event. So the boundary at 140. You can set for example your conversion rates prior for recommendation read mean to be five above that boundary and 200 below ridiculous
+
+01:12:35.000 --> 01:12:45.000
+numbers in this case, but that will then be taken into account. And you will have the model that obeys the prior information.
+
+01:12:45.000 --> 01:12:49.000
+And to some degree, the dates as well.
+
+01:12:49.000 --> 01:12:51.000
+Okay.
+
+01:12:51.000 --> 01:13:01.000
+And you can also use a hiatus if you want to sort of same type of model, same command but then changed boundary to hiatus steps.
+
+01:13:01.000 --> 01:13:13.000
+And then it will model ages, and the prayer for hiatus, is a uniform distribution with a maximum of 10,000 years, but that can also be changed if you want to.
+
+01:13:13.000 --> 01:13:28.000
+Okay, moving on. So now you have this other thing that that affects your model and that is say the thickness, the section thickness yeah but just default is five.
+
+01:13:28.000 --> 01:13:38.000
+And if you set your model to have too few sections, then the thing becomes to elbow. Yeah, you see those elbows.
+
+01:13:38.000 --> 01:13:48.000
+And that's not nice not smooth enough, so then you would want to decrease the thickness so you get more parameters and becomes more smooth.
+
+01:13:48.000 --> 01:14:02.000
+If you have too many sections that happens as well sometimes you have too many sections, then you have too many parameters, and then the model can, it's just too many parameters to estimate and the model so that loses itself and becomes like a trumpet,
+
+01:14:02.000 --> 01:14:09.000
+that's just lives outside of the dates and it's it's totally lost.
+
+01:14:09.000 --> 01:14:21.000
+In that case, you just have to reduce the amount of parameters by setting your thickness to something larger than than it was. And then the model should be able to find yourself back again.
+
+01:14:21.000 --> 01:14:31.000
+So if you're very, very long course, then the default of five centimeter thickness might not work because there's too many things to many parameters to estimate too many population rates to estimate.
+
+01:14:31.000 --> 01:14:44.000
+So then different values four figures justice, and for a very short core Redis were five would result in too few sections into elbow. Then again, they can go suggest different values for thick.
+
+01:14:44.000 --> 01:14:49.000
+And later on we'll look at plum. And
+
+01:14:49.000 --> 01:15:04.000
+from their default thickness is one not five because we're talking about these surface course. Okay, so also when you testing different values, check what different values will fit due to your model.
+
+01:15:04.000 --> 01:15:19.000
+Okay, and sometimes if you have a very long core and it takes a long time to run some tests you can set the thickness to something quite big. So you have a few parameters only to court to model, you run a quick model, and it might be quite elbow but that
+
+01:15:19.000 --> 01:15:30.000
+might be a good way to find the correct settings, and once you found those Greg settings you can then increase or decrease fake again to something, which results in smaller model.
+
+01:15:30.000 --> 01:15:38.000
+And currently we're working on finding better suggestions for how to decide on the thick parameter.
+
+01:15:38.000 --> 01:15:57.000
+In most cases that we looked at five centimeters seems to work fine. And that's, that's more or less often say some cores have instead of centimeters, have meters or kilometres, even, and that can be adapted in your, in your file, and some courts would
+
+01:15:57.000 --> 01:16:13.000
+work with millions of years instead of years. That's what else we adapted anyway. Now, we also have to talk about mC mC so that this the leftmost panel, and that's so what bacon does it runs all these millions of mC mC iterations.
+
+01:16:13.000 --> 01:16:15.000
+Yeah.
+
+01:16:15.000 --> 01:16:29.000
+And amount of iterations that you put on depends on the sun, the parameter size sample size, but also on the amount of sections of the round of parameters you have.
+
+01:16:29.000 --> 01:16:42.000
+And it will run say well, 5 million or 20 million mC mC iterations, and it does that, using a special type of mC mC so Monte Carlo Markov chain of Markov chain Monte Carlo.
+
+01:16:42.000 --> 01:16:44.000
+And that's a table.
+
+01:16:44.000 --> 01:17:01.000
+And, and there are many Well, there's, there's a few different types of mC mC out there. And this one, made by unders Christian and his colleague, and it's actually quite a nice one because it's many other types of mC mC approaches and require lots of
+
+01:17:01.000 --> 01:17:14.000
+tuning. So you need quite a bit of knowledge in order to set the parameters for it for the mC mC. This one doesn't mean that it just, it finds the correct settings by itself it out to choose it.
+
+01:17:14.000 --> 01:17:21.000
+And it makes several types of movements in the space, and to in order to get that.
+
+01:17:21.000 --> 01:17:35.000
+Now it's a very inefficient process because of all those millions and millions of iterations, only less than 1% of unlike point 7% or so from 7% of the iteration will actually have moved a parameter.
+
+01:17:35.000 --> 01:17:44.000
+Remember that's for each iteration, it will have one random parameter will be changed by a tiny base.
+
+01:17:44.000 --> 01:17:59.000
+And then it will eat this new iteration will either be accepted as a reasonable next model, or to fit so badly that it will be rejected, and the previous iteration will still remain the same.
+
+01:17:59.000 --> 01:18:12.000
+So, the rejections rates of the mC mC process in bacon is really high 99% of all the time you're spending know parameter will be moved all those interns you actually get to deal with Syfy go.
+
+01:18:12.000 --> 01:18:13.000
+Yeah.
+
+01:18:13.000 --> 01:18:28.000
+And, and we only, we remain have, what we have at the end is a few thousand remaining iterations, all those others, and while they're not pointless are useful for the process of getting it's your agents and.
+
+01:18:28.000 --> 01:18:32.000
+But we, at the end of only a few thousand iterations.
+
+01:18:32.000 --> 01:18:52.000
+And after and they will sort of be elected from the initial burn in, where does the model has found correct settings more or less the correct parameters, and that burden is removed, and then additionally more iterations are removed in order to get rid
+
+01:18:52.000 --> 01:18:58.000
+of any dependency any like structure in the MCC output.
+
+01:18:58.000 --> 01:19:10.000
+And at the end of the process what you shoot She is like the empty, empty empty but should be, like, some white noise in there with no structure, or features.
+
+01:19:10.000 --> 01:19:30.000
+And if you have run which which have still has a burning, or just shows too much variability, you can use functions like thinner to fin out iterations, or scissors to cut off, like, the initial bits or and bit or bit in between.
+
+01:19:30.000 --> 01:19:45.000
+So here we have a core, that's very mC mC is horrible. Yeah, so this is not what we want to see you want to see a white noise process, there's no structure, except for perhaps this bit here.
+
+01:19:45.000 --> 01:19:56.000
+Yeah. So here, the run didn't go well. The model is really finding its way and it's just simply, it's not good enough, the mixing isn't good enough. And we should run for much much longer.
+
+01:19:56.000 --> 01:20:03.000
+In order to get something comparable to this bike noise thing. Yeah.
+
+01:20:03.000 --> 01:20:08.000
+So this, I would never use this, this, this model this doesn't look good.
+
+01:20:08.000 --> 01:20:10.000
+Okay.
+
+01:20:10.000 --> 01:20:20.000
+And this one is looks right and if you want to you could perhaps cut out this bit here but I wouldn't necessarily
+
+01:20:20.000 --> 01:20:24.000
+any questions.
+
+01:20:24.000 --> 01:20:44.000
+Ok. Now, another part of this mC mC process is reproducibility Yeah, if you run it once and then run it again how comparable is two outputs, and one function that can be used for that is beacon, or bake conversions.
+
+01:20:44.000 --> 01:20:47.000
+And you can what what it does, it brings your core.
+
+01:20:47.000 --> 01:21:01.000
+Several times for, for example, five times in this case, and we can discuss with bank it's like a very small sample size like a very short run, we repeat that process five times and put them all on top of each other.
+
+01:21:01.000 --> 01:21:12.000
+In order to compare to make sure that the individual runs, don't disagree by too much, not too much variability between the rooms.
+
+01:21:12.000 --> 01:21:31.000
+If there is too much variability, like in this case for the short runs it says that, okay I did five bacon runs, and the reduction factor which is a comparison of how much these different five different MC, she runs overlap.
+
+01:21:31.000 --> 01:21:44.000
+Say, it's about 1.1 or one point 11, which is not good enough. So it should be this sector should be smaller than that. So it says, well, not, not a robust run.
+
+01:21:44.000 --> 01:21:49.000
+So please try again with different settings for example more iterations.
+
+01:21:49.000 --> 01:21:50.000
+Okay.
+
+01:21:50.000 --> 01:22:07.000
+Right now, Amy you have some courses well I quickly run them random shift current for one to two three. It has a mix of radiocarbon and Kelby p dates, and also some lead to 10 days.
+
+01:22:07.000 --> 01:22:22.000
+And again, in your CSV file by of your dates you can include a mix of radiocarbon and copy dates by adding a fifth column where cc equals zero for Calvin key dates and one or two or three, four ready carbon dates.
+
+01:22:22.000 --> 01:22:23.000
+Okay.
+
+01:22:23.000 --> 01:22:28.000
+Anything else you want to add about this, this score.
+
+01:22:28.000 --> 01:22:37.000
+Um, no nothing particular I mean it has yeah this was sort of something we threw everything added has led to 10. It has some tentative dates from the literature on identified temperatures.
+
+01:22:37.000 --> 01:22:48.000
+This is from Glacier National Park radiocarbon dates and then some BB counting and extrapolation sex, which I know is not not ideal.
+
+01:22:48.000 --> 01:22:51.000
+I thought that if you were.
+
+01:22:51.000 --> 01:22:57.000
+If you are interested in showing a well everybody has the CSV file.
+
+01:22:57.000 --> 01:23:09.000
+But you could take a people could take a look at that and see how you identify which dates get calibrated and which don't so with a one or a zero in that calibration curve in that cc column.
+
+01:23:09.000 --> 01:23:27.000
+You can see that the radiocarbon dates, we have one for Intel, whatever it was, at the time, 14, and zero for the lead to 10 the tetra, and any other any other of those non radiocarbon dates.
+
+01:23:27.000 --> 01:23:37.000
+And those are put it in his beard, like nice blue collar and get ready for mentioned in dark blue is a bit of a problem because I'm more active over my seat.
+
+01:23:37.000 --> 01:23:38.000
+And what I am.
+
+01:23:38.000 --> 01:23:40.000
+Yeah, you can't work anymore.
+
+01:23:40.000 --> 01:23:44.000
+You have to cancel the session. Oh, Yes.
+
+01:23:44.000 --> 01:23:53.000
+Okay. No. And, and you can now also use plum to redo this, this one, perhaps, but look at a later.
+
+01:23:53.000 --> 01:24:02.000
+Okay, the next one is still 98, and I just plotted quieter large number of dates.
+
+01:24:02.000 --> 01:24:08.000
+And I promise here the file contains more columns. Yeah.
+
+01:24:08.000 --> 01:24:14.000
+So this one has 56789 columns.
+
+01:24:14.000 --> 01:24:25.000
+Yep. So we've got an additional column for the CC, which we just described, marriage, zero is Kelby p years and one is in our 20.
+
+01:24:25.000 --> 01:24:30.000
+And then we've additional columns for the restaurant effect.
+
+01:24:30.000 --> 01:24:35.000
+So if your date is subject to reservoir affect anything and water.
+
+01:24:35.000 --> 01:24:37.000
+Zero. Yeah.
+
+01:24:37.000 --> 01:24:43.000
+So in this case, the reservoir effect is zero, plus or minus zero.
+
+01:24:43.000 --> 01:24:50.000
+And then we've got additional the file columns are for TA and TB.
+
+01:24:50.000 --> 01:24:59.000
+I'm sorry. And that is for the student t distribution. And we'll have to, we'll come to that.
+
+01:24:59.000 --> 01:25:00.000
+And help.
+
+01:25:00.000 --> 01:25:11.000
+And so, if you have reservoir effects for some of your days you can include it as additional columns for your dates in your CSV file.
+
+01:25:11.000 --> 01:25:17.000
+And if you have different values for TA and TV show coming come to later.
+
+01:25:17.000 --> 01:25:19.000
+You can also include that here.
+
+01:25:19.000 --> 01:25:22.000
+Okay.
+
+01:25:22.000 --> 01:25:23.000
+Right.
+
+01:25:23.000 --> 01:25:33.000
+The student t. So, what they can use is by default is not to model. Our dates using the Gaussian distribution which is here in red.
+
+01:25:33.000 --> 01:25:38.000
+So if you use the Gaussian distribution to calibrate your updates, you get well.
+
+01:25:38.000 --> 01:25:41.000
+Distribution like the red one.
+
+01:25:41.000 --> 01:25:51.000
+But what we're actually using is not that, by default, we don't use Gaussian distribution, but we use something quite similar to student to distribution.
+
+01:25:51.000 --> 01:26:08.000
+And that's the grave on here is very comparable to the normal distribution, or to using the normal distribution, but the peaks are a bit lower. And there is some more wider tales, and that's very very useful, because that actually allows for outliers
+
+01:26:08.000 --> 01:26:12.000
+for a bit of scattered so if a date is scattered.
+
+01:26:12.000 --> 01:26:17.000
+It's still actually fits the model, a little bit.
+
+01:26:17.000 --> 01:26:39.000
+So the students he has lighter details, using the settings of the use of the two parameters. A equals for the vehicles for. And that's allows us then for for a bit of scattered and for example scattered that we see.
+
+01:26:39.000 --> 01:26:54.000
+Very. For example, this type of scatter. Yeah, that's the type scattered at bit normal if you use the normal distribution to model the error of the dates that would convert programmatic, but if you use a student to distribution which has a bite or tails,
+
+01:26:54.000 --> 01:26:59.000
+and a bit of scatter can easily be accommodated.
+
+01:26:59.000 --> 01:27:01.000
+Okay.
+
+01:27:01.000 --> 01:27:14.000
+Right. So what is killed, he does, it is when we enter our dates, it has a each state has a lab error, for example 25 years or 20 or 50.
+
+01:27:14.000 --> 01:27:29.000
+And that's just one number, but what this student t introduces is sort of uncertainty of the uncertainty. So we're not exactly certain that's the error size that we assigned to that date is the correct one.
+
+01:27:29.000 --> 01:27:39.000
+It could be less, it could more. Yeah, so there's an error multiplier and just multiplier of the dates of the dates error, could be one.
+
+01:27:39.000 --> 01:27:41.000
+But it could also be more.
+
+01:27:41.000 --> 01:27:49.000
+So, and that's this student, the student at distribution with two parameters and we suggest us free.
+
+01:27:49.000 --> 01:28:06.000
+A good eight equals three and B equals four. And that will reduce produce distribution It looks a lot like normal distribution, but has these details know if you have some days.
+
+01:28:06.000 --> 01:28:13.000
+then you can put higher values different values for AMD for those dates. Okay.
+
+01:28:13.000 --> 01:28:25.000
+Right now for your own court, and you can produce a CSV file which only four columns so lab ID. Ready carbon age error in depth.
+
+01:28:25.000 --> 01:28:34.000
+But I would suggest to also add the fifth column, which is the coloration curve, column so that you're that you remember which calibration curve she used for each date.
+
+01:28:34.000 --> 01:28:36.000
+Yeah.
+
+01:28:36.000 --> 01:28:41.000
+And you put that in a new folder under the umbrella folder which you say bacon rooms.
+
+01:28:41.000 --> 01:28:46.000
+And then you call your course on name for central software for core.
+
+01:28:46.000 --> 01:28:51.000
+And within the folders on different core you will have some different core dot CSV.
+
+01:28:51.000 --> 01:28:55.000
+And then you will get run bacon to run that core. Okay.
+
+01:28:55.000 --> 01:28:59.000
+I hope you've been able to do that.
+
+01:28:59.000 --> 01:29:10.000
+We also had a question about depths and I think, Amy you already discussed that in a male that you can. There's several ways in which you can use other types of depths than the default ones.
+
+01:29:10.000 --> 01:29:17.000
+Yeah, so, yeah, we can, if there's more questions we can look at it again, but it should be enough. Yeah.
+
+01:29:17.000 --> 01:29:35.000
+And then we've got the post run analysis which you went through quickly. I really suggest that if you want to look at. If you're interested in a correlation rage history as a proxy, don't just use the mean but also use this to look at the variability
+
+01:29:35.000 --> 01:29:41.000
+the uncertainty of its for example about plotting your correlation Rage Against depth Oregon's time.
+
+01:29:41.000 --> 01:29:52.000
+And you can also please look at your proxies, as a grayscale and not just one curve chain.
+
+01:29:52.000 --> 01:30:04.000
+Okay. And I think that's me for the mode, are there any questions you or anyone wants to look at, or a course or what you want to have a quick look at plum.
+
+01:30:04.000 --> 01:30:07.000
+But who do like
+
+01:30:07.000 --> 01:30:12.000
+Martin What do you think,
+
+01:30:12.000 --> 01:30:15.000
+more I couldn't care less.
+
+01:30:15.000 --> 01:30:21.000
+You want to have a look at clump.
+
+01:30:21.000 --> 01:30:25.000
+Yeah.
+
+01:30:25.000 --> 01:30:41.000
+Okay, yeah, I think that would be great and people can I know that some people are are messaging me and sort of asking some questions about issues with their, you know, their bacon runs and go ahead and keep doing that, we can do that more of that, as
+
+01:30:41.000 --> 01:30:58.000
+a group, after, if you like, but yeah plum would be extremely important, I think, Okay, so what does lead to 10 day to the is, is that for ready carbon dating you have just one date, and that will tell you something about an absolute age of the depths
+
+01:30:58.000 --> 01:31:06.000
+that you're interested in, four letter tennis different single value come tell you very much for hardly anything.
+
+01:31:06.000 --> 01:31:17.000
+You never sequence of measurements for for for lead to 10. And there's also def to generally two components to lead to 10.
+
+01:31:17.000 --> 01:31:27.000
+What and here in in pink is, say, the background inputs of led to 10.
+
+01:31:27.000 --> 01:31:42.000
+So, so the support it's not too technical it, and then you've also got influx raining in of lead from from the atmosphere, through the water column into your site and that's the one that we're interested in because that one will decrease over time.
+
+01:31:42.000 --> 01:31:44.000
+Yeah.
+
+01:31:44.000 --> 01:31:52.000
+So, what we're doing with plum is really using this for a model of that we have that they know. Well, We haven't aged debt model.
+
+01:31:52.000 --> 01:32:00.000
+We haven't aged debt model. And we have the measurements of lead to 10.
+
+01:32:00.000 --> 01:32:24.000
+And what we're trying to do is to produce a model that accommodates and values and yes but attacks reproduce dose measured values. Okay, so what does depends on it a shooting glum assumes, that's the influx of letter 10 is constant.
+
+01:32:24.000 --> 01:32:31.000
+That's something we could debate. but that's what most models assume anyway but we could actually change that in future iterations.
+
+01:32:31.000 --> 01:32:38.000
+And it assumes either a constant or varying supportive background lead.
+
+01:32:38.000 --> 01:32:39.000
+Yeah.
+
+01:32:39.000 --> 01:32:52.000
+And then it uses the bacon model to produce an A step model.
+
+01:32:52.000 --> 01:33:12.000
+we don't get rid of the supported lead, we just used to total measurements as they are measured in the lab, and each measurement bi, the lead in slice I depends on the total lead in in that slice, and that's to be, we hope, distributed normally that that
+
+01:33:12.000 --> 01:33:22.000
+that measurement should have a normal error, based on the total lead in that slice, I, and some error. Yeah.
+
+01:33:22.000 --> 01:33:31.000
+And the total lead depends. It consists of both supported PS, and unsupported pu that.
+
+01:33:31.000 --> 01:33:45.000
+And this bs supported lead can either be constant throughout the core. Then we have simply that pi, total is PS plus b i you support it.
+
+01:33:45.000 --> 01:34:01.000
+Or, and PS can also be varying throughout the core NEFPI t equals pis plus Pau right now.
+
+01:34:01.000 --> 01:34:22.000
+So we're not getting rid of lack of support leverage using us, as part of the process. Now, what happens now is that we, for each metric sample for each sample is steps or each slice where we have a measurement of lead, we mess it up, we model that as
+
+01:34:22.000 --> 01:34:36.000
+a normal distribution again, where we have a bit of supported lead the activity of the supported supported lead which could be either varying are consistent over the court.
+
+01:34:36.000 --> 01:34:47.000
+And we then also have to influx, which is constant again flow over the court it's constant influx of here five feet.
+
+01:34:47.000 --> 01:34:55.000
+And then we have also the time, because we have a depth, and we have an age. Yeah.
+
+01:34:55.000 --> 01:35:02.000
+And the age model, the depth of age model is our bacon model.
+
+01:35:02.000 --> 01:35:03.000
+Yeah.
+
+01:35:03.000 --> 01:35:19.000
+And if we know our if we, if we set a value for our supporters, and we set a value for for infects me sets and bacon a step model that we know that the entire me know all the values.
+
+01:35:19.000 --> 01:35:39.000
+Yeah, we can can calculate how much lead to show up in the top of our slice of interest, and how much they should be in the bottom of the slides of interest so that we can calculate the integrated the entire amount of lab to 10 of the support letter 10
+
+01:35:39.000 --> 01:35:47.000
+that should still be in a slice at the time you're measuring it. Alright, and they also have an error.
+
+01:35:47.000 --> 01:35:58.000
+So this whole thing. So, it simply combines prior information on well it combines assumptions about this flux to be in constant
+
+01:35:58.000 --> 01:36:11.000
+support with lead being either constant or changing and then place to eat bacon, a step model to give us all the parameters to calculate the lead value.
+
+01:36:11.000 --> 01:36:18.000
+The motivates for each measures value, slice. Yeah.
+
+01:36:18.000 --> 01:36:25.000
+So, We can simply load or install our plan does name.
+
+01:36:25.000 --> 01:36:30.000
+And that will require it as before and then run it by them. Yeah.
+
+01:36:30.000 --> 01:36:46.000
+And if we run the default core should be using this one console without with just the TV measurement lead to 10 measurements, no additional radium radium measurements.
+
+01:36:46.000 --> 01:36:55.000
+So all we know about supported that to 10 is calculated from the tail from the essay, where we've reached equilibrium.
+
+01:36:55.000 --> 01:37:10.000
+Now, this plot here has many many subplots, but when we look at here is the little rectangles, Adam measured values, and blue scale is the model values.
+
+01:37:10.000 --> 01:37:13.000
+And then engrave got a step model.
+
+01:37:13.000 --> 01:37:23.000
+And then at the top, we've got the mC mC iterations accommodation rates of the bacon a step portal, and it's memory.
+
+01:37:23.000 --> 01:37:28.000
+So these to make this model.
+
+01:37:28.000 --> 01:37:41.000
+Yeah. And then you've also got the developers for five, which is different in greater posterior and then in green, the prior, which is very right so many things can be accommodated.
+
+01:37:41.000 --> 01:38:01.000
+And we've also got supporters, which in this case is estimated based on the tail measurements. Yeah. So we've got parameters for supported in flux and the memory and cognition rate and that gives us the entire model, and the model the values for lead.
+
+01:38:01.000 --> 01:38:03.000
+Okay.
+
+01:38:03.000 --> 01:38:13.000
+In most cases to motivate us to agree very very much with the measured values, except for this one, outlier here.
+
+01:38:13.000 --> 01:38:14.000
+Yeah.
+
+01:38:14.000 --> 01:38:15.000
+Okay.
+
+01:38:15.000 --> 01:38:28.000
+So this is one core of just very genetic 10 measurements. If we also want to if you also have additional measurements of the supported lead for sample radium
+
+01:38:28.000 --> 01:38:29.000
+measurements.
+
+01:38:29.000 --> 01:38:38.000
+Then you can assume those, so you can add that as additional information, which is here the purple data.
+
+01:38:38.000 --> 01:38:47.000
+You can add them and then assume that these their support is constant for for the core, and then you get this model.
+
+01:38:47.000 --> 01:38:52.000
+You can run this command.
+
+01:38:52.000 --> 01:38:57.000
+This is another core that comes with our master package.
+
+01:38:57.000 --> 01:39:07.000
+You can also assume with the same data we can assume that is actually very of the core so it is not a constant value but it varies overtime, or over debt.
+
+01:39:07.000 --> 01:39:09.000
+And there's over time.
+
+01:39:09.000 --> 01:39:16.000
+That takes longer to run because there's more parameters that have to be estimated. So if you can.
+
+01:39:16.000 --> 01:39:32.000
+If you can assume constant supported as often better diversity runs. It runs faster and it's a safer assumption. Then, in most cases, perhaps, then using these individual estimates.
+
+01:39:32.000 --> 01:39:53.000
+And you also see that's the model extends as far back as safely possible, but when our model values over it starts getting background values, then bacon will not extra extrapolate beyond that will say okay that's how far will go and not beyond that.
+
+01:39:53.000 --> 01:39:54.000
+Okay.
+
+01:39:54.000 --> 01:40:12.000
+Now you can also, this is interesting I think you can add all the data, it's simply a part of the bacon model. Yeah. So, let the 10 data are modeled with these two parameters and the bacon model and and bake a model can simply get, you can add more information
+
+01:40:12.000 --> 01:40:19.000
+radiocarbon dates or any other dates. And then it's naturally combined integrated all that information into an edge step model.
+
+01:40:19.000 --> 01:40:20.000
+Yeah.
+
+01:40:20.000 --> 01:40:39.000
+So you don't have the problem of first putting your lead to 10 data through a CRS model and putting data into bacon, because I am be double modeling here, all the data is taken at face value and his, his accommodated based on the information and all of
+
+01:40:39.000 --> 01:40:43.000
+data available to come as an integrated ASAP model.
+
+01:40:43.000 --> 01:40:46.000
+Okay. That's me.
+
+01:40:46.000 --> 01:40:55.000
+If there's any questions or people want to look at Oracle or to get more information about bacon or plum year.
+
+01:40:55.000 --> 01:41:12.000
+Yet, we have a couple of questions in the chat Martin so one you just started to approach which is why not just put the CRS, so we get from the lab, from the lead to 10 lab we get, you know modeled ages for our lead to 10, why not just plug them into
+
+01:41:12.000 --> 01:41:24.000
+bacon. You said you talked about double modeling but can you talk a little bit more about why why would want to use plum instead of just putting in the dates that come from the lab for Linda 10.
+
+01:41:24.000 --> 01:41:28.000
+First of all, if you use plum, I get more citations. That's important.
+
+01:41:28.000 --> 01:41:35.000
+But it's also the CRS model has uncertainties, yeah.
+
+01:41:35.000 --> 01:41:54.000
+For example, a CRS model can be very very sensitive to to what settings were used, for example, and the simple process of taken away as supported lead the decisions that are taking their can affect your model by a lot.
+
+01:41:54.000 --> 01:42:01.000
+Yeah, I think in most cases, the CRS model is really under estimating that type of uncertainty.
+
+01:42:01.000 --> 01:42:22.000
+Much like classical hf models like clam s underestimate uncertainty, because they simply cannot accommodate all that uncertainty reservation moles are more pessimistic but more realistic in in their estimates of uncertainty, so glum doesn't have to take
+
+01:42:22.000 --> 01:42:35.000
+away the supportive lead so that's that's that's one thing. Also CRS requires the entire inventory of court to be estimated.
+
+01:42:35.000 --> 01:42:43.000
+And if you're wrong there, then your whole model is wrong and that is again to do with supported and taken away to support the data.
+
+01:42:43.000 --> 01:42:48.000
+If you have missing data, which is certainly a thing that can happen.
+
+01:42:48.000 --> 01:43:00.000
+You have to look at all kinds of magic, rich ers, in order to, to fill in those missing gaps for better for plumbing, that's not a problem at all because it's, It's just another data point.
+
+01:43:00.000 --> 01:43:19.000
+Yeah. And, yeah, so I think it's a yeah it's a more integrated approach, and it then can really combine the letter 10 data, and the radiocarbon data. It also puts the responsibility for the chronology in the lap of the user and not have that have the
+
+01:43:19.000 --> 01:43:21.000
+letter turn lab.
+
+01:43:21.000 --> 01:43:23.000
+Yeah.
+
+01:43:23.000 --> 01:43:30.000
+So yeah, that that's more or less where I think it will be good to use plum.
+
+01:43:30.000 --> 01:43:33.000
+Thanks I hope Nancy that answers your question.
+
+01:43:33.000 --> 01:43:35.000
+Um, another question.
+
+01:43:35.000 --> 01:43:38.000
+Sorry, just just one one more story.
+
+01:43:38.000 --> 01:43:52.000
+It's also the amount of dates, but the amount of data points in a CRM model, you have 20 or 30 data points, it doesn't. Those are not 30 independent dates.
+
+01:43:52.000 --> 01:44:16.000
+Yeah, the old tell us something about the entire inventory of led to Tim, but it's not that these are the 13 independent data points, but if you input them as a CRS output in bacon you get 30 data points, which bacon things are independent, and mathematicians,
+
+01:44:16.000 --> 01:44:26.000
+get totally crazy about us, shouldn't be done riffraff couldn't care less but I think it's important that you should have independent data coming into your model.
+
+01:44:26.000 --> 01:44:35.000
+Sorry for interrupting you know that that was actually a really really good additional point about the differences between lead to 10 and radiocarbon dates.
+
+01:44:35.000 --> 01:44:45.000
+So another question is so radium 226 can be used as a background What about lead to 14.
+
+01:44:45.000 --> 01:44:51.000
+Yeah, if you have other types of background data that should also be possible to include.
+
+01:44:51.000 --> 01:44:52.000
+Yeah.
+
+01:44:52.000 --> 01:44:56.000
+Yeah. I'm not sure how you will do that.
+
+01:44:56.000 --> 01:44:59.000
+At the moment, I'm not an expert on lead to 10.
+
+01:44:59.000 --> 01:45:09.000
+But if you have other measurements of background or say and supported lead, and should be able to include that.
+
+01:45:09.000 --> 01:45:13.000
+Great, and a question.
+
+01:45:13.000 --> 01:45:14.000
+Let's see.
+
+01:45:14.000 --> 01:45:18.000
+Um, so, and this is a general question about extrapolation.
+
+01:45:18.000 --> 01:45:27.000
+So I understand that we are discouraged from extending our course from our last date. In my case I have a gravity core which the dates are up to 20 to 25 centimeters.
+
+01:45:27.000 --> 01:45:35.000
+I'd like to extend this to the entire length of the gravity core 40 to 50 centimeters. Is there a way to do this in Plum.
+
+01:45:35.000 --> 01:45:44.000
+Well, as people like Mars know you're almost without data, you're just using your prior information and extrapolate, you're welcome to do that, but it's not.
+
+01:45:44.000 --> 01:45:58.000
+It's hardly based on data there. Yeah, so you're simply, you're using bacon on Mars, and and you're still yeah you're not using the data there but only using the prior information.
+
+01:45:58.000 --> 01:46:10.000
+Yeah, I would recommend if you can you could get somebody to carbon dates, then you might be able to extrapolate but then use some data to back up, that you're extrapolating.
+
+01:46:10.000 --> 01:46:16.000
+Well, in one issue with the prior accumulation rate is does.
+
+01:46:16.000 --> 01:46:36.000
+It will not win start extrapolating if you're not really balloon, or trumpet out because it is constrained by this green value so it will continue on quite straight, but it might be an illusion because there's not really actually data to back it up.
+
+01:46:36.000 --> 01:46:40.000
+Yeah, that's good.
+
+01:46:40.000 --> 01:46:54.000
+So your best bet is to to truncate, where your data approach them. Yeah, the limit of your measurement of your Yeah, the background.
+
+01:46:54.000 --> 01:46:55.000
+Yep.
+
+01:46:55.000 --> 01:47:14.000
+And I think, I think that a lot of the messages from all of this plum and bacon and Martin in general, is just caution in presenting our data as knowing more than we then we actually do it and making sure that we were really presenting those uncertainties.
+
+01:47:14.000 --> 01:47:20.000
+Another question, another great question is does plum use accumulated dry mass.
+
+01:47:20.000 --> 01:47:40.000
+It's important for the CRS model and both density changes so much with depth at the core top, you know, yes, it's uses, it doesn't use accumulated mastered users mouse, it is summer in the equation.
+
+01:47:40.000 --> 01:47:54.000
+It's around here, so it is included in the supported and well yeah so density is not cumulative us but density is one of the parameters that has to be included.
+
+01:47:54.000 --> 01:48:10.000
+And I'm aware of some course where that data is not available. And, yeah, that's a bit of a problem then, if we don't have that we might have to actually, we could start looking at many many legs and see if there's some sort of a prior information we
+
+01:48:10.000 --> 01:48:14.000
+could use if we don't have that information.
+
+01:48:14.000 --> 01:48:15.000
+Okay.
+
+01:48:15.000 --> 01:48:23.000
+You do need density.
+
+01:48:23.000 --> 01:48:24.000
+Last.
+
+01:48:24.000 --> 01:48:29.000
+Yeah. Other questions. Oh, can we see an example of a plum input data sheet.
+
+01:48:29.000 --> 01:48:36.000
+Oh yeah,
+
+01:48:36.000 --> 01:48:42.000
+good question.
+
+01:48:42.000 --> 01:48:46.000
+Ishida.
+
+01:48:46.000 --> 01:48:55.000
+So yes, something yeah so you have different columns you have the lab ID. As always, They have depth.
+
+01:48:55.000 --> 01:49:04.000
+Then the density, followed by the measurements of lead to 10 and error.
+
+01:49:04.000 --> 01:49:11.000
+Then the thickness of the slice so that's here a thing. So, so the depths of your slice with me.
+
+01:49:11.000 --> 01:49:16.000
+I was looking at the top of the world, or the bottom one of them.
+
+01:49:16.000 --> 01:49:21.000
+And I think the top.
+
+01:49:21.000 --> 01:49:40.000
+And if you have any additional data for for background, you say rhodium, then you can add them as extra columns. And then finally you have the final column, which tells the date in AD or common era when it was measured.
+
+01:49:40.000 --> 01:49:43.000
+And then
+
+01:49:43.000 --> 01:49:46.000
+the
+
+01:49:46.000 --> 01:50:02.000
+case so whether if you have read on radium data, and we want to assume them being constant or, I'm sorry I'm not confused. Desperate this one, I'm still getting used to this to this file.
+
+01:50:02.000 --> 01:50:18.000
+But there's one value for what type of radium case to use. And there's also one value for how many tail data to us to help estimate the supported lead.
+
+01:50:18.000 --> 01:50:35.000
+But I so it's a bit confusing perhaps to have this order of columns that depth, density than the lead and then thickness so it might in the future, change that to a slightly more logical order but that might also cause more confusion than, and then solve
+
+01:50:35.000 --> 01:50:39.000
+it.
+
+01:50:39.000 --> 01:50:57.000
+And if you don't provide the last column and plan will ask you to provide it in commands, so it will ask for something year and so etc and that will then be added as information to the, to the file for the next round.
+
+01:50:57.000 --> 01:50:59.000
+Okay.
+
+01:50:59.000 --> 01:51:06.000
+Any other questions, but plumber bacon.
+
+01:51:06.000 --> 01:51:10.000
+I'm getting there. I think there's another question in the chat.
+
+01:51:10.000 --> 01:51:25.000
+Scrolling Nope, that's just the thanks. I do have one question where someone's having trouble with the swift current swift current CSV file. Martin Did you need to do anything that it's an older CSV.
+
+01:51:25.000 --> 01:51:37.000
+And so I don't have to do something, I think yes I had to forgot to tell her I had to change the name of the, the r amp D STD, it had a different name.
+
+01:51:37.000 --> 01:51:39.000
+I think that's what I did.
+
+01:51:39.000 --> 01:51:49.000
+Yeah. Okay, thank you so trying that's that's the problem so you'll have to just change those headers and there should be inflammation in the bacon.
+
+01:51:49.000 --> 01:51:55.000
+Help where would Where would he find the that's so you can see what the headers are right here.
+
+01:51:55.000 --> 01:52:07.000
+But that should be in the bacon manual, wherever you find a good question.
+
+01:52:07.000 --> 01:52:20.000
+Or you could just look at the RLGH three or MSBTK maybe those don't have all seven columns that don't have also haven't caught on so
+
+01:52:20.000 --> 01:52:24.000
+don't remember if I have added
+
+01:52:24.000 --> 01:52:26.000
+to this point.
+
+01:52:26.000 --> 01:52:32.000
+It's kind of funny because sometimes the simplest things are the vignette.
+
+01:52:32.000 --> 01:52:35.000
+So there's these like little tutorials.
+
+01:52:35.000 --> 01:52:50.000
+If you go to folders files. And then there is some information about what Delta dot r delta STD is one of one of the correct names, you can give it.
+
+01:52:50.000 --> 01:52:55.000
+And then your honor Congress could be.
+
+01:52:55.000 --> 01:53:01.000
+Great, thank you and sorry for sending out a file to everybody that had that was not plug and play.
+
+01:53:01.000 --> 01:53:08.000
+But that's good because, yeah, you see this is how we learn.
+
+01:53:08.000 --> 01:53:19.000
+And I think Can I share my screen, and just compare well okay so, take, take a look at this for just a second this steel. One Martin Can you bring that to the for the front.
+
+01:53:19.000 --> 01:53:36.000
+Yeah, that's, that's perfect. And I wanted to just show you the in the paper that same age step model. So it's little axes are flipped around a little bit, but this is the original from from that steel like paper, which, again, the purpose was to once
+
+01:53:36.000 --> 01:53:50.000
+and for all set a chronology for the, the Minnesota pollen chronology history. And so this is you know, way back in the early 2000s lots and lots of radiocarbon dates.
+
+01:53:50.000 --> 01:54:10.000
+And you can see that the way that each radiocarbon date is presented is as a calibrated date with just straight arrow bars right a little TIE Fighter thing and it doesn't capture that probability distribution function of the different possible ages.
+
+01:54:10.000 --> 01:54:26.000
+This is modeled as a lowest model. And so it looks very smooth, but you can see that say in between. to David horizons. It represents the uncertainty as essentially zero.
+
+01:54:26.000 --> 01:54:33.000
+Right. And so, if you had say a pollen transition in between two of these data horizons.
+
+01:54:33.000 --> 01:54:49.000
+You would be presented as knowing that date very well, but it actually doesn't so I've done a little back when I started working with bacon. About a decade ago did a little head and Agu poster, where I compared say a bacon model to this model and how
+
+01:54:49.000 --> 01:55:02.000
+that would change the pollen transitions in in the Minnesota pollen record. So it's, it's interesting and you can see that there are a few dates that are excluded, that they excluded our priority, there a couple slumps.
+
+01:55:02.000 --> 01:55:20.000
+There are a couple slumps. It's just an interesting comparison of sort of the best you could do pre bacon and the different kinds of assumptions that that people make, and especially that presentation of uncertainty, where, you know, the whole idea was
+
+01:55:20.000 --> 01:55:29.000
+to improve the chronology, but there are still places where there's a lot of uncertainty that's not really shown.
+
+01:55:29.000 --> 01:55:33.000
+And we've got an enormous scatter at the bottom as well.
+
+01:55:33.000 --> 01:55:35.000
+For the scanner.
+
+01:55:35.000 --> 01:55:51.000
+Yep. And that's all that is the trash layer. So something that happens very much in Minnesota and probably some other places where you have at the end of the place to see and and you have still wasting ice sitting on the landscape and you actually have
+
+01:55:51.000 --> 01:55:56.000
+lakes and forests, developing on top of that, glacier.
+
+01:55:56.000 --> 01:56:11.000
+And so when the glacier finally melts you have this weird, you know you have the stuff under the glacier, getting mixed with essentially a New Forest, and that's that layer is just has a whole bunch of, you know, the trash layer.
+
+01:56:11.000 --> 01:56:14.000
+And so that's where that scatter comes from.
+
+01:56:14.000 --> 01:56:27.000
+I'm really interesting Corps, too, because the their Barb's anyway, it's, it's all interesting. So What other questions do people have Have you been trying to run.
+
+01:56:27.000 --> 01:56:45.000
+Anything that you you're having trouble with. Have you run your own data and, you know, been disappointed that your uncertainties look a lot bigger because the example, the MSP to K cor has, you know more dates than anybody should should really have it's
+
+01:56:45.000 --> 01:56:52.000
+always a little disappointing to see the big balloons in our own data. But one of the questions.
+
+01:56:52.000 --> 01:56:54.000
+If.
+
+01:56:54.000 --> 01:57:15.000
+So What other questions do people have about, about bacon or club I know this is a lot, but hopefully the tutorials are helpful, but you may be getting stuck in just little places where like, like trends question about this column headings are a problem
+
+01:57:15.000 --> 01:57:25.000
+so there are little places that you can get stuck that are very frustrating but.
+
+01:57:25.000 --> 01:57:30.000
+Oh, how can how can Randy interrupt a run that goes too long. Is there a break.
+
+01:57:30.000 --> 01:57:41.000
+You can't know, because we haven't in the psycho that underlies that does the actual mC mC hasn't got an interrupt code.
+
+01:57:41.000 --> 01:57:58.000
+And I'm glad you asked. So that makes me gives me stronger, a stronger case for my mescaline to actually implement that. So, yes, thank you
+
+01:57:58.000 --> 01:57:58.000
+wish you'd known needs to us, but I think we do need that.
+
+01:57:58.000 --> 01:58:05.000
+No one needs to have, but I think we do need that. I think we did that.
+
+01:58:05.000 --> 01:58:10.000
+And how do you save results without exiting the program.
+
+01:58:10.000 --> 01:58:20.000
+How do you mean show shoulder well the results actually saved in files. So, output file, and all the settings are saved.
+
+01:58:20.000 --> 01:58:32.000
+So next time you come back to your, your run, you can simply go to run again. And then you should have all the data available again.
+
+01:58:32.000 --> 01:58:45.000
+So there's no need no real need to shave yourselves, but you can always at the end of your bacon, or your hour session you can always quits the session and save the data.
+
+01:58:45.000 --> 01:58:47.000
+So save your session and it's always a good thing to do.
+
+01:58:47.000 --> 01:58:53.000
+And then when you come back you'll have the sum of the data still, still there.
+
+01:58:53.000 --> 01:58:59.000
+Right. And that's sort of the commands where you you're exciting in it asks if you want to save workspace image.
+
+01:58:59.000 --> 01:59:14.000
+And so that's that's like everything that you put in that command line, but you could just copy and paste that as well if you wanted to, you know, be sure that you have it before you quit and other commands that I finally, we go ahead.
+
+01:59:14.000 --> 01:59:15.000
+No, go ahead.
+
+01:59:15.000 --> 01:59:22.000
+I was just gonna say another command that I find useful sometimes when I've been running bacon for a while is that I think it's bacon cleanup.
+
+01:59:22.000 --> 01:59:29.000
+Yeah, which just kind of clears everything so sometimes they can just get a little confused.
+
+01:59:29.000 --> 01:59:41.000
+Especially if you for example you've run a core, and then you like, Oh no, actually depth data is not a debt, debt, or you actually added some data or removed from the eggs and bacon can sometimes get confused.
+
+01:59:41.000 --> 02:00:00.000
+So if you've done something like that like adding some different depths, and just call bacon cleaned up and build them, remove all the information that knows it has other runs it has done, and as assumptions, it has made for that core, that is in memory.
+
+02:00:00.000 --> 02:00:13.000
+And then you can run it again in the field and read the data, all cleanly and Martin is it, is it capital B bacon cleanup or lowercase, I think.
+
+02:00:13.000 --> 02:00:16.000
+Bacon the cleanup so it is.
+
+02:00:16.000 --> 02:00:24.000
+Hey, They come clean.
+
+02:00:24.000 --> 02:00:31.000
+Right, I forgot the parentheses.
+
+02:00:31.000 --> 02:00:37.000
+Does anybody want to share a some of their data with us.
+
+02:00:37.000 --> 02:00:45.000
+Oh, and this message pops up after running my data Megan warning only 20% of candidates overlap with HTML.
+
+02:00:45.000 --> 02:01:15.000
+How concerned seem to be about this message, could you perhaps share your results, share your screen, because it probably means that the debt and many of the days are simply not fit in with the model, so of course you need to be a bad run.
+
+02:01:15.000 --> 02:01:30.000
+2345 678-912-3459 days fits and to outlying.
+
+02:01:30.000 --> 02:01:48.000
+Not sure why it would say that only 2017 or 27.
+
+02:01:48.000 --> 02:01:56.000
+Okay, I'm not sure why she changed 27 looks like it looks larger to me than that.
+
+02:01:56.000 --> 02:02:16.000
+Because you have sent me to the CSV file under Settings, the commands you have been giving them, I can run out to see what values I got.
+
+02:02:16.000 --> 02:02:29.000
+This is great. One of the great things about Martin and bacon and plum is that all of your questionable stuff goes into improvements.
+
+02:02:29.000 --> 02:02:34.000
+Okay, Martin Do you see the other one in the, in the chat, or we utilize.
+
+02:02:34.000 --> 02:02:36.000
+Yeah, good.
+
+02:02:36.000 --> 02:02:45.000
+Oh sorry, are encouraged to use lead flow, instead of bacon when we have primarily lead to 10 days since will be avoiding the double modeling from zero.
+
+02:02:45.000 --> 02:02:55.000
+Yes, please. Yes, so glum.
+
+02:02:55.000 --> 02:03:00.000
+We could have chosen any other type we could have used clam or be chrome or obstacle.
+
+02:03:00.000 --> 02:03:10.000
+But for some reason, because, Well, all of us together we have made bacon. So, that's why. One of the reasons that we use bacon.
+
+02:03:10.000 --> 02:03:21.000
+And so if you have a married let primarily lead to 10 dates, I would certainly use plum. Of course you can't enter lead to 10 dates, the data themselves.
+
+02:03:21.000 --> 02:03:28.000
+The pure data, real data into bacon so you should use plan anyway because actually the same.
+
+02:03:28.000 --> 02:03:46.000
+If you install plum, or our plum, it actually also installs bacon and it uses the bacon approach is an exact same code as bacon shows just a subset of bacon.
+
+02:03:46.000 --> 02:03:51.000
+Okay.
+
+02:03:51.000 --> 02:03:55.000
+Is there a blonde joke.
+
+02:03:55.000 --> 02:03:59.000
+Oh, it just the way it's called why it's plum.
+
+02:03:59.000 --> 02:04:08.000
+Oh, promo, which is Spanish for lead. And
+
+02:04:08.000 --> 02:04:10.000
+it's very clever.
+
+02:04:10.000 --> 02:04:18.000
+And there's also if you are vegan or vegetarian, you don't have to use bacon. You can also use duffel.
+
+02:04:18.000 --> 02:04:28.000
+I that cracked me up so much, so you can do you can do anything instead of instead of the bacon command you can use tofu anywhere. Yeah, yeah.
+
+02:04:28.000 --> 02:04:41.000
+I don't have to clean up or tofu that he just runs fine.
+
+02:04:41.000 --> 02:04:51.000
+What else great questions we love the questions. Others anybody else want to share a model that they've run that they think has worked well poorly yeah Jamila, Awesome.
+
+02:04:51.000 --> 02:04:58.000
+You should have be able to share your screen
+
+02:04:58.000 --> 02:05:01.000
+and Martin Do you have to capitalize tofu.
+
+02:05:01.000 --> 02:05:04.000
+Nope, lowercase.
+
+02:05:04.000 --> 02:05:06.000
+Don't know why.
+
+02:05:06.000 --> 02:05:15.000
+Didn't think Oh What an interesting model what can you. What can you tell us about this model.
+
+02:05:15.000 --> 02:05:24.000
+So this is on the lake I'm working on for my PhD dissertation there's the gold lake in Milan with National Forest.
+
+02:05:24.000 --> 02:05:32.000
+So this one has me. Good. where is
+
+02:05:32.000 --> 02:05:35.000
+it.
+
+02:05:35.000 --> 02:05:55.000
+So this one has like 12 radiocarbon dates with the was counting so the center one over here. This one is the Muslim eruption we had and we were able to get 78 centimeter of Musoma tetra and optimism from like there is like two, two meter of the whole
+
+02:05:55.000 --> 02:06:11.000
+is, which has finally, which has very fine limitations so we were able to count like 660 Wars over the two meter and we were able to get like three carbon dates in this particular area.
+
+02:06:11.000 --> 02:06:21.000
+And those carbon dates and the words counting words like they fit really well with each other, which is confirming. They were the worst counting, we did was correct.
+
+02:06:21.000 --> 02:06:26.000
+So, and go.
+
+02:06:26.000 --> 02:06:40.000
+yeah, that's interesting because, well, because in most cases if you have what you know is the relative time that has passed between different depths.
+
+02:06:40.000 --> 02:06:47.000
+But you do not know, in many cases, when it happened, but you know in this case because you have a separate layer.
+
+02:06:47.000 --> 02:07:02.000
+That's pretty good. And then you have additional confirmation that direct from the ready Calvin dates, yeah exactly like there were three dates, three different apps where are we took the carbon dates and they like pretty like that fit really well with
+
+02:07:02.000 --> 02:07:16.000
+with each other and these, the wharf counting was done by myself and my advisor Dan Gavin, so it's kind of two researchers they counted those independently so confirming as well.
+
+02:07:16.000 --> 02:07:31.000
+Yeah. Excellent. Yeah. So, one, one thing I would like to work on in future years is to include virus comes that will be floating, for example, still have no idea how will be able to do that innovation framework or thing it's fascinating and this is a
+
+02:07:31.000 --> 02:07:39.000
+really really good case because you have to, to, to, to anchor it,
+
+02:07:39.000 --> 02:07:43.000
+and how well do you know the age of the different layer.
+
+02:07:43.000 --> 02:07:49.000
+So the age of careful there we use the one I think this was.
+
+02:07:49.000 --> 02:07:53.000
+I think the paper that came out recently.
+
+02:07:53.000 --> 02:07:57.000
+Dean, what was the pepper, it is can you get the system.
+
+02:07:57.000 --> 02:08:17.000
+Oh I forget the name on the paper but it was a it was a beat Kron approach to aging them as for using a whole bunch of dates and as upper limit and lower limiting ages of a tetra, and they, they got it down to a like plus or minus 25 to 30, years, and
+
+02:08:17.000 --> 02:08:27.000
+I think Jamila, I remember right that's what we used for the uncertainty on the valve counts, with certainty on the tetra.
+
+02:08:27.000 --> 02:08:41.000
+Yeah, so that yeah so so in an ideal case in a few decades in future. There might be a model or approach where that type of information can be part of the modeling process.
+
+02:08:41.000 --> 02:08:56.000
+Now, because now the agent certainty of that effort is given as a date, and recalibrated each year. Yes. Uh huh. And then the
+
+02:08:56.000 --> 02:09:13.000
+diverse grounds are given as, collaborative data as well, but what effect is you have is you have a different layer and uncertainty and then relative to that you have your vast columns, which should be it should be a different type of error if it makes
+
+02:09:13.000 --> 02:09:25.000
+sense. Yeah, yeah. This is the best you can do is we just punted yeah we just said use the use the same error as the tougher, huh. Yeah. Yeah.
+
+02:09:25.000 --> 02:09:28.000
+but it will be something.
+
+02:09:28.000 --> 02:09:47.000
+And then how many we do put out an age in for every virus. Of course we did like every 10 centimeters. And that's arbitrary to Yes, and indeed if you would add one for every year you would end up with hundreds of thousands of dates and begun really happy
+
+02:09:47.000 --> 02:09:52.000
+and just go through them. But there's yeah some sort of.
+
+02:09:52.000 --> 02:10:00.000
+Yeah, an arbitrary number that you should put in and that's a set set yeah
+
+02:10:00.000 --> 02:10:08.000
+yeah I don't know how many verses This is sometimes similar sometimes people use bacon to do, and tuning.
+
+02:10:08.000 --> 02:10:19.000
+So there's a record and written, where people line two and they find that a few tuning points, I must have I don't like tuning but don't get me started on that.
+
+02:10:19.000 --> 02:10:28.000
+But then how many tuning points he used to 10 100,000 and, yeah, the more you Yeah, the more you include.
+
+02:10:28.000 --> 02:10:51.000
+Perhaps the more precise your age, most likely to look, but it's not necessarily true. So yeah just yet. Yeah, a balance between how much, how many data points you enter quite similar to that have led to 10 dating and using the CRS model.
+
+02:10:51.000 --> 02:11:00.000
+We also did some similar some some tests of using CRS model in adding it to bacon of a simulated core and.
+
+02:11:00.000 --> 02:11:16.000
+And if you use all the CRS data points as individual dates, the model was quite wrong, but if you take away half and then have fewer data points for bacon to get confused by or us, then it actually got closer to the truth will cost us more freedom for
+
+02:11:16.000 --> 02:11:21.000
+bacon to move around
+
+02:11:21.000 --> 02:11:24.000
+so interesting. Thanks.
+
+02:11:24.000 --> 02:11:31.000
+Yeah, thank you for sharing that one that's a that's a really cool example that anchoring of our floating bar chronology.
+
+02:11:31.000 --> 02:11:45.000
+And it does as I put in the chat it, it reflects like how that sedimentation rate changes after the Musonda which fertilizes, you know, which not only you have the ash washing off the landscape for, you know, quite a while, which is something we had in
+
+02:11:45.000 --> 02:11:50.000
+the Messiah, in our Glacier National Park course.
+
+02:11:50.000 --> 02:12:05.000
+So that contribution of ash over time, but also potentially fertilization with phosphorus and night, and silicon, that are coming from the ash. So if you're limited in that you can have higher productivity.
+
+02:12:05.000 --> 02:12:10.000
+After the masala as well. After a tetra.
+
+02:12:10.000 --> 02:12:12.000
+Good stuff.
+
+02:12:12.000 --> 02:12:22.000
+Other questions I also put a link in in the chat for Martin's, if you want to get him started, you want to read about tuning.
+
+02:12:22.000 --> 02:12:28.000
+You could read that, that really good paper chance. So,
+
+02:12:28.000 --> 02:12:31.000
+good lessons.
+
+02:12:31.000 --> 02:12:37.000
+Any other data that we want to you want to share.
+
+02:12:37.000 --> 02:12:47.000
+Of course,
+
+02:12:47.000 --> 02:12:54.000
+any other basic or very complicated questions about bacon plum radiocarbon
+
+02:12:54.000 --> 02:13:00.000
+chronology extrapolation interpolation uncertainty.
+
+02:13:00.000 --> 02:13:05.000
+Oh we did have one question that I skipped in the chat is about compaction.
+
+02:13:05.000 --> 02:13:09.000
+So loss of water.
+
+02:13:09.000 --> 02:13:17.000
+In, so is is compaction a factor at all in these models.
+
+02:13:17.000 --> 02:13:31.000
+Well, for us in depth. And so you have to watch this very surface, you would have different apparent accumulation rates, if you if you're if you have lots of water in your sediment there.
+
+02:13:31.000 --> 02:13:46.000
+So there you would want to for from very sites very close to your surface you might want to adapt your prior to accommodate for that's not for the complexion, or a non complexion.
+
+02:13:46.000 --> 02:13:58.000
+And you also might want to replace depths with accumulated mass, but I will be quite a bit of work, perhaps, but that would, would perhaps get rid of some of that.
+
+02:13:58.000 --> 02:14:01.000
+And problem of compaction.
+
+02:14:01.000 --> 02:14:22.000
+But then you're replacing one problem of with another problem of that you get your mass estimates, right, which shouldn't be too much a phone but I I grew up as a beta ecologist in Amsterdam, with using depth, and not accumulated mass and that's what
+
+02:14:22.000 --> 02:14:36.000
+my brain. But I know that the lead to 10 community users accumulated mass. So, can also be used, but we tend to use depth for these.
+
+02:14:36.000 --> 02:14:49.000
+These models, except for plum by you indeed need to enter your masters Well, I hope that answers the question more or less.
+
+02:14:49.000 --> 02:14:57.000
+Yeah, it's a tough one. There is some point after which, you know, in a industry regular core that's not you know say a lake sediment core from the whole scene.
+
+02:14:57.000 --> 02:15:15.000
+That's not under a ton of pressure or hasn't been you know squeezed by hundreds of meters on top of it. I think there is some, you know, there's a surface it's 100% water, and then it decreases over some depth maybe the top meter to whatever it ends up
+
+02:15:15.000 --> 02:15:28.000
+being 70 80% water, something like that but then it's relatively constant below that, but of course changes with the, with the characteristics of the sediment the amount of organic matter, the grain size, things like that.
+
+02:15:28.000 --> 02:15:43.000
+So it's, it turns out to be somewhat complicated but yeah the difference between linear sedimentation rate and mass accumulation rate is kind of at the at the heart of that and it led to 10 gets into that a lot where you have to have the water content
+
+02:15:43.000 --> 02:15:46.000
+and the bulk density, Dr both density of the sentiment.
+
+02:15:46.000 --> 02:15:50.000
+Yeah. and if you have data.
+
+02:15:50.000 --> 02:15:55.000
+So sufficient lead to 10 data, or perhaps possible Murti carbon data.
+
+02:15:55.000 --> 02:16:03.000
+bacon should be able to capture any changes and accumulation as they take place. Shoot.
+
+02:16:03.000 --> 02:16:27.000
+Just enough data. Yeah, that's a good point that it that it. Um, yeah it's sort of washes out in the linear sedimentation.
+
+02:16:27.000 --> 02:16:42.000
+anything else.
+
+02:16:42.000 --> 02:16:50.000
+My zoom is getting very lucky again. Yeah, come see the new messages.
+
+02:16:50.000 --> 02:16:56.000
+Nope, I think, I think we're good we're getting some thank yous and some examples.
+
+02:16:56.000 --> 02:17:11.000
+And so I think we'll wind it up. Remember that these recordings are available. Martin's materials are available to you and tutorials and there's kind of more every day, especially on plum.
+
+02:17:11.000 --> 02:17:22.000
+As it is, you know, continuing to be developed and refined and improved, both the model and the usability of of the package. So stay tuned.
+
+02:17:22.000 --> 02:17:26.000
+And please fill out our surveys.
+
+02:17:26.000 --> 02:17:30.000
+After all, after this.
+
+02:17:30.000 --> 02:17:37.000
+And please keep the questions and remarks, coming course Yeah, the more we gets about.
+
+02:17:37.000 --> 02:17:50.000
+Yeah, festival ways to me saying to update our code to make it better. Yeah.
+
+02:17:50.000 --> 02:17:52.000
+Yeah.
+
+02:17:52.000 --> 02:17:53.000
+Yeah.
+
+02:17:53.000 --> 02:18:05.000
+The first email I ever sent to Martin after, after a short course, he responded with up, I love bug reports. So that's, that's kind of what you're dealing with.
+
+02:18:05.000 --> 02:18:06.000
+So thank you.
+
+02:18:06.000 --> 02:18:27.000
+Thanks everybody. And thanks to GSA for providing the foundation for this and for any of you who are actually going to be in Portland, maybe we'll see you there I will be there so I'm going to start to mask the 10th 10th of October.
+
+02:18:27.000 --> 02:18:42.000
+see might be might be not too many people but a lot of remote participation. Excellent. Yep, absolutely. Okay, thanks everybody the recordings recording will be linked on martin session three page.
+
+02:18:42.000 --> 02:19:07.000
+At some point, this afternoon.
+

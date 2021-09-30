@@ -7,11 +7,16 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-This page contains the R code that will be ran in the third and final session of the GSA Short Course on age-modeling - part 3 on running Bacon, Plum and your own cores.
+This page contains the R code that was used in the third and final session of the GSA Short Course on age-modeling - part 3 on running Bacon, Plum and your own cores.
 
 The presentation slides of this session can be downloaded from these links: [.odp](./3_BaconPlum.odp) or [.pptx](./3_BaconPlum.pptx).
 
 The .Rmd script is here: [session 3](session_3.Rmd).
+
+The streamed session is available here:<br>
+[video on youtube](https://youtu.be/SpLpndpLKrI){target="_blank"}<br>
+[chats](session3/session_3.txt){target="_blank"}<br>
+[transcript](session3/session_3.vtt){target="_blank"}<br>
 
 The first slides which we could reproduce here were done using the R package `rbacon`. Assuming you have it installed already (see [here](intro.html)), then you simply need to load the code:
 
