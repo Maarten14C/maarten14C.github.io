@@ -1,0 +1,25 @@
+I have to leave half way through each session. Not such a big barrier though. I can simply watch the video (thanks Amy!) and walk through the steps later on my own.
+
+Thank you Maarten for an excellent review of the radiocarbon system and calibration process. Along with the information on using R for calibration, this was really useful!
+
+Is is possible to provide .txt or r-markdown document that contain R codes that you use during the lectures? So we can keep it for the future when we will run the calibration to our own data. Thanks!
+
+Minior problem.  Emailed Maarten directly with a question.
+
+Flipping between R, the presentation, and the open ppt presentation (to make notes).  This is not an organizers' issue!
+
+Got a good conceptual understanding of Bayesian stats.
+
+Figuring out the smaller ins and outs of Bacon and how to best model my data.
+
+Today seem to go a little too fast for my understanding. I am still building up my stats knowledge. Thank you for sharing the additional resources, that is a tremendous help.
+
+How do you account for reservoir correction in marine records while using Bacon?	I need more resources to better understand MCMC and bootstrapping, and I would welcome any recommended resources.	I am really looking forward to plotting my own data and hope it helps me understand the process better.
+
+I am dissatisfied with the answer given regarding the graphs on top of the RBacon output.
+
+If the graphs at the top of the RBacon don’t indicate the quality of the model, then why are they provided?  From what I understand of graphs, they simply compare the priors to the modeled output, but the modeled output is what matters.  If true, then why provide any priors at all?  And I don’t understand the concept of “memory”.
+
+Receiving adequate explanations of the basics of RBacon as they relate to the model results.
+
+I strongly suspect that most of the people in the course are interested in obtaining the best possible model results for use in their research.  Not the different commands to give Bacon to obtain assorted data that is of little or no value to the age-depth model.

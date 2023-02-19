@@ -1,0 +1,53 @@
+00:04:19	Shannon Mahan:	poll is gone
+00:04:24	Priscilla Martinez (she/her):	No
+00:04:28	Shannon Mahan:	no poll
+00:05:29	Chantel Saban:	YES!
+00:06:01	lisa boush:	I think Maarten’s cat is a radiocarbon fan!
+00:06:29	Jason Price:	Cats are smart!
+00:14:19	Amy Myrbo (she/her) - Amiable Consulting:	also, oxidation of dissolved organic carbon (DOC) that enters the lake affects the apparent age of the dissolved inorganic carbon (DIC)
+00:15:38	Amy Myrbo (she/her) - Amiable Consulting:	Lakes are typically out of equilibrium with the atmosphere wrt CO2. They are usually oversaturated, so that they emit CO2 to the atmosphere.
+00:16:32	Amy Myrbo (she/her) - Amiable Consulting:	And no, the names of those labs are not shared.
+00:19:06	Maryann Malinconico:	For charcoal, is there any unequal partitioning of C isotopes between Carbon burned off and the Carbon left behind?
+00:20:57	Maryann Malinconico:	Thanks for the answer!
+00:22:07	David Grimley:	Can we use large mass of sample, for older ages, to help alleviate the contamination issue ?
+00:22:59	Amy Myrbo (she/her) - Amiable Consulting:	David: yes! Larger samples will be less affected by contamination.
+00:23:30	Chantel Saban:	I can't get this one to plot
+00:23:55	Chantel Saban:	never mind!
+00:25:12	Amy Myrbo (she/her) - Amiable Consulting:	I think that this is the most important plot to understand!
+00:27:38	Tuma Kamulali:	What is the standard amount of sediment sample that should be submitted to an AMS lab for bulk organic matter C14 dating? eg for Lake Tanganyika?
+00:28:05	Amy Myrbo (she/her) - Amiable Consulting:	1 mg of C is often cited as a minimum, but labs can date much less!
+00:29:21	Amy Myrbo (she/her) - Amiable Consulting:	Typical organic matter (even charcoal) is about half C by mass, so you can calculate about how much C you have from your sample mass.
+00:30:20	Amy Myrbo (she/her) - Amiable Consulting:	More is better!  Better counting statistics (lower uncertainty in the lab results), and less affected by contamination.
+00:31:01	Amy Myrbo (she/her) - Amiable Consulting:	And in some cases if you have a very large sample, a lab can split it in half and date it twice, for their internal replicability (and two dates for you is better, even though they are the same!).
+00:33:20	Amy Myrbo (she/her) - Amiable Consulting:	(dry mass of course!)
+00:34:50	Tuma Kamulali:	Thanks Amy
+00:43:16	Amy Myrbo (she/her) - Amiable Consulting:	When I did this on paper in 2010 it blew my mind and I finally understood radiocarbon calibration.
+00:43:55	Chantel Saban:	OMG!! THAT's RAD!!
+00:44:02	Amy Myrbo (she/her) - Amiable Consulting:	RIGHT?!
+00:44:20	Amy Myrbo (she/her) - Amiable Consulting:	And that's why calibrated radiocarbon dates are those weird little shapes.
+00:44:46	Amy Myrbo (she/her) - Amiable Consulting:	And the probability distribution functions can even be discontinuous!
+00:45:02	Christina Tenison:	what are rounding conventions for the 1 sigma error from the age provided from the lab? The lab I get ages from will have an age +/- 18 for example instead of rounding it. Do I round to the nearest 5 yrs for uncertainty before calibrating?
+00:46:01	Amy Myrbo (she/her) - Amiable Consulting:	No need to round.
+00:46:16	Amy Myrbo (she/her) - Amiable Consulting:	If they are really that accurate!!!
+00:47:34	Amy Myrbo (she/her) - Amiable Consulting:	Highest posterior density
+00:47:40	Christina Tenison:	thanks!
+00:52:11	Amy Myrbo (she/her) - Amiable Consulting:	I love Maarten's animations.  They are all available on his github page: https://maarten14c.github.io
+00:52:16	lisa boush:	Amy will be sending around a short post-session survey. PLEASE fill it out so we can respond to your feedback for Session 2
+00:52:35	Amy Myrbo (she/her) - Amiable Consulting:	👍
+00:55:51	Elizabeth J Davis:	@Christina You can add uncertainty (added variance) to lab errors to account for additional sources of error (like in sampling, etc.) that are not accounted for in the lab errors. I’m not sure if this is common, but there is a formula for calculating added variance at this webpage: https://www2.whoi.edu/site/nosams/client-services/radiocarbon-data-calculations/
+00:55:58	Amy Myrbo (she/her) - Amiable Consulting:	https://docs.google.com/forms/d/e/1FAIpQLSd7-V1dfQXw6CV9IBD0qeQiT65Kk_t9uMH6ifUmMC9ayi_8Xw/viewform
+00:56:46	Christina Tenison:	excellent thanks Elizabeth!
+00:57:49	Amy Myrbo (she/her) - Amiable Consulting:	https://docs.google.com/forms/d/e/1FAIpQLSd7-V1dfQXw6CV9IBD0qeQiT65Kk_t9uMH6ifUmMC9ayi_8Xw/viewform
+00:58:01	Michelle Nelson - USU Luminescence Lab:	Thank you!!
+00:58:05	Alexie Millikin (she/her):	Thanks!
+00:58:06	Nicole Lapeyrouse:	THANK YOU!!!
+00:58:09	Jeremiah:	Thank you!
+00:58:13	Christina Tenison:	thank you!!
+00:58:16	Jamila Baig:	Thank you
+00:58:21	Cale Gushulak:	Thank you Maarten
+00:58:22	Edward Duarte Martinez:	Thank you!
+00:58:26	Chantel Saban:	Thank you all!
+00:58:26	nkehrwald:	Thank you!
+00:58:27	Claudia Cozadd:	Thank you!
+00:58:32	Maryann Malinconico:	thanks
+00:58:35	Jill Coleman Wasik (she/her):	Thank you!

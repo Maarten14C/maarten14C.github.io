@@ -1,0 +1,118 @@
+00:33:51	lisa boush:	EarthRates is excited to support traditionally underrepresented Geoscience Students participating (virtually/in-person) in the GSA meeting 10/10-10/13. Complete the short application below by Friday October 1st for consideration.
+
+https://forms.gle/AveP9VcERfRgedsM7
+00:36:05	Michelle Nelson - USU Luminescence Lab:	either works for me!
+00:36:05	Jill Coleman Wasik:	Either is fine for me
+00:36:06	Shannon Mahan:	arrow
+00:36:10	Amy Myrbo (she/her) - Amiable Consulting:	Haha I complained about it
+00:36:19	Maryann Malinconico:	Doesn’t matter to me
+00:36:35	Amy Myrbo (she/her) - Amiable Consulting:	It gives me anxiety because it looks like something is perpetually sloooowly loading
+00:36:50	Amy Myrbo (she/her) - Amiable Consulting:	(Probably a personal problem)
+00:36:57	Shannon Mahan:	If we were cats we would prefer the red dot sliding crazily around the slide. It would keep our attention
+00:45:44	James:	How would you check the .out file?
+00:46:09	Amy Myrbo (she/her) - Amiable Consulting:	@James, you can open it in a text editor I believe.
+01:01:26	Amy Myrbo (she/her) - Amiable Consulting:	If that mill construction had a sedimentary signal, like an erosion silt layer, that would be one way to connect it to an age in a core.
+01:02:41	Amy Myrbo (she/her) - Amiable Consulting:	I should credit the CALIB program for that nice image I showed.
+01:06:05	Dan Gavin:	There is probably much more variability...
+01:06:33	Amy Myrbo (she/her) - Amiable Consulting:	Turkey bacon?
+01:07:15	Jonathan Obrist:	Too funny!!! Don't fall of the vegetarian wagon Amy!!!!
+01:08:22	Amy Myrbo (she/her) - Amiable Consulting:	That's Facon
+01:09:36	Amy Myrbo (she/her) - Amiable Consulting:	And those of you who work in very recent times (neo-paleolimnology) know that human-impacted sedimentation rates can be quite high and variable!
+01:11:25	Amy Myrbo (she/her) - Amiable Consulting:	Maarten has a nice animation illustrating the point he made a few minutes ago about sedimentation rates over time, the elbows, dates, and interpolation: https://chrono.qub.ac.uk/blaauw/wiggles/agemodel.html
+01:14:25	Amy Myrbo (she/her) - Amiable Consulting:	I think it's useful to think about what your core looks like (boring? highly variable?) and what the surrounding landscape looks like (flat? flashy? human-impacted?) when you think about the memory setting. Do you expect that there would be high variability in accumulation rate over time, or not?
+01:15:35	Amy Myrbo (she/her) - Amiable Consulting:	My lakes are usually more like 10 yr/cm, because they usually have carbonate in addition to diatoms, organic matter, and siliciclastics.
+01:16:48	Amy Myrbo (she/her) - Amiable Consulting:	Yes, and you can change it either in the command line or in the priors file.
+01:20:26	Amy Myrbo (she/her) - Amiable Consulting:	A lot less organic matter in Mars lakes tho
+01:20:42	Randy Calcote:	seems like an absurd assumption
+01:21:12	Amy Myrbo (she/her) - Amiable Consulting:	😯😯🙀
+01:25:48	Amy Myrbo (she/her) - Amiable Consulting:	Reminder that the code is here: https://maarten14c.github.io/GSA_agemodeling/session_3.html
+01:28:45	Amy Myrbo (she/her) - Amiable Consulting:	Another case where context is very important! Maybe the sed rate is actually much lower in the early Holocene.
+01:33:34	Maarten Blaauw:	going to quickly log out an in again to solve the lag problem which I keep having
+01:35:23	Greg:	Hopefully this question is not too much into the weeds, in this and previous slide, Bacon bypasses the younger ages between 50-125 m depth.  Could these younger dates be indicating that older dates at these levels are in fact old?  Is this prior knowledge that should have been thought of before modelling, or do you just accept Bacons model that the young ages are outliers?
+01:35:58	Amy Myrbo (she/her) - Amiable Consulting:	@Greg I think Maarten is approaching this question.
+01:38:16	Amy Myrbo (she/her) - Amiable Consulting:	@Greg I hope I somewhat articulated your q.
+01:38:57	Greg:	Older dates can be reworked organics and less representative of event of interest.
+01:39:17	Amy Myrbo (she/her) - Amiable Consulting:	Absolutely. And dates can appear younger because of contamination!
+01:39:23	Michelle Nelson - USU Luminescence Lab:	Seems like you need another sample or two in the 140 cm range, that's right at the crux of model.
+01:39:53	Amy Myrbo (she/her) - Amiable Consulting:	@Michelle yes! And that might even complicate things more . . .
+01:45:43	Amy Myrbo (she/her) - Amiable Consulting:	One of Maarten's previous recommendations was to first try a thickness of about 50 cm, to play with the model, and then reduce that thickness until the model is suitably smooth.
+01:46:00	Nancy Bigelow:	Though a thick of 5 cm on the Steel dataset took forever to run . . . .
+01:46:49	Amy Myrbo (she/her) - Amiable Consulting:	Yes, a 10 m core at 5 cm is very slow!
+01:47:05	Amy Myrbo (she/her) - Amiable Consulting:	Another good reason to start with something very thick like 50 cm.
+01:49:39	Amy Myrbo (she/her) - Amiable Consulting:	You want to see a sausage
+01:50:20	Michelle Nelson - USU Luminescence Lab:	The one on the left looks more smooth tho
+01:51:24	Amy Myrbo (she/her) - Amiable Consulting:	@Michelle indeed, but the model also doesn't fit the dates very well.
+01:53:08	Michelle Nelson - USU Luminescence Lab:	Ah yes, it's not sausage like, thanks!
+01:54:00	Nancy Bigelow:	Amy---can you explain the other headers in your datasets?  Or maybe Maarten will?
+01:54:11	Amy Myrbo (she/her) - Amiable Consulting:	Happening!
+01:54:43	Amy Myrbo (she/her) - Amiable Consulting:	Zero because we were working with terrestrial organic matter.
+01:55:47	Amy Myrbo (she/her) - Amiable Consulting:	But would use a reservoir effect if you knew the radiocarbon age of your water and were dating aquatic carbonate or aquatic organic matter.
+01:56:04	Melissa:	Paper or info recommended on how to account for reservoir effects?
+01:59:25	Amy Myrbo (she/her) - Amiable Consulting:	This is a good paper on lacustrine reservoir: https://journals.uair.arizona.edu/index.php/radiocarbon/article/viewFile/3016/2774
+02:00:11	Michelle Nelson - USU Luminescence Lab:	yes
+02:00:11	Melissa:	Thank you!
+02:00:12	Kevin Ng:	Plum would be great!
+02:00:16	Melissa:	Yes to Plum!
+02:00:16	Nancy Bigelow:	Yes!
+02:00:18	James:	Yes
+02:04:56	Amy Myrbo (she/her) - Amiable Consulting:	I had to restart zoom so if anyone sent me direct chat messages in the last couple minutes please resend. Thanks!
+02:05:05	Melissa:	For total lead..from a gamma spec report does this just me the Pb210 measurement?
+02:05:17	Melissa:	Sorry *mean the Pb210
+02:05:32	Nancy Bigelow:	When we get 210Pb results from a lab, they give you age/depth numbers (using a model developed by the lab); can we just plug those into Bacon?
+02:06:43	Amy Myrbo (she/her) - Amiable Consulting:	@Nancy I believe you would use the underlying data - the activities etc., because Plum is making a model itself.
+02:06:59	Amy Myrbo (she/her) - Amiable Consulting:	But I will ask Maarten shortly.
+02:07:55	Nancy Bigelow:	I mean--is it wrong to plug the lab-generated into Bacon, and side step Plumb?
+02:08:34	Nancy Bigelow:	I meant  lab-generated age-depths . . .😀
+02:08:55	Amy Myrbo (she/her) - Amiable Consulting:	There are some issues with the way that the CRS lead-210 model deals with the very lowest / oldest values that makes lead-210 not connect well with calendar dates
+02:09:54	Melissa:	So Ra226 can be used as a ‘background’..what about Pb214?
+02:11:23	Amy Myrbo (she/her) - Amiable Consulting:	LOL
+02:12:27	Dan Gavin:	I always have difficult time estimating the supported Pb value.
+02:13:36	Nancy Bigelow:	Yes--that is a big help!
+02:13:57	Amy Myrbo (she/her) - Amiable Consulting:	So I understand that we are “discouraged” from extending our cores from our last date. In my case, I have a gravity core, which the dates are up to 20-25cm in length. I’d like to extend this to the entire length of the gravity core (40-50cm). Is there a way to do this in rPlum?
+02:14:03	Amy Myrbo (she/her) - Amiable Consulting:	From Kevin Ng
+02:14:25	Nancy Bigelow:	Ooh, I hadn't thought about the independence thing. Excellent!
+02:15:00	Dan Gavin:	Does plum use accumulated dry mass?
+02:15:32	Dan Gavin:	It is important for the CRS model, and bulk density changes so much with depth at the core top.
+02:18:13	Nancy Bigelow:	Can we see an example of a plumb input datasheet?
+02:19:39	Nancy Bigelow:	Thanks--that's excellent.  And Dan--there's the density info . . . .
+02:20:08	Amy Myrbo (she/her) - Amiable Consulting:	Maarten has a new UK funded project with the St Croix Watershed Research Station, which has dated many hundreds of lead-210 cores, where we will look at many many cores along with Plum in order to improve the model and software!
+02:20:52	Dan Gavin:	Thanks!
+02:21:10	lisa boush:	Very excited to see the new development of PLUM
+02:27:13	Randy Calcote:	How can I interrupt a run that goes to long?
+02:27:54	Randy Calcote:	and how do I save results without exiting program?
+02:28:36	Randy Calcote:	Thanks!!!
+02:29:26	lisa boush:	I have to go—thanks to Maarten and Amy for all of their hard work on a great class!  Don’t forget to fill in your surveys!! It really helps us!   See some of you at GSA in Portland!  Safe travels to you if you are attending in person!
+02:29:39	Nancy Bigelow:	Amy, can you type out the bacon cleanup command in the chat?
+02:30:02	Amy Myrbo (she/her) - Amiable Consulting:	Bacon.cleanup
+02:30:11	Maarten Blaauw:	Bacon.cleanup()
+02:30:24	Joshua Barna:	This message pops up after running my data in Bacon:  Warning! Only 27% of the dates overlap with the age-depth model (95% ranges).  How concerned should I be about this message?
+02:32:10	Kevin Ng:	Are we encouraged to utilize Plum instead of Bacon when we have primarily Pb210 dates? Since we would avoid the “double modelling from CRS model” as suggested before?
+02:33:37	Kevin Ng:	Great, thank you!
+02:33:38	Amy Myrbo (she/her) - Amiable Consulting:	And everybody gets the "Plum" joke right?
+02:33:52	Amy Myrbo (she/her) - Amiable Consulting:	Plomo
+02:33:54	Amy Myrbo (she/her) - Amiable Consulting:	Pb
+02:34:38	Jamila Baig:	I can share
+02:34:41	Maryann Malinconico:	Must capitalize “Tofu”?
+02:35:44	Amy Myrbo (she/her) - Amiable Consulting:	VERY COOL
+02:36:04	Amy Myrbo (she/her) - Amiable Consulting:	Floating varve chronology tied to Mazama!  So cool.
+02:36:59	Amy Myrbo (she/her) - Amiable Consulting:	And you can see how the sedimentation rate changes after the Mazama
+02:37:01	Maryann Malinconico:	Is compaction a factor at all in these models?
+02:37:29	Amy Myrbo (she/her) - Amiable Consulting:	High sedimentation rate, and then it slows down.
+02:40:16	Amy Myrbo (she/her) - Amiable Consulting:	Read Maarten's amazing paper "Out of Tune"
+02:40:36	Amy Myrbo (she/her) - Amiable Consulting:	https://d1wqtxts1xzle7.cloudfront.net/31328773/Blaauw_2012_QSR-with-cover-page-v2.pdf?Expires=1632942793&Signature=Su75L4Nl1u6E4QVKw7tw5G6ULyZZmegbsR9-fe1YpTEwNQ439Z~q~Grruy2kG5udwH7yByI8vnARSDTFjB8N0z-C3JOURHnxrWM8j32ahE~tDhQgYfb2QjIdP-2WeMbffugzE~5ixl2bRgKhlvVzSVHxSD8DnULHZKEl5gWTvrBdjHHoBFNc8ZvT4KEOWrrBWXM6miquem0W1eTByOCnwVS5ij3movGvkACfpZAPNaMR6b4rTY8U~OirdZ-yP5ue9wT-igLVZGS8IC~bgLVlEG3g6yPVKS6JZJOZbxj6inSNC6NlRED656p6yARLcmRs0d~DbcQlL8q3SjY7yWjtxg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+02:40:46	Amy Myrbo (she/her) - Amiable Consulting:	Oh gosh that was a big link
+02:40:57	Amy Myrbo (she/her) - Amiable Consulting:	Blaauw, M., 2012. Out of tune: the dangers of aligning proxy archives. Quaternary Science Reviews, 36, pp.38-49.
+02:44:54	Maryann Malinconico:	Thanks for the compaction answer!
+02:45:57	Maryann Malinconico:	I have seen fresh ocean cores, and worked with seeds buried to a few kilometers so a range of compaction and qualifications on sed rate.
+02:46:12	Maryann Malinconico:	Seds not seeds!!!
+02:46:36	Dan Gavin:	Thanks so much!
+02:46:47	David Grimley:	Have to go --- thank you for running this !
+02:46:50	Nancy Bigelow:	Thanks!
+02:47:03	Edward Duarte Martinez:	Thanks so much!
+02:47:11	Monika Ruwaimana:	Thank you!
+02:47:11	Randy Calcote:	Thanks again!
+02:47:14	Christina Tenison:	Thank you for this great course!!
+02:47:14	RISE GSA Lindsey Henslee:	From GSA, thank you for running this short course!
+02:48:00	Jamila Baig:	Thank you so much
+02:48:21	Edward Duarte Martinez:	see you in Portland :)
+02:48:24	Joshua Barna:	Thank you!
