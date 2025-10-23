@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: sans-serif;
+  font-size: 0.9em; /* about 90% of normal size */  
 }
 
 .container {

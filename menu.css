@@ -2,4 +2,5 @@ body {
   background-color: white; /* or #f7f7f7, etc. */
   color: black;
   font-family: sans-serif;
+  font-size: 0.9em; /* about 90% of normal size */  
 }
