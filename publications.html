@@ -1,11 +1,38 @@
 <html>
 <head>
 <LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+
+<style>
+  .oa-lock {
+    width: 1em;
+    height: 1em;
+    fill: #2e7d32;
+  }
+</style>
+
+<script>
+class OALock extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<svg class="oa-lock"><use href="#icon-oa"></use></svg>`;
+  }
+}
+customElements.define('oa-lock', OALock);
+</script>
+
 </head>
 
 <title> Publications Maarten Blaauw </title>
 
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-oa" viewBox="0 0 24 24">
+    <path d="M14 10V8a4 4 0 1 0-8 0h2a2 2 0 1 1 4 0v2H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-3zm-2 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  </symbol>
+</svg>
+
 <h2>Publications</h2>
+
+<oa-lock></oa-lock></a> = Open Access
+<p>
 
 <hr>
 <h3>Scientific publications</h3>
@@ -13,7 +40,8 @@
 126 - <b>Blaauw, M.</b>, Aquino-L&oacute;pez, M.A., Christen, J.A., <i>in press</i>.
 Modelling chronologically ordered radiocarbon dates in R.
 <i>Radiocarbon</i>
-<a target="new" href=http://dx.doi.org/10.1017/RDC.2024.56> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.1017/RDC.2024.56> [link] <oa-lock></oa-lock>
+</a>
 <p>
 
 125 - Roseby, Z.A., Sengupta, T., Ward, S., Vosper, D., <b>Blaauw, M.</b>, Roberts, C.M., Scourse, J.D., <i>in press</i>.
@@ -25,7 +53,7 @@ Vulnerability of blue carbon stocks to disturbance in sediments with low burial 
 124 - Sanchez-Cabeza, J.-A., Aquino-L&oacute;pez, M.A., <b>Blaauw, M.</b>, Ruiz Fernandez, A.C., Jupin, J., Anderson, L., Knight, C.A., Champagne, M.R., Sanderson, N., Goring, S., Christen, J.A., <i>in press</i>. 
 Guidelines for producing integrated <sup>210</sup>Pb and <sup>14</sup>C age-models.
 <i>Earth-Science Reviews</i>
-<a target="new" href=https://doi.org/10.1016/j.earscirev.2025.105301> [link] <b>Open Access</b></a>
+<a target="new" href=https://doi.org/10.1016/j.earscirev.2025.105301> [link] </a>
 <p>	
 
 123 - Anderson, D., <b>Blaauw, M.</b>, 2025.
@@ -38,7 +66,7 @@ The Bloomsbury Handbook of Apocalypticism and Millennialism. Bloomsbury, ISBN 97
 122 - Aquino-L&oacute;pez, M.A., Sanderson, N.K., <b>Blaauw, M.</b>, Sanchez-Cabeza, J.-A., Ruiz-Fern&aacute;ndez, A.C., Christen, J.A., 2025.
 The impact of data reduction on classical and Bayesian <sup>210</sup>Pb dating models.
 <i>Quaternary Geochronology</i> 90, 101687
-<a target="new" href=http://dx.doi.org/10.1016/j.quageo.2025.101687> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.1016/j.quageo.2025.101687> [link] <oa-lock></oa-lock></a>
 <p>
 
 121 - <b>Blaauw, M.</b>, 2025.
@@ -50,19 +78,19 @@ The impact of data reduction on classical and Bayesian <sup>210</sup>Pb dating m
 120 - Crichton, K.A., Anderson, K., Fewster, R.E., Charman, D.J., Garneau, M., V&auml;liranta, M., Mleczko, M., Handley, J.N., Hodson, S., Parker, R.E., Swindles, G.T., <b>Blaauw, M.</b>, Gallego-Sala, A.V, 2025. 
 Satellite data indicates recent Arctic peatland expansion with warming. 
 <i>Communications in Earth & Environment</i> 6, 461
-<a target="new" href=https://doi.org/10.1038/s43247-025-02375-1> [link] <b>Open Access</b></a>
+<a target="new" href=https://doi.org/10.1038/s43247-025-02375-1> [link] <oa-lock></oa-lock></a>
 <p>
 
 119 - Essell, H., Plunkett, G., <b>Blaauw, M.</b>, 2025. 
 Challenges in dating blanket peat and implications for understanding its initiation in Ireland.
 <i>Journal of Quaternary Science</i> 40, 996-1009
-<a target="new" href=https://doi.org/10.1002/jqs.3723> [link] <b>Open Access</b></a>
+<a target="new" href=https://doi.org/10.1002/jqs.3723> [link] <oa-lock></oa-lock></a>
 <p>
 	
 118 - Hatton, D.A., Roe, H.M., Patterson, R.T., Leavitt, P.R., McCann, E.T., McMullin, D.R., Walsh, C.R., Bartlett, S.A., <b>Blaauw, M.</b>, 2025. 
 Assessing the impacts of land-use change and climate variability on cyanobacterial abundance and toxicity in shallow lakes.
 <i>Freshwater Biology</i> 70, e70066
-<a target="new" href=https://doi.org/10.1111/fwb.70066> [link] <b>Open Access</b></a> 
+<a target="new" href=https://doi.org/10.1111/fwb.70066> [link] <oa-lock></oa-lock></a>
 <p>	
 
 117 - Reimer, P.J., <b>Blaauw, M.</b>, Heaton, T.J., Hogg, A.G., 2025.
@@ -75,13 +103,13 @@ Calibration of the radiocarbon (<sup>14</sup>C) record.
 116 - Swindles, G.T., Mullan, D.J., Brannigan, N.T., Fewster, R.E., Sim, T.G., Gallego-Sala, A., <b>Blaauw, M.</b>, Lamentowicz, M., Jassey, V.E.J., Marcicz, K., Green, S.M., Roland, T.P., Loisel, J., Amesbury, M.J., Blundell, A., Chambers, F.M., Charman, D.J., Evans, C.R.C., Feurdean, A., Galloway, J.M., Ga&#322;ka, M., Karofeld, E., Keaveney, E.M., Korhola, A., Lamentowicz, &#321;., Langdon, P., Mauquoy, D., McKeown, M.M., Mitchell, E.A.D., Plunkett, G., Roe, H.M., Turner, T.E., Sillasoo, &Uuml;,  V&auml;liranta, M., van der Linden, M., Warner, B., 2025. 
 Climate and water-table levels regulate peat accumulation rates across Europe.
 <i>PLOS ONE</i>, PONE-D-24-48416R1
-<a target="new" href=https://doi.org/10.1371/journal.pone.0327422> [link] <b>Open Access</b></a>
+<a target="new" href=https://doi.org/10.1371/journal.pone.0327422> [link] <oa-lock></oa-lock></a>
 <p>	
 
 115 - Vegas-Vilarr&uacute;bia, T., Blasco, A., Garc&eacute;s-Pastor, S., <b>Blaauw, M.</b>, Calero, M.&Aacute;., Rull, V., 2025.
 Early organic carbon and nitrogen accumulation in a Pyrenean site: From rock to peat across the Late Glacial–Early Holocene transition.
 <i>Palaeogeography, Palaeoclimatology, Palaeoecology</i> 680, 113330
-<a target="new" href=https://doi.org/10.1016/j.palaeo.2025.113330> [link] <b>Open Access</b></a>
+<a target="new" href=https://doi.org/10.1016/j.palaeo.2025.113330> [link] <oa-lock></oa-lock></a>
 <p>	
 
 114 - Di Chiara, A., Hounslow, M.W., Maher, B.A., Karloukovski, V., Van Daele, M., <b>Blaauw, M.</b>, Verschuren, D., 2024.
@@ -105,13 +133,13 @@ Extreme solar storms and the quest for exact dating with radiocarbon.
 111 - Martin-Jones, C., Lane, C.S., <b>Blaauw, M.</b>, Mark, D., Verschuren, D., van der Meeren, T., van Daele, M., Wynton, H., Blegen, N., Kisaka, M., Leng, M.J., Barker, P., 2024. 
 The &gt;250-kyr Lake Chala record as a tephrostratotype for correlating archaeological, palaeoenvironmental and volcanic sequences across eastern Africa.
 <i>Quaternary Science Reviews</i> 326, 108476
-<a target="new" href=http://dx.doi.org/10.1016/j.quascirev.2023.108476> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.1016/j.quascirev.2023.108476> [link] <oa-lock></oa-lock></a>
 <p>
 
 110 - Bronk Ramsey, C., Adolphi, F., Austin, E., Bard, E., Bayliss, A., <b>Blaauw, M.</b>, Cheng, H., Edwards, R.L., Friedrich, M., Heaton, T., Hogg, A., Hua, Q., Hughen, K., Kromer, B., Manning, S., Muscheler, R., Palmer, J., Pearson, C., Reimer, P.J., Reimer, R., Richards, D., Scott, M., Southon, J., Turney, C., Wacker, L., 2023. 
 Development of the IntCal database. 
 <i>Radiocarbon</i> 66, 1852-1868
-<a target="new" href=http://dx.doi.org/10.1017/RDC.2023.53> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.1017/RDC.2023.53> [link] <oa-lock></oa-lock></a>
 <p>
 
 109 - Correa-Metrio, A., Cordero-Oviedo, C., G&aacute;mez-N&uacute;&ntilde;ez, Olivares-Casillas, G., Escobar, J., Curtis, J.H., P&eacute;rez, L., <b>Blaauw, M.</b>, Bernal, J.P., 2023.
@@ -123,7 +151,7 @@ The evolution of the Maya coastal landscape in the Mexican Caribbean during the 
 108 - Rull, V., Blasco, A., Calero, L.&aacute;., <b>Blaauw, M.</b>, Vegas-Vilarr&uacute;bia, T., 2023. 
 A continuous centennial Late Glacial-Early Holocene (15–10 cal kyr BP) palynological record from the Iberian Pyrenees and regional comparisons. 
 <i>Plants</i> 12, 3644
-<a target="new" href=http://dx.doi.org/10.3390/plants12203644> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.3390/plants12203644> [link] <oa-lock></oa-lock></a>
 <p>
 
 107 - Sim, T.G., Swindles, G.T., Morris, P.J., Baird, A.J. Gallego-Sala, A.V., Wang, Y., <b>Blaauw, M.</b> and 80 others, 2023.
@@ -177,7 +205,7 @@ Northward shift of the southern westerlies during the Antarctic Cold Reversal.
 99 - Olivares-Casillas, G., Correa-Metrio, A., Zawisza, E., M Wojew&#243;dka-Przyby&#322;, <b>Blaauw, M.</b>, Romero, F., 2021.
 Environmental variability during the last three millennia in the rain shadows of central Mexico.
 <i>Boletín de la Sociedad Geológica Mexicana</i> 73, A171220
-<a target="new" href=http://dx.doi.org/10.18268/BSGM2021v73n1a171220> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.18268/BSGM2021v73n1a171220> [link] <oa-lock></oa-lock></a>
 <p>
 
 98 - Aquino-L&oacute;pez, M.A., Ruiz-Fern&aacute;ndez, A.C., <b>Blaauw, M.</b>, Sanchez-Cabeza, J.-A., 2020.
@@ -189,24 +217,24 @@ Comparing classical and Bayesian 210Pb dating models in human-impacted aquatic e
 97 - <b>Blaauw, M.</b>, Christen, J.A., Aquino-L&oacute;pez, M.A., 2020.
 A review of statistics in palaeoenvironmental research (invited review). 
 <i>Journal of Agricultural, Biological, and Environmental Statistics</i> 25, 17-31
-<a target="new" href=http://dx.doi.org/10.1007/s13253-019-00374-2> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.1007/s13253-019-00374-2> [link] <oa-lock></oa-lock></a>
 <p>
 
 96 - Comas-Bru, L., and 83 others, 2020.
 SISALv2: A comprehensive speleothem isotope database with multiple age-depth models.
 <i>Earth Systems Science Data</i> 12, 2579-2606
-<a target="new" href=http://dx.doi.org/10.5194/essd-12-2579-2020> [link] <b>Open Access</b></a>
+<a target="new" href=http://dx.doi.org/10.5194/essd-12-2579-2020> [link] <oa-lock></oa-lock></a>
 <p>
 
 95 - Heaton, T.J., <b>Blaauw, M.</b>, Blackwell, P.G., Bronk Ramsey, C., Reimer, P.J., Scott, E.M., 2020.
 The IntCal20 approach to radiocarbon calibration curve construction: a new methodology using Bayesian splines and errors-in-variables.
 <i>Radiocarbon</i> 62, 821-863.
-<a target="new" href=http://dx.doi.org/10.1017/RDC.2020.46> [link] <b>Open Access</b> </a> <p>
+<a target="new" href=http://dx.doi.org/10.1017/RDC.2020.46> [link] <oa-lock></oa-lock> </a> <p>
 
 94 - Hunt, C.O., Farrell, M., Fenech, K., French, C., McLaughlin, R., <b>Blaauw, M.</b>, Bennett, J, Flood, R.P., Pyne-O'Donnell, S.D.F., Reimer, P.J., Ruffell, A., Cresswell, A.J., Kinnaird, K.C., Sanderson, D.C.W., Taylor, S., Malone, C., Stoddart, S., Vella, N.C., 2020.
 Chronology and stratigraphy of the valley systems.
 <i> Temple landscapes Fragility, Change and Resilience of Holocene Environments in the Maltese Islands, McDonald Institute for Archaeological Research</i>
-<a target="new" href=http://dx.doi.org/10.17863/CAM.59608> [link] <b>Open Access</b> </a> <p>
+<a target="new" href=http://dx.doi.org/10.17863/CAM.59608> [link] <oa-lock></oa-lock> </a> <p>
 
 93 - Bronk Ramsey, C., <b>Blaauw, M.</b>, Kearney, R., Staff, R., 2019.
 The importance of Open Access to chronological information: The IntChron initiative.
@@ -221,7 +249,7 @@ Holocene establishment of mangrove forests in the western coast of the Gulf of M
 91 - Lise-Pronovost, A., Fletcher, M., Mallett, T, Mariani, M., Lewis, R., Gadd, P., Herries, A.I.R., <b>Blaauw, M.</b>, Heijnis, H., Hodgson, D., Pedro, J., 2019.
 Scientific drilling of sediments at Darwin Crater, Tasmania.
 <i>Scientific Drilling</i> 25, 1-14
-<a target="new" href=http://dx.doi.org/10.5194/sd-25-1-2019> [link] <b>Open Access</b></a> <p>
+<a target="new" href=http://dx.doi.org/10.5194/sd-25-1-2019> [link] <oa-lock></oa-lock></a> <p>
 
 90 - Mayr, C., Zolitschka, B., Lempe, B., Ohlendorf, C., <b>Blaauw, M.</b>, Grohganz, M., L&oacute;pez Correa, M., Reimer, P.J., Stojakowits, P., Diersche, V., 2019. 
 High-resolution geochemical record of environmental changes during MIS 3 from the northern Alps (Nesseltalgraben, Germany). 
@@ -231,12 +259,12 @@ High-resolution geochemical record of environmental changes during MIS 3 from th
 89 - Pontevedra-Pombal, X., Castro, D., Souto, M., Fraga, I., Blake, W.H., <b>Blaauw, M.</b>, L&oacute;pez-S&aacute;ez, J., P&eacute;rez-D&iacute;az, S., Valc&aacute;rcel, M., Garc&iacute;-Rodeja, E., 2019.
 10,000 years of climate control over carbon accumulation in an Iberian bog (southwestern Europe).
 <i>Geoscience Frontiers</i> 10, 1521-1533
-<a target="new" href=http://dx.doi.org/10.1016/j.gsf.2018.09.014> [link] <b>Open Access</b></a><p>
+<a target="new" href=http://dx.doi.org/10.1016/j.gsf.2018.09.014> [link] <oa-lock></oa-lock></a><p>
 	
 88 - Rabett, R.H., Pryor, A.J.E., Simpson, D.J., Farr, L.R., Pyne-O'Donnell, S., <b>Blaauw, M.</b>, Crowhurst, S., Mulligan, R.P.M., Hunt, C.O., Stevens, R., Fiacconi, M., Beresford-Jones, D., Karrow, P.F., 2019.
 A multi-proxy reconstruction of environmental change in the vicinity of the North Bay outlet of pro-glacial Lake Algonquin. 
 <i>Open Quaternary</i> 5, 12
-<a target="new" href=http://dx.doi.org/10.5334/oq.54> [link] <b>Open Access</b></a><p>
+<a target="new" href=http://dx.doi.org/10.5334/oq.54> [link] <oa-lock></oa-lock></a><p>
 <p>
 
 87 - Swindles, G.T., Morris, P.J., Mullan, D.J., Payne, R.J., Roland, T.P., Amesbury, M.J., Lamentowicz, M., Turner, T.E., Gallego-Sala, A., Sim, T., Barr, I.D., <b>Blaauw, M.</b>, Blundell, A., Chambers, F.M., Charman, D.J., Feurdean, A., Galloway, J.M., Ga&#0322;ka, M., Green, S., Kajuka&#0322;o, K., Karofeld, E., Korhola, A., Lamentowicz, L., Langdon, P., Marcisz, K., Mauquoy, D., Mazei, Y.A., McKeown, M., Mitchell, E.A.D., Novenko, E., Plunkett, G., Roe, H.M., Schoning, K., Sillasoo, &Uuml;., Tsyganov, A.N., van der Linden, M., V&auml;liranta, M., Warner, B. 2019. Widespread drying of European peatlands in recent centuries. 
@@ -247,7 +275,7 @@ A multi-proxy reconstruction of environmental change in the vicinity of the Nort
 86 - Aquino-L&oacute;pez, M.A., <b>Blaauw, M.</b>, Christen, J.A., Sanderson, N., 2018.
 Bayesian analysis of <sup>210</sup>Pb dating.
 <i>Journal of Agricultural, Biological, and Environmental Statistics</i> 23, 317-333
-<a target="new" href=http://dx.doi.org/10.1007/s13253-018-0328-7> [link] <b>Open Access</b></a><p>
+<a target="new" href=http://dx.doi.org/10.1007/s13253-018-0328-7> [link] <oa-lock></oa-lock></a><p>
 
 85 - <b>Blaauw, M.</b>, Christen, J.A., Bennett, K.D., Reimer, P.J., 2018.
 Double the dates and go for Bayes &ndash; impacts of model choice, dating density and quality on chronologies.
@@ -272,7 +300,7 @@ Reconstructing the accumulation history of a saltmarsh sediment core: Which age-
 81 - Buckles, L.K., Verschuren, D., Weijers, J.W.H., Cocquyt, C., <b>Blaauw, M.</b>, Sinninghe Damst&eacute;, J.S., 2016. 
 Interannual and (multi-)decadal variability in the sedimentary BIT index of Lake Challa, East Africa, over the past 2200 years: assessment of the precipitation proxy.
 <i>Climate of the Past</i> 12, 1243-1262
-<a target="new" href=http://dx.doi.org/10.5194/cp-12-1243-2016> [link] <b>Open Access</b> </a><p>
+<a target="new" href=http://dx.doi.org/10.5194/cp-12-1243-2016> [link] <oa-lock></oa-lock> </a><p>
 
 80 - Chawchai, S., Yamoah, K.A., Smittenberg, R.H., Kurkela, J., V&auml;liranta, M., Chabangborn, A., <b>Blaauw, M.</b>, Fritz, S.C., Reimer, P.J. and Wohlfarth, B., 2016. Lake Kumphawapi revisited - the complex climatic and environmental record of a tropical wetland in NE Thailand. 
 <i>The Holocene</i> 26, 614-626
@@ -330,7 +358,7 @@ Geochemical records of palaeoenvironmental controls on peat forming processes in
 69 - Giesecke, Th., Davis, B.A.S., Brewer, S., Finsinger, W., Wolters, S., <b>Blaauw, M.</b>, de Beaulieu, J.-L., Binney, H., Fyfe, R.P., Gaillard, M.-J., Gil-Romera, G., van der Knaap, P.W.O., Kune&#353;, P., K&ouml;hl, N., van Leeuwen, J.F.N., Leydet, M., Lotter, A.F., Ortu, E., Semmler, M., Bradshaw, R.H.W., 2014.
 Towards mapping the late Quaternary vegetation change of Europe. 
 <i>Vegetation History and Archaeobotany</i> 23, 75-86
-<a target="new" href=http://dx.doi.org/10.1007/s00334-012-0390-y> [link] <b>Open Access</b></a><p>
+<a target="new" href=http://dx.doi.org/10.1007/s00334-012-0390-y> [link] <oa-lock></oa-lock></a><p>
 
 68 - Mahan, S.A., Gray, H.J., Pigati, J.S., Wilson, J., Lifton, N.A., Paces, J.B., <b>Blaauw, M.</b>, 2014.
 A geochronologic framework for the Ziegler Reservoir fossil site, Snowmass Village, Colorado.
@@ -476,7 +504,7 @@ Holocene environmental changes in Northeast Thailand as reconstructed from a tro
 40 - <b>Blaauw, M.</b>, Christen, J.A., 2011.
 Flexible paleoclimate age-depth models using an autoregressive gamma process.
 <i>Bayesian Analysis</i> 6, 457-474
-<a target="new" href=https://projecteuclid.org/euclid.ba/1339616472> [link] <b>Open Access</b></a><p>
+<a target="new" href=https://projecteuclid.org/euclid.ba/1339616472> [link] <oa-lock></oa-lock></a><p>
 
 39 - <b>Blaauw, M.</b>, van Geel, B., Kristen, I., Plessen, B., Lyaruu, A., Engstrom, D.R., van der Plicht, J., Verschuren, D., 2011.
 High-resolution <sup>14</sup>C dating of a 25,000-year lake-sediment record from equatorial East Africa.
