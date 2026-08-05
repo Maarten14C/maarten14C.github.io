@@ -1,4 +1,4 @@
-ffmpeg <- function(folder="~/spiral_pngs", file="spirals.mp4", framerate=30, firstframe=1, lastframe=5) {
+ffmpeg <- function(folder="~/spiral_pngs", file="spirals.mp4", framerate=30, firstframe=1, lastframe=5, compression=23) {
   input_pattern <- path.expand(file.path(folder, "*.png"))
   output_file <- path.expand(file.path(folder, file))
   
@@ -7,7 +7,9 @@ ffmpeg <- function(folder="~/spiral_pngs", file="spirals.mp4", framerate=30, fir
     "\" -vf \"tpad=start_mode=clone:start_duration=", firstframe, # enable a pause at the start... 
     ":stop_mode=clone:stop_duration=", lastframe, # and at the end
     ",scale=trunc(iw/2)*2:trunc(ih/2)*2\" ", # avoid problems with frame dimensions
-    "-c:v libx264 -profile:v high -level:v 5.1 -crf 18 -preset slow -pix_fmt yuv420p ", # most software should be able to play these videos. -level 4.0 would be safer though for older devices. -crf 18 gives high-quality at the cost of large file size. -preset slow to help retain more detail upon compressin
+    "-c:v libx264 -crf ", compression, # compression 23 will still lead to good quality (18 is really good but create large files)
+	" -c:a aac -b:a 128k " # quality of any audio
+	" -preset slow -pix_fmt yuv420p ", # most software should be able to play these videos. -level 4.0 would be safer though for older devices. -crf 18 gives high-quality at the cost of large file size. -preset slow to help retain more detail upon compressin
     "-movflags +faststart -an \"", output_file, "\"") # optimise for web playing. No audio
 system(command)
 }
@@ -19,8 +21,10 @@ combine.av <- function(folder, video, audio, output) {
   audio_fl <- path.expand(file.path(folder, audio))	
   output_fl <- path.expand(file.path(folder, output))
   
-  command <- paste0("ffmpeg -y -i ", video_fl, " -i ", 
-    audio_fl, " -c:v copy -ac 1 -c:a aac -shortest ", output_fl)
-  system(command)		
+  command <- paste0('"ffmpeg -y -i "', 
+    video_fl, '" -i "', audio_fl, 
+	'" -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart"', 
+	output_fl, '"')
+  system(command)
 }
 
