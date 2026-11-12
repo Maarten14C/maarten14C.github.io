@@ -25,7 +25,7 @@
 
 <h2><a name="intro"></a>Introduction</h2>
 
-<p>Clam (Blaauw, 2010; this version 2.0) was written to perform 'classic' age-depth modelling - prior to applying more sophisticated techniques such as Bayesian age-depth modelling. A recent version of the free open-source statistical software <a HREF=http://www.r-project.org>R</a> (current version 2.14.1; R Development Core Team, 2011) should also be installed on your computer.
+<p>Clam (Blaauw, 2010; this version 2.0) was written to perform 'classic' age-depth modelling - prior to applying more sophisticated techniques such as Bayesian age-depth modelling. A recent version of the free open-source statistical software <a HREF=https://www.r-project.org>R</a> (current version 2.14.1; R Development Core Team, 2011) should also be installed on your computer.
 
 <p>Clam consists of some 1200 lines of R code (file clam.R), a range of <sup>14</sup>C calibration curves, an example <sup>14</sup>C-dated core (/Cores/Example), and this manual (manual.html). The clam code itself consists of a few dozen functions; the user will normally need to know some details about up to four of these only (<code>calibrate</code>, <code>clam</code>, <code>cores</code> and <code>plot.proxies</code>).
 
@@ -37,10 +37,10 @@
 
 <p>Radiocarbon dates need to be calibrated so that they can be placed onto a calendar year time-scale. Clam's default calibration curve is the northern hemisphere terrestrial IntCal09.14C (<code>cc=1</code>) from Reimer et al. (2004). This can be changed to Marine09 (Reimer et al., 2004; <code>cc=2</code>) or SHCal04 (McCormac et al.. 2004; <code>cc=3</code>). In case you want to change the default calibration curve permanently, open clam.R in a plain text editor, and within the opening brackets of the <code>clam</code> and/or <code>calibrate</code> functions change <code>cc</code> to either 2 (cc2, Marine09) or 3 (cc3, SHCal04). You can also provide an alternative curve (which must be present within the clam folder), change the default name of <code>cc1</code>, <code>cc2</code> or <code>cc3</code> to that alternative curve, and set <code>cc</code> to the desired curve. 
 
-<p>Negative radiocarbon ages are calibrated with one of the postbomb curves from Hua and Barbetti (2004), but the user needs to inform clam which one should be used. Three postbomb curves are provided for different regions of the northern hemisphere (check the map of <a target="new" href=http://www.calib.qub.ac.uk/CALIBomb/frameset.html>calibomb</a>), while there is one curve for the southern hemisphere. For example, to use the first of the three northern hemisphere curves with <code>clam</code> and/or <code>calibrate</code>, provide the option <code>postbomb=1</code>, while for southern hemisphere samples, use <code>postbomb=4</code>. Clam will provide a warning if no such option is provided with negative radiocarbon ages.
+<p>Negative radiocarbon ages are calibrated with one of the postbomb curves from Hua and Barbetti (2004), but the user needs to inform clam which one should be used. Three postbomb curves are provided for different regions of the northern hemisphere (check the map of <a target="new" href=https://www.calib.qub.ac.uk/CALIBomb/frameset.html>calibomb</a>), while there is one curve for the southern hemisphere. For example, to use the first of the three northern hemisphere curves with <code>clam</code> and/or <code>calibrate</code>, provide the option <code>postbomb=1</code>, while for southern hemisphere samples, use <code>postbomb=4</code>. Clam will provide a warning if no such option is provided with negative radiocarbon ages.
 
 <a name="eq.1"></a>
-<p>The clam functions to calibrate <sup>14</sup>C dates are similar to that of standard calibration approaches such as used in <a target="new" href="http://www.calib.org">Calib</a> (Stuiver and Reimer, 1993) or <a target="new" href="http://c14.arch.ox.ac.uk/embed.php?File=oxcal.html">OxCal</a> (Bronk Ramsey, 2010). In short, for all calendar ages &theta; in a wide range, the corresponding <sup>14</sup>C ages &mu; of the calibration curve &mu;(&theta;) can be looked up, and compared with the measurement's <sup>14</sup>C age <i>y</i> and reported error <i>sd</i>. The probability for each calendar year can then be expressed using the normal function:<br>
+<p>The clam functions to calibrate <sup>14</sup>C dates are similar to that of standard calibration approaches such as used in <a target="new" href="http://www.calib.org">Calib</a> (Stuiver and Reimer, 1993) or <a target="new" href="https://c14.arch.ox.ac.uk/embed.php?File=oxcal.html">OxCal</a> (Bronk Ramsey, 2010). In short, for all calendar ages &theta; in a wide range, the corresponding <sup>14</sup>C ages &mu; of the calibration curve &mu;(&theta;) can be looked up, and compared with the measurement's <sup>14</sup>C age <i>y</i> and reported error <i>sd</i>. The probability for each calendar year can then be expressed using the normal function:<br>
 <i>y</i>|&theta; ~ N(&mu;(&theta;), &sigma;),
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>[eq.1]</i><br>
 where &sigma; is a combination of the error of the measurement and that of the calibration curve,<br>
@@ -351,7 +351,7 @@ After a clam run (setting <code>storedat=TRUE</code>), reconstructed accumulatio
 
 <p>Previously typed commands can be retrieved by pressing the cursor-up key, after which they can be edited and/or run again. After typing part of a command, pressing tab will fill in the rest of the command or suggest alternatives.
 
-<p>There is much help available for R, either within R through typing a question mark followed by an internal R command (e.g, <code>?plot</code>), on-line (e.g., <a href="http://www.rseek.org">www.rseek.org</a> or <a href="http://www.r-project.org">www.r-project.org</a>), through reading the R <a href="http://cran.r-project.org/doc/manuals/">manuals</a> or any of the  <a href="http://cran.r-project.org/doc/contrib/">reference cards</a>, or, as a last resort, by asking questions in <a href="http://www.r-project.org/mail.html">mailing lists</a>.
+<p>There is much help available for R, either within R through typing a question mark followed by an internal R command (e.g, <code>?plot</code>), on-line (e.g., <a href="http://www.rseek.org">www.rseek.org</a> or <a href="https://www.r-project.org">www.r-project.org</a>), through reading the R <a href="https://cran.r-project.org/doc/manuals/">manuals</a> or any of the  <a href="https://cran.r-project.org/doc/contrib/">reference cards</a>, or, as a last resort, by asking questions in <a href="https://www.r-project.org/mail.html">mailing lists</a>.
 
 <hr>
 <table align="right"><tr><td><a href="#top">to top of page</a></table>
@@ -428,9 +428,9 @@ After a clam run (setting <code>storedat=TRUE</code>), reconstructed accumulatio
 <p>Blaauw, M., Christen, J.A., Mauquoy, D., van der Plicht, J., Bennett, K.D., 2007. Testing the timing of radiocarbon-dated events between proxy archives. <i>The Holocene</i> <b>17</b>: 283-288
 
 <p>Blaauw, M., 2010. Methods and code for 'classical' age-modelling of radiocarbon sequences. <i>Quaternary Geochronology</i> <b>5</b>:  
-<a href="http://dx.doi.org/10.1016/j.quageo.2010.01.002"> 512-518</a>
+<a href="https://dx.doi.org/10.1016/j.quageo.2010.01.002"> 512-518</a>
 
-<p>Bronk Ramsey, C., 2011. OxCal 4.1. <a href=http://c14.arch.ox.ac.uk/oxcal>http://c14.arch.ox.ac.uk/oxcal</a>
+<p>Bronk Ramsey, C., 2011. OxCal 4.1. <a href=https://c14.arch.ox.ac.uk/oxcal>http://c14.arch.ox.ac.uk/oxcal</a>
 
 <p>Christen, J.A., P&eacute;rez E., S., 2010. A new robust statistical model for radiocarbon data. <i>Radiocarbon</i> <b>51</b>: 1047-1059.
 
@@ -454,7 +454,7 @@ After a clam run (setting <code>storedat=TRUE</code>), reconstructed accumulatio
 <table align="right"><tr><td><a href="#top">to top of page</a></table>
 <h2><a NAME="this"></a>About this manual</h2>
 
-<p>Clam is open-source software; you are free to use, copy, distribute and modify it, but please read this manual and accompanying paper before using this program, and cite properly when using/modifying it. This software is distributed under the terms of the <a href="http://www.gnu.org/copyleft/gpl.txt">GNU General Public License</a>. Clam does not come with any warranty and the author, a mere mortal, does not assume any responsibility for the usefulness of any portion of this program.
+<p>Clam is open-source software; you are free to use, copy, distribute and modify it, but please read this manual and accompanying paper before using this program, and cite properly when using/modifying it. This software is distributed under the terms of the <a href="https://www.gnu.org/copyleft/gpl.txt">GNU General Public License</a>. Clam does not come with any warranty and the author, a mere mortal, does not assume any responsibility for the usefulness of any portion of this program.
 
 </body>
 </html>
